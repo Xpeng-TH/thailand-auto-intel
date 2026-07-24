@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+  .box { background: white; border-radius: 14px; padding: 40px; max-width: 480px; width: 90%; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+  h1 { font-size: 20px; margin-bottom: 8px; }
+  p { color: #888; font-size: 14px; margin-bottom: 24px; }
+  a { display: block; padding: 12px 20px; background: #1a73e8; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; margin-bottom: 10px; }
+  a:hover { background: #1558b0; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <p>每日 08:30 自动更新</p>
+  <div id="links"><p style="color:#aaa">加载中...</p></div>
+</div>
+<script>
+  // 自动跳转到最新一期（由推送脚本更新此文件中的日期）
+  const latest = "2026-07-24";
+  document.getElementById("links").innerHTML =
+    `<a href="reports/${latest}.html">📄 查看最新报告（${latest}）</a>`;
+</script>
+</body>
+</html>
