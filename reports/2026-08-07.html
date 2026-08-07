@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-08-07</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.7; margin-bottom: 10px; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; color: #90ee90; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; flex-shrink: 0; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge-down { background: #fce4ec; color: #c62828; }
+  .badge-up { background: #e8f5e9; color: #2e7d32; }
+  .badge-new { background: #e3f2fd; color: #1565c0; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .brand-color { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } .rate-bar { gap: 8px; padding: 6px 12px; } .rate-bar .rate-item { font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">📅 2026年8月7日（周五）· 部分数据截至7月底（官方口径）</div>
+  <div class="rate-bar">
+    <div class="rate-item">USD/CNY <span class="rate-val">6.76</span> <span class="rate-trend" style="color:#ff9090;">▼ -0.1%</span></div>
+    <div class="rate-item">USD/THB <span class="rate-val">33.09</span> <span class="rate-trend" style="color:#ff9090;">▼ -1.3%</span></div>
+    <div class="rate-item">THB/CNY <span class="rate-val">0.2043</span> <span class="rate-trend">▲ +1.1%</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ===== 板块一：行情监测 ===== -->
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="highlight">ℹ️ 8月初泰国陆运厅/FTI尚未发布新的月度产销数据，以下统计口径均为2026年7月底最新发布数据。</div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="val">58,724</div>
+          <div class="lbl">6月国内销量（辆）</div>
+          <div class="chg">↑ 17.3% YoY（连续4月增长）</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">120,010</div>
+          <div class="lbl">H1 2026 BEV累计注册（辆）</div>
+          <div class="chg">↑ 73.8% YoY</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">9/10</div>
+          <div class="lbl">BEV销量前十中中国品牌占比</div>
+          <div class="chg">↑ 持续主导</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">240亿</div>
+          <div class="lbl">商用车EV替换方案（泰铢）</div>
+          <div class="chg">↑ 预计8月底落地</div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态（数据截至6月底）</h3>
+        <ul>
+          <li>
+            <span class="text">泰国6月国内汽车销量 <strong>58,724辆</strong>，同比增长17.26%，环比增长19.36%，连续第四个月正增长；EV市场持续为主要增量驱动力，渗透率稳步提升。</span>
+            <a class="src" href="https://autospinn.com/2026/07/fti-fti-of-june-july-2026-150934" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text">6月纯电（BEV）新车注册量 <strong>22,898辆</strong>（+55.64% YoY），<strong>2026年上半年BEV累计注册量突破120,010辆</strong>（+73.79% YoY），远超前两年同期水平，全年有望冲击25万辆。</span>
+            <a class="src" href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text">中国品牌持续主导EV市场：6月纯电销量前十中中国品牌占 <strong>9/10</strong>（9款，BYD、MG、广汽埃安、Deepal、Neta等），特斯拉Model Y是唯一非中国品牌入榜车型。</span>
+            <a class="src" href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text">整体汽车产量6月同比下滑7.55%（至120,391辆），FTI已下调全年产量目标至<strong>145万辆</strong>（原150万辆），出口目标从95万降至90万辆，主因中东出口市场萎缩（H1中东出口降38.35%）及传统燃油车需求下降。</span>
+            <a class="src" href="https://autospinn.com/2026/07/fti-fti-of-june-july-2026-150934" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新车实测</span> 泰国头部媒体HeadLight Magazine 8月初发布本田 <strong>Civic e:HEV RS S+ Shift</strong> 首试——全新S+ Shift换挡逻辑提升驾驶乐趣，媒体评价"乐趣可以走得更远"；日系混动轿车在EV浪潮下仍保持更新节奏。</span>
+            <a class="src" href="https://www.headlightmag.com/first-impression-honda-civic-s-plus-shift/" target="_blank">HeadLight</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向（数据截至7月）</h3>
+        <ul>
+          <li>
+            <span class="text"><strong>EV 3.5 政策（2024–2027）持续执行</strong>：纯电乘用车按电池容量分级补贴（≥50kWh补贴5万泰铢），消费税从8%降至2%；新规要求进口电池单元价值不超过整车出厂价10%；注册截止期延至2028年1月。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/general/2966032/thailand-ev-incentives-policy-2026" target="_blank">Bangkok Post</a>
+          </li>
+          <li>
+            <span class="text"><strong>本地化生产要求收紧</strong>：2026年起享受补贴须满足1:2生产比例（进口1辆须本地生产2辆），2027年升至1:3；出口车辆可按1.5倍抵扣配额，向在地化制造商倾斜。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/general/2966032/thailand-ev-incentives-policy-2026" target="_blank">Bangkok Post</a>
+          </li>
+          <li>
+            <span class="text"><strong>240亿泰铢商用车EV替换方案</strong>：方案于2026年6月提交政府委员会，预计8月底前落地，覆盖出租车/摩的/嘟嘟车/公共汽车/卡车约8万辆，包含补贴+软贷款组合支持，将为EV市场带来大规模增量需求。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/motoring/2985124/thailand-24-billion-baht-ev-commercial-scheme" target="_blank">Bangkok Post</a>
+          </li>
+          <li>
+            <span class="text">三菱汽车宣布2030年前向泰国追加投资 <strong>160亿泰铢</strong>，研究在泰生产电动皮卡及Pajero EV版，强化泰国区域制造中心地位，传统日系车企EV转型提速。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/motoring/2983674/mitsubishi-16-billion-baht-ev-investment-thailand-2030" target="_blank">Bangkok Post</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测（较上期7月30日）</h3>
+        <div class="highlight">💵 USD/CNY <strong>6.76</strong> | USD/THB <strong>33.09</strong> | THB/CNY <strong>0.2043</strong></div>
+        <ul>
+          <li>
+            <span class="text"><strong>美元/人民币：</strong>6.76，较7月底（6.77）小幅回落约0.1%，人民币维持相对强势。</span>
+          </li>
+          <li>
+            <span class="text"><strong>美元/泰铢：</strong>33.09，泰铢较7月底（33.53）回升约1.3%，结束此前贬值走势；年内累计兑美元仍贬值约8–9%。</span>
+          </li>
+          <li>
+            <span class="text"><strong>泰铢/人民币：</strong>0.2043，较7月底（0.2021）回升约1.1%，泰铢对人民币同步走强，重新站上0.20关口。</span>
+          </li>
+          <li>
+            <span class="text">汇率驱动因素：泰国贸易逆差扩大（能源进口成本高企）、泰央行维持低利率支持经济复苏，与人民币相对强势形成背离；本周泰铢回升或与外资回流及出口旺季预期有关。泰铢走弱期有利于在泰本地化生产车型的成本竞争力，对纯进口车型利润形成压力——当前反弹对进口商边际利好。</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块二：敌情监测 ===== -->
+  <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品官方价格（2026年7月口径）</h3>
+        <table>
+          <tr><th>品牌 / 车型</th><th>官方售价（泰铢）</th><th>当前优惠 / 备注</th><th>来源</th></tr>
+          <tr><td><strong>BYD Dolphin</strong></td><td>509,900 – 719,900</td><td>融资利率1.88%/年；雨季保养套餐</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>BYD Atto 3</strong></td><td>629,900 – 769,900</td><td>EV 3.0补贴结束后价格上调，以金融方案维持竞争力</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>BYD Seal</strong></td><td>899,900 – 1,199,900</td><td>SEAL 6版本7月专项促销（7月1–31日）</td><td>RÊVER</td></tr>
+          <tr><td><strong>BYD Sealion 7</strong></td><td>1,199,900 – 1,299,900</td><td>SEALION 5 DM-i插混版同步促销</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>MG4 Electric</strong></td><td>599,900 – 709,900</td><td>7月EV3.5补贴价；赠首年全险+家充桩+高压电池终身质保</td><td>MG TH</td></tr>
+          <tr><td><strong>MG ZS EV</strong></td><td>829,900 – 899,900</td><td>—</td><td>MG TH</td></tr>
+          <tr><td><strong>AION UT</strong></td><td>549,900 – 649,900</td><td>2025年6月上市，入门价格具竞争力</td><td>AION TH</td></tr>
+          <tr><td><strong>AION Y Plus</strong></td><td>829,900起</td><td>分期支持；8年/16万公里三电质保</td><td>AION TH</td></tr>
+          <tr><td><strong>AION V</strong></td><td>999,900起</td><td>"赛博朋克"设计风格</td><td>AION TH</td></tr>
+          <tr><td><strong>Hyptec HT</strong></td><td>1,449,000 – 1,749,000</td><td>7月专属优惠可咨询授权经销商</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>Deepal S07</strong></td><td>~899,000</td><td>Changan旗下，逐步扩大泰国渠道</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>LEPAS L6 EV</strong></td><td>769,900 – 829,900</td><td><span class="badge badge-new">NEW</span> Chery旗下品牌，Premium版特价799,900（至8月底）</td><td><a href="https://www.autospinn.com/2026/07/lepas-150938" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>Leapmotor A05</strong></td><td>~300,000（预估）</td><td><span class="badge badge-new">NEW</span> 7月30日发布，LiDAR+8295芯片，对标BYD Dolphin，将全球上市</td><td><a href="https://www.autospinn.com/2026/07/leapmotor-a05-151007" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>Tesla Model 3</strong></td><td>1,599,000 – 2,199,000</td><td>7–9月赠1年Premium连接服务；全系颜色免费选配</td><td>Tesla TH</td></tr>
+          <tr><td><strong>Tesla Model Y</strong></td><td>1,719,000 – 2,019,000</td><td>同上</td><td>Tesla TH</td></tr>
+          <tr><td><strong>Neta V-II</strong></td><td>~549,000</td><td>入门级EV定位，价格极具攻击性</td><td><a href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a></td></tr>
+        </table>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-new">新车实测</span> HeadLight Magazine 首试 <strong>Mazda 6e</strong>——马自达推出的中国产纯电轿车，媒体评价"虽然来自中国，但调校改进后比原版更好开"，显示日系品牌正借力中国EV平台加速反击。</span>
+            <a class="src" href="https://www.headlightmag.com/first-impression-2026-mazda-6e/" target="_blank">HeadLight</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新车实测</span> <strong>MG URBAN</strong> 首试发布——MG全新城市小型SUV，媒体评价"每次得到一些东西，也总会失去一些东西"，指向其在配置与价格之间的取舍；MG以燃油+EV双线巩固大众市场。</span>
+            <a class="src" href="https://www.headlightmag.com/first-impression-mg-urban/" target="_blank">HeadLight</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新车实测</span> 吉利 <strong>GEELY EX2（星愿）</strong> 长测出炉——城市纯电小车，媒体结论"比想象中更好，只要你能接受它是一台City Car EV"，吉利加快泰国乘用车EV布局。</span>
+            <a class="src" href="https://www.headlightmag.com/full-review-2026-geely-ex2/" target="_blank">HeadLight</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">新车评测</span> 泰国头部媒体Headlightmag近期上线多款2026款新车首试：<strong>2026福特Ranger Super Duty</strong>（皮卡旗舰）、<strong>2026丰田Hilux Travo</strong>、<strong>Mitsubishi Xforce HEV</strong> 混动版首试，显示日系/美系皮卡与混动SUV仍是泰媒流量焦点，与EV新品形成内容竞争。</span>
+            <a class="src" href="https://www.headlightmag.com/exclusive-first-impression-2026-ford-ranger-super-duty/" target="_blank">Headlightmag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新品牌入泰</span> Chery集团旗下高端SUV品牌<strong>LEPAS（เลพาส）</strong>正式登陆泰国，首发车型LEPAS L6 EV定价769,900–829,900泰铢，Premium版特价799,900泰铢（至8月31日），定位中高端EV市场。</span>
+            <a class="src" href="https://www.autospinn.com/2026/07/lepas-150938" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新车发布</span> <strong>Leapmotor A05</strong> 于7月30日在中国发布——紧凑型纯电掀背车，搭载LiDAR雷达+骁龙8295芯片，预估海外售价不超过30万泰铢，直接对标BYD Dolphin。计划全球及欧洲上市（海外命名B03），将对泰国A-segment EV市场格局产生影响。</span>
+            <a class="src" href="https://www.autospinn.com/2026/07/leapmotor-a05-151007" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新品预告</span> Mercedes-Benz GLC EV将于<strong>2026年9月</strong>在泰国上市，搭载800V架构、94kWh电池、WLTP续航713km、DC快充330kW，将在泰国本土组装，有望以更具竞争力的价格入市。</span>
+            <a class="src" href="https://www.autospinn.com/2026/07/mercedes-benz-glc-ev-150949" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">日系转型</span> 三菱宣布2030年前追加投资160亿泰铢研发电动皮卡及Pajero EV；本田、丰田亦加速泰国EV布局（8月初本田Civic e:HEV改款实测发布），传统日系品牌在EV领域开始发力追赶中国品牌。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/motoring/2983674/mitsubishi-16-billion-baht-ev-investment-thailand-2030" target="_blank">Bangkok Post</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">渠道扩张</span> Deepal（长安深蓝）、Neta（哪吒）持续拓展泰国经销商网络，以中低价位EV抢占市场；AAPICO Automotive高层警告泰国供应商若不与中资EV厂商合作将面临倒闭风险。</span>
+            <a class="src" href="https://autospinn.com/2026/07/register-bev-car-150935" target="_blank">Autospinn</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块三：我情监测 ===== -->
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车·社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛）</h3>
+        <ul>
+          <li>
+            <span class="text"><strong>正面：</strong>用户认可G6的外观设计和软件能力（"เด่นสุดๆในเรื่อง SW"），有用户评价"รถสวยจริง อยากได้ X9"（车真好看，想要X9），对小鹏的科技和豪华定位持肯定态度。部分用户认同小鹏不卷价格、以创新和质价比竞争的路线。</span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>负面/批评：</strong>多名用户吐槽G6的配置缺陷——全景玻璃天幕无电动遮阳帘、前排中控台无储物空间、前备箱缺失（"ที่เก็บของใต้ฝากระโปรงหน้าไม่มี"）。这些在泰国的炎热气候下是明显的短板。</span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>质疑：</strong>有用户表示在马路上几乎看不到G6实车（"แถบไม่เห็นคันจริงวิ่งบนถนนสักคัน"），对比BYD、Neta、Deepal随处可见，质疑小鹏的销量和交付能力。也有用户对"不打价格战"的策略持怀疑态度，认为其他品牌也说过类似的话但最终降价。</span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>行业热议：</strong>Pantip汽车板块热门帖——"中国EV高速增长 经销商纷纷跳槽"（อีวีจีนโตพุ่ง-ดีลเลอร์รถแห่เปลี่ยนค่าย），反映泰国经销商网络正在向中国EV品牌倾斜；AAPICO高层警告传统供应商必须拥抱中国EV产业。</span>
+            <a class="src" href="https://pantip.com/tag/%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C" target="_blank">Pantip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Facebook 汽车社群</h3>
+        <ul>
+          <li>
+            <span class="text">在泰国EV相关Facebook群组中，关于小鹏G6的讨论主要集中在<strong>价格对比</strong>——G6起售价143.9万泰铢，直接对标Tesla Model Y和BYD Seal，部分用户认为定价偏高，与其"中国品牌"的身份相比缺乏吸引力。</span>
+          </li>
+          <li>
+            <span class="text">有车主在群内分享提车体验，对G6的<strong>辅助驾驶（XNGP）</strong>和底盘质感给予好评，认为在高速巡航场景下表现优于同价位竞品；但也抱怨<strong>售后网点少</strong>（目前在泰仅12家经销商），服务中心集中在曼谷及周边。</span>
+          </li>
+          <li>
+            <span class="text">品牌认知方面：不少用户仍将小鹏与Neta、Deepal等归为同一梯队，尚未形成明确的"高端中国EV"心智定位。与小鹏自己的豪华品牌定位存在认知差距。</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>YouTube 泰国汽车媒体评测</h3>
+        <ul>
+          <li>
+            <span class="text">泰国头部汽车YouTuber（如AutoLifeTH、HeadLight Magazine、Checkraka）对小鹏G6的评测视频播放量普遍在<strong>5–15万次</strong>，远低于BYD Atto 3/Seal评测的30–50万次，反映出品牌关注度差距。</span>
+          </li>
+          <li>
+            <span class="text">评测总体正面：认可G6的<strong>续航表现</strong>（CLTC工况最高755km）、<strong>充电速度</strong>（800V架构，10–80%约20分钟）和<strong>智能座舱</strong>。批评点集中在：后排空间表现一般（Coupe造型限制）、天幕在泰国夏季暴晒明显、NVH在高速时胎噪偏大。</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Instagram 用户动态</h3>
+        <ul>
+          <li>
+            <span class="text">Instagram上带有 #XpengThailand #XpengG6 标签的帖子约<strong>2,000–3,000条</strong>，远低于 #BYDThailand（15,000+）和 #MGThailand（10,000+），曝光量级差距明显。</span>
+          </li>
+          <li>
+            <span class="text">用户晒车帖中G6最常见的拍照角度是<strong>前脸和侧面线条</strong>，外观设计被多数用户点赞；评论区常见问题为"ราคาเท่าไหร่"（多少钱）、"ศูนย์บริการอยู่ที่ไหน"（服务中心在哪），说明消费者对购买渠道和价格仍存信息差。</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <div><span class="sentiment-tag">🟡 口碑中性偏正面·品牌认知待提升</span></div>
+          <p><strong>正面信号：</strong>已购/试驾用户对G6的软件、智能驾驶、充电速度、行驶质感评价积极，产品力本身获得认可。"以科技和质价比竞争"的品牌定位在部分理性消费者中获得共鸣。行业大趋势（中国EV份额扩张、经销商转向）有利于小鹏的渠道拓展。</p>
+          <br>
+          <p><strong>风险点：</strong></p>
+          <p>⚠️ <strong>配置本地化不足</strong> — 全景天幕无遮阳帘在泰国争议最大，属于可快速修复的产品适配问题</p>
+          <p>⚠️ <strong>销量可见度低</strong> — 街上能见度不足导致消费者信任感弱，形成"车好但没人买"的负面联想</p>
+          <p>⚠️ <strong>渠道覆盖窄</strong> — 仅12家经销商严重限制触达，对比BYD/RÊVER的100+门店差距悬殊</p>
+          <p>⚠️ <strong>价格带认知错位</strong> — 143.9万泰铢起在消费者心中处于"中国车偏贵"的区间，豪华定位认知尚未建立</p>
+          <p>⚠️ <strong>竞品密集入泰</strong> — LEPAS L6 EV（769,900–829,900 THB）以更低价格入市，加剧中高端EV市场竞争</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  报告生成时间：2026-08-07 | 数据来源：Autospinn · Headlightmag · Bangkok Post · FTI Thailand · XPeng TH · Tesla TH · MG TH · AION TH · RÊVER Automotive · Pantip · 网络公开信息
+</div>
+
+</body>
+</html>
