@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-09-11</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.7; margin-bottom: 10px; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; color: #90ee90; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; flex-shrink: 0; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge-down { background: #fce4ec; color: #c62828; }
+  .badge-up { background: #e8f5e9; color: #2e7d32; }
+  .badge-new { background: #e3f2fd; color: #1565c0; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 140px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .brand-color { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+  .new { background: #fff3cd; padding: 0 3px; border-radius: 3px; font-weight: 700; }
+  .new-li { border-left: 3px solid #ffc107; background: #fffde7; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } .rate-bar { gap: 8px; padding: 6px 12px; } .rate-bar .rate-item { font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">📅 2026年9月11日（周五）· 统计口径为2026年7月新车注册数据（CAR250汇总）· 9/11 08:00 采集说明：autospinn.com 返回空内容（未捕获，未重试）、headlightmag.com 新车频道抓取成功，<strong>新增新车/官价条目11条（9/11新收录）</strong>；bangkokpost.com 本期未新增；行情统计口径与竞品价格快照沿用9/10报告已验证条目 · <strong>8月18日为 XPENG L03 泰国正式上市日（今日为上市第24天）</strong> · <strong>HeadLightMag：XPENG L03 将于 9月17日 公布全部版本官方售价（现规格对比价 899,000–1,2XX,000泰铢）</strong> · XPENG CARNIVAL 特惠已于9/6截止 · BIG Motor Sale 2026（8/21–30）已收官</div>
+  <div class="rate-bar">
+    <div class="rate-item">USD/CNY <span class="rate-val">6.73</span> <span class="rate-trend" style="color:#888;">（9/11 08:00实时，持平）</span></div>
+    <div class="rate-item">USD/THB <span class="rate-val">33.00</span> <span class="rate-trend" style="color:#2e7d32;">（9/11 08:00实时，较9/10 ▲）</span></div>
+    <div class="rate-item">THB/CNY <span class="rate-val">0.2039</span> <span class="rate-trend" style="color:#c62828;">（9/11 08:00实时，6.73/33.00折算，较9/10 ▼）</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ===== 板块一：行情监测 ===== -->
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="highlight">⚠️ 9/11 08:00 采集说明：autospinn.com 返回空响应（134字节，未重试）；headlightmag.com 新车频道（news/new-cars-in-thailand）抓取成功，<strong>本期新增新车/官价条目11条</strong>（9/11新收录：XPENG L03 定价预告、丰田 Land Cruiser FJ、现代 IONIQ 5 N Line 泰产CKF、比亚迪 Sealion 7 MY2026、GWM TANK 500 3.0T、现代 STARIA Hybrid、吉利 Starray EM-R Max、铃木 Fronx 特价、三菱全新 PAJERO、MINI ACEMAN Collections、马自达 6e Exclusive）；<strong>销量/注册/汇率以外的行情条目与竞品价格快照沿用9/10报告已验证内容（统计口径2026年7月注册数据；竞品价格快照8/11、8/22复核）</strong>；L03 上市第24天（8/18上市），<strong>官方定价公布日锁定9月17日</strong>是近期最大观察点；XPENG CARNIVAL 特惠已于9/6截止收官。</div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="val">58,402</div>
+          <div class="lbl">7月新车注册总量（辆）</div>
+          <div class="chg">50大品牌口径</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">21,460</div>
+          <div class="lbl">7月BEV市场总注册（辆）</div>
+          <div class="chg">同比+110.5%</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">657</div>
+          <div class="lbl">XPENG品牌7月注册（辆）</div>
+          <div class="chg">品牌榜第18位</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">2,640</div>
+          <div class="lbl">7月BEV单车注册冠军（辆）</div>
+          <div class="chg">Geely EX2</div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>🚀 XPeng 主力车型销量追踪（注册量）</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:14px;">
+          <div style="flex:1;min-width:260px;background:#f8f9fa;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-size:13px;font-weight:700;color:#333;margin-bottom:4px;">XPeng G6</div>
+            <div style="font-size:11px;color:#888;margin-bottom:10px;">纯电智能轿跑SUV · C-Segment</div>
+            <img src="https://s-cdn.xpeng.com/commoncms/prod/2024-04-01/8e7dcbe0e06744449f91fe6981395eca.jpg?x-oss-process=image%2Fresize%2Cw_1920%2Cquality%2Cq_80%2Finterlace%2C1" alt="XPeng G6 官方渲染图" style="width:100%;max-width:260px;height:auto;border-radius:8px;display:block;margin:0 auto;object-fit:cover;aspect-ratio:16/10;"/>
+            <div style="margin-top:8px;font-size:12px;"><span style="color:#888;">7月注册</span> <strong style="color:#1a73e8;">344辆</strong></div>
+          </div>
+          <div style="flex:1;min-width:260px;background:#f8f9fa;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-size:13px;font-weight:700;color:#333;margin-bottom:4px;">XPeng X9</div>
+            <div style="font-size:11px;color:#888;margin-bottom:10px;">纯电智能旗舰MPV · 7座</div>
+            <img src="https://s-cdn.xpeng.com/commoncms/prod/2026-03-19/6c37b69e7e11425cafde3b5797efe18f.jpg" alt="XPeng X9 官方渲染图" style="width:100%;max-width:260px;height:auto;border-radius:8px;display:block;margin:0 auto;object-fit:cover;aspect-ratio:16/10;"/>
+            <div style="margin-top:8px;font-size:12px;"><span style="color:#888;">7月注册</span> <strong style="color:#1a73e8;">314辆</strong></div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:#888;">数据来源：Autolifethailand BEV注册统计（autolifethailand.tv/ev-bev-register-thailand-july-2026/）；车型图为XPeng官方渲染图。</div>
+      </div>
+
+      <div class="subsection">
+        <h3>📋 近期新车·官价动态（★=9/11 HeadLightMag 新收录，含官价/实车图条目）</h3>
+        <ul>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·我情核心</span> <span class="new">XPeng L03 规格对比公布：899,000 – 1,2XX,000 泰铢，官方定价将于 9月17日 公布全部版本</span>——泰媒给出 L03 各版本预估价区间，标准版落在 90万泰铢档、"1,2XX,000"为长续航/高配预留上限；9/17 官价公布是决定 L03 能否打开百万铢以下最大细分市场的关键节点，也是小鹏泰国下半年最重要的销量变量。</span>
+            <a class="src" href="https://www.headlightmag.com/unofficial-price-xpeng-l03/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·日系/韩系</span> <span class="new">现代 IONIQ 5 N Line（泰国产 CKD / MY2026 第二批）官方售价 1,449,000 泰铢</span>——韩系纯电以泰国本地组装（CKD）落地 1.45M 泰铢价位，直接进入 XPeng G6 高配（最高1,489,000泰铢）价格带；本地生产意味着可享消费税/EV3.5 政策红利，对纯进口车型形成成本端压制。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·竞品官价</span> <span class="new">比亚迪 BYD Sealion 7 MY2026 官方售价复核：1,199,900 – 1,349,900 泰铢（含 AWD Ultimate 顶配）</span>——与 XPeng G6（1,189,000–1,489,000泰铢）价格带正面重叠，C-Segment 纯电SUV竞争持续白热化。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-byd-sealion-7-2026-awd-ultimate/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·竞品官价</span> <span class="new">长城 GWM TANK 500 3.0T 柴油官方售价 1,669,000 – 1,749,000 泰铢</span>——中系高端硬派SUV以3.0L柴油涡轮上探1.7M泰铢档，与高端MPV/SUV（含 X9 入门2,539,000泰铢）形成中系品牌整体价格上探趋势。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-gwm-tank-500-diesel-2026/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·中系新动力</span> <span class="new">吉利 Geely Starray EM-R Max 实车曝光："可充电、可加油"缓解节假日续航焦虑</span>——吉利在泰推增程/插混（EM-R）产品，中系品牌从纯电向"电+油"双补能方案延伸，覆盖充电条件不足的二三线客群，对纯电单一动力车型构成场景分流。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-09-08-picture-specs-geely-starray-em-r-max/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·日系官价</span> <span class="new">丰田 Toyota Land Cruiser FJ 官方售价 1,289,000 泰铢（实车图同步解析）</span>——丰田以"方盒子"入门级越野SUV切入约1.29M泰铢，日系以经典IP吸引风格化客群，对1.2–1.4M价位带燃油/纯电SUV形成话题竞争。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-toyota-land-cruiser-fj-2/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·促销</span> <span class="new">铃木 Suzuki Fronx 特价 599,000 – 699,000 泰铢（GLX / GLX Plus 再降 100,000 泰铢）</span>——日系小型SUV以近10万泰铢降幅促销，反映入门级市场竞争与日系清库压力，与入门纯电（Geely EX2 429,990起、AION UT 519,900起）在60–70万泰铢档交叉竞争。</span>
+            <a class="src" href="https://www.headlightmag.com/special-price-suzuki-fronx-september-2026/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·新车</span> <span class="new">三菱全新 PAJERO 全球首发信息公布（Off-road 旗舰SUV）</span>——三菱以传奇车型 PAJERO 重启硬派SUV线，预计导入泰国（三菱在泰拥有本地工厂与皮卡基本盘），强化日系在SUV/皮卡品类的产品攻势。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-mitsubishi-pajero-world-premiere-launch/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">沿用</span> 马自达 Mazda 6e Exclusive 实车（Melting Copper 配色）图解——日系纯电轿车（Exclusive版1,199,000泰铢）以配色/质感持续维持话题度，与 XPeng G6 入门价（1,189,000）几乎重合。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-09-28-picture-specs-mazda-6e-exclusive/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">沿用</span> 现代 STARIA Hybrid（Minorchange）官方售价 2,099,000 – 2,399,000 泰铢——高端混动MPV价位，与 XPeng X9（2,539,000–2,799,000泰铢）所在高端多人出行市场存在客群交叉（混动vs纯电路线之争）。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-hyundai-staria-hybrid-minorchange-2026/" target="_blank">HeadLightMag</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态（7月注册数据；★=9/11 新收录；其余沿用条目数据截至9/7）</h3>
+        <ul>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·我情</span> <span class="new">XPENG L03 官方定价公布日锁定 9月17日</span>——泰媒给出规格对比价 <strong>899,000 – 1,2XX,000 泰铢</strong>，L03 上市（8/18）已第24天但仍未见全部版本官价，9/17 公布后将成为百万泰铢以下最大细分市场的直接竞争者；定价是否低于市场预期的"9xx,xxx"将决定其走量弹性。</span>
+            <a class="src" href="https://www.headlightmag.com/unofficial-price-xpeng-l03/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·本地化</span> <span class="new">现代 IONIQ 5 N Line 以"泰国产 CKD"身份定价 1,449,000 泰铢</span>——本地组装车型享受政策红利，与以CBU进口为主的品牌（含小鹏MGC渠道）形成成本剪刀差；印证"本地化=准入门槛+价格优势"的行业趋势（对应消费税改革与EV3.5本地化要求）。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text">泰国2026年7月新车注册总量 <strong>58,402辆</strong>（50大品牌口径），其中皮卡注册 <strong>11,235辆</strong>；丰田以 <strong>19,564辆</strong> 稳居品牌第一，五十铃4,599辆、本田4,292辆分列二三位，中国品牌集团（OMODA&amp;JAECOO 3,291 / BYD 3,178 / GEELY 3,011 / MG 2,861）整体表现强劲。</span>
+            <a class="src" href="https://www.car250.com/07-th-2026.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">确认</span> Autolifethailand 8/11报道：7月BEV注册总量 <strong>21,460辆</strong>（同比+110.5%），<strong>Geely EX2 连续第二个月蝉联BEV单车注册冠军（2,640辆）</strong>；JAECOO 5 EV（2,132辆）、GWM ORA 5（1,399辆）、MG S5 EV（1,295辆）、Deepal S05 EV（1,258辆）、AION UT（1,044辆）紧随其后——BEV前十名中中国品牌包揽全部席位，特斯拉Model 3（592辆）列第10。</span>
+            <a class="src" href="https://autolifethailand.tv/ev-bev-register-thailand-july-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">我情亮点</span> XPENG 品牌7月注册 <strong>657辆</strong>（品牌榜第18位），其中G6 <strong>344辆</strong>、X9 <strong>314辆</strong>（Autolife口径双车合计658辆，CAR250品牌口径657辆）；7月BEV市场总注册 <strong>21,460辆</strong>，XPeng占BEV市场约3.1%。</span>
+            <a class="src" href="https://autolifethailand.tv/ev-bev-register-thailand-july-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">FTI销量</span> 丰田泰国7月销量（FTI口径）17,866辆，同比下降1.62%——销量口径（17,866）低于CAR250注册口径（19,564），两套统计差异反映终端上牌与销售节奏错位，日系龙头在销量与注册两端均承压。</span>
+            <a class="src" href="https://www.autospinn.com/2026/08/car-sales-toyota-car-sales-2026-151973" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">延续·利空</span> FTI数据：泰国皮卡市场销量暴跌——从此前约3万辆/月的高位跌至约1万辆/月，与7月皮卡注册 <strong>11,235辆</strong>（CAR250口径）相互印证；本期三菱 PAJERO 全球首发、丰田 Land Cruiser FJ 官价1,289,000泰铢等硬派SUV新品，反映日系正以SUV品类对冲皮卡下行。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-mitsubishi-pajero-world-premiere-launch/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">展会战果</span> BIG Motor Sale 2026（8/21–30）收官总结：中国品牌预订量领先——展会预订榜前列为中国品牌（OMODA&amp;JAECOO 5,028辆领跑），中系在展销渠道的走量能力进一步验证，日系以金融促销（0%利率）对冲。</span>
+            <a class="src" href="https://www.autospinn.com/2026/08/number-car-of-bookings-big-motor-sale-2026-151960" target="_blank">Autospinn</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向（★=9/11 新收录；其余沿用9/10在案条目）</h3>
+        <ul>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·本地化印证</span> <span class="new">现代 IONIQ 5 N Line 以泰国产 CKD 身份上市（1,449,000泰铢）</span>——外资品牌将纯电主力车型转入泰国本地组装，直接印证消费税改革与 EV3.5 本地化配比（2026年1:2、2027年1:3）对投资决策的实际牵引；本地化车型的价格/政策优势将持续拉大与纯进口车型的剪刀差。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">新动向</span> 泰国财政部长Ekniti 8月11日要求<strong>全面改革消费税</strong>，以对冲自贸协定（FTA）下进口车的优势——对本土生产车型减税、对未在泰设厂的整车进口提高税率的方向进一步明确，进口/本地化剪刀差持续拉大，直接影响以进口为主的品牌（含小鹏MGC渠道）。</span>
+            <a class="src" href="https://www.nationthailand.com/business/economy/40069517" target="_blank">Nation Thailand</a>
+          </li>
+          <li>
+            <span class="text"><strong>240亿泰铢商用车EV替换方案</strong>持续推进：路透社7月23日报道该方案约合7亿美元、覆盖约 <strong>8万辆</strong> 出租车/摩的/嘟嘟车/巴士/卡车，预计8月底前落地——原预期时间点已过，落地节奏与细则公布是近期政策最大观察点，将为BEV市场带来大规模增量需求。</span>
+            <a class="src" href="https://www.car250.com/ev-incentive.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text">GWM（长城）成为首家<strong>按EV 3.5标准完成本土生产补偿</strong>的车企（罗勇府GWM Smart Factory，Motor Expo官方报道）；2026年1:2、2027年1:3的进口-生产配比要求下，本地化进度成为中国品牌在泰竞争的关键变量。</span>
+            <a class="src" href="https://www.motorexpo.co.th/news/5379" target="_blank">Motor Expo</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">竞争压力</span> 印尼财长8月8日公开向丰田抛出更优惠激励，<strong>直接挑战泰国区域汽车制造枢纽地位</strong>；泰国政府回以FTAs拓展+消费税组合拳，汽车产业政策博弈升温。</span>
+            <a class="src" href="https://www.nationthailand.com/business/automobile/40069561" target="_blank">Nation Thailand</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">EV政策</span> 泰国2026年EV激励政策框架（Bangkok Post 报道）：补贴+消费税减免延续，本地生产与进口配比挂钩，政策红利向本地化生产倾斜——是小鹏泰国"设厂研究"决策的直接政策背景。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/general/2966032/thailand-ev-incentives-policy-2026" target="_blank">Bangkok Post</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测（9/11 08:00 实时）</h3>
+        <div class="highlight">💵 USD/CNY <strong>6.73</strong> <span style="color:#888;">（持平，同9/10）</span> | USD/THB <strong>33.00</strong> <span style="color:#2e7d32;">（▲ 较9/10的32.88，美元走强/泰铢走弱）</span> | THB/CNY <strong>0.2039</strong> <span style="color:#c62828;">（▼ 较9/10的0.2047，泰铢走弱）</span></div>
+        <ul>
+          <li>
+            <span class="text"><strong>美元/人民币：</strong>6.73（<span style="color:#888;">持平，与9/10报告值一致</span>），open.er-api 9/11 08:00 实时快照，人民币延续强势，汇率端对中资品牌以人民币结算的零部件进口成本边际利好。</span>
+          </li>
+          <li>
+            <span class="text"><strong>美元/泰铢：</strong>33.00（<span style="color:#2e7d32;">▲ 较9/10的32.88走高</span>），open.er-api 9/11 08:00 实时快照，美元兑泰铢回升、泰铢走弱并重回33.00整数关口。</span>
+          </li>
+          <li>
+            <span class="text"><strong>泰铢/人民币：</strong>0.2039（<span style="color:#c62828;">▼ 较9/10的0.2047走弱</span>），按 USD/CNY 6.73 ÷ USD/THB 33.00 折算，泰铢对人民币贬值，人民币结算的进口成本变动极小。</span>
+          </li>
+          <li>
+            <span class="text">汇率驱动：泰国贸易逆差（能源进口成本高企）与低利率构成泰铢中长期压力，短期美元回升、泰铢走弱重回33.00；泰铢走弱对本地化生产车型成本影响有限、对纯进口车型（含小鹏MGC进口渠道）边际承压；人民币强势整体利好中资品牌以人民币结算的零部件进口成本。</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块二：敌情监测 ===== -->
+  <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品官方价格（checkraka.com 实时，8/11抓取/8/22复核 · ★为9/11 HeadLightMag 新收录官价）</h3>
+        <table>
+          <tr><th>品牌 / 车型</th><th>官方售价（泰铢）</th><th>动力类型</th><th>营销政策（备注）</th><th>来源</th></tr>
+          <tr><td><strong>XPeng X9</strong></td><td>2,539,000 – 2,799,000</td><td>纯电</td><td>BIG MOTOR SALE 同款优惠已收官，现行优惠需联系经销商</td><td><a href="https://www.xpeng.com/th" target="_blank">XPeng TH</a></td></tr>
+          <tr><td><strong>XPeng G6</strong></td><td>1,189,000 – 1,489,000</td><td>纯电</td><td>同上（优惠需联系经销商）</td><td><a href="https://www.xpeng.com/th" target="_blank">XPeng TH</a></td></tr>
+          <tr><td><strong>XPeng L03</strong></td><td><span class="new">899,000 – 1,2XX,000</span></td><td>纯电</td><td><span class="new">9/17 公布全部版本官价；规格对比价已出（泰媒）</span></td><td><a href="https://www.headlightmag.com/unofficial-price-xpeng-l03/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>BYD Dolphin</strong></td><td>549,900 – 639,900</td><td>纯电</td><td><strong>直降90,000–120,000</strong> → 509,900–599,900；送家充桩</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>BYD Atto 3</strong></td><td>669,900 – 769,900</td><td>纯电</td><td><strong>直降130,000</strong>（已含折后价）；置换再降30,000</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>BYD Seal</strong></td><td>899,900 – 999,900</td><td>纯电</td><td>无专属campaign（可享全系金融方案）</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>BYD Sealion 7 (MY2026)</strong></td><td><span class="new">1,199,900 – 1,349,900</span></td><td>纯电</td><td><span class="new">9/11官价复核（顶配 AWD Ultimate 1,349,900）；首付59,995起 或 利率1.88%</span></td><td><a href="https://www.headlightmag.com/official-price-byd-sealion-7-2026-awd-ultimate/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>MG4 Electric</strong></td><td>599,900 – 709,900</td><td>纯电</td><td>2026款促销价599,900起；全系终身质保</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>MG S5 EV</strong></td><td>779,900 – 899,900</td><td>纯电</td><td>S5 EV Plus 649,900起（EV 3.5）；终身质保</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>AION UT</strong></td><td>549,900 – 649,900</td><td>纯电</td><td>519,900–619,900；送50,000优惠包+Home Charger；终身质保</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>AION V</strong></td><td>799,900 – 949,000</td><td>纯电</td><td>769,900–899,900；利率1.48%；Trade-in 40,000</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Deepal S05</strong></td><td>949,000 – 999,000</td><td>纯电/增程</td><td>BEV降50,000→799,000–969,000；REEV降30,000→919,000–969,000；终身质保</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Deepal S07</strong></td><td>1,099,000 – 1,219,000</td><td>纯电</td><td>8月campaign（金额需经销商）；电池终身质保</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Geely EX2</strong></td><td>429,990 – 484,990</td><td>纯电</td><td>无公开促销（新车热销中，7月BEV单车冠军2,640辆）</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Geely Starray EM-R Max</strong></td><td><span class="new">资料待官价</span></td><td><span class="new">增程/插混（可充电+加油）</span></td><td><span class="new">9/11实车曝光，中系“电+油”双补能方案</span></td><td><a href="https://www.headlightmag.com/2026-09-08-picture-specs-geely-starray-em-r-max/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>Zeekr X</strong></td><td>899,000 – 1,349,000</td><td>纯电</td><td>MY2026官方降价300,000 → 899,000–1,069,000</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Zeekr 7X</strong></td><td>1,399,000 – 1,799,000</td><td>纯电</td><td>无公开促销</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Jaecoo 5 EV</strong></td><td>599,000 – 649,000</td><td>纯电</td><td>—</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Tesla Model 3</strong></td><td>1,149,000 – 2,099,000</td><td>纯电</td><td>BIG MOTOR SALE 0%首付已收官，Open House活动延续</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Tesla Model Y</strong></td><td>1,849,000 – 1,999,000</td><td>纯电</td><td>同上（Open House延续）</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Hyptec HT</strong></td><td>1,624,000</td><td>纯电</td><td>优惠需联系经销商</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+          <tr><td><strong>Hyundai IONIQ 5 N Line</strong></td><td><span class="new">1,449,000</span></td><td>纯电（泰产CKD）</td><td><span class="new">MY2026第二批；本地组装享政策红利，与G6高配重叠</span></td><td><a href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>GWM TANK 500 3.0T</strong></td><td><span class="new">1,669,000 – 1,749,000</span></td><td>柴油</td><td><span class="new">9/11官价；中系高端硬派SUV上探1.7M档</span></td><td><a href="https://www.headlightmag.com/official-price-gwm-tank-500-diesel-2026/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>Toyota Land Cruiser FJ</strong></td><td><span class="new">1,289,000</span></td><td>燃油</td><td><span class="new">9/11官价；入门硬派越野SUV</span></td><td><a href="https://www.headlightmag.com/official-price-toyota-land-cruiser-fj-2/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>Hyundai STARIA Hybrid</strong></td><td><span class="new">2,099,000 – 2,399,000</span></td><td>混动</td><td><span class="new">Minorchange；高端混动MPV，与X9客群交叉</span></td><td><a href="https://www.headlightmag.com/official-price-hyundai-staria-hybrid-minorchange-2026/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td><strong>KIA EV5</strong></td><td>1,080,000 – 1,455,000</td><td>纯电</td><td>直降 344,000（中国CBU进口）</td><td><a href="https://checkraka.com/" target="_blank">checkraka</a></td></tr>
+        </table>
+        <p style="font-size:11px;color:#888;margin-top:6px;">数据来源：checkraka.com 品牌页实时抓取（2026-08-11，8/22快照复核）＋ HeadLightMag 官价条目（9/11 新收录，来源见"来源"列）；L03 已8/18上市，官方定价以9/17 公布为准；Neta/其他品牌及完整 71 品牌 880 配置明细见配套 Excel。</p>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态（★=9/11 HeadLightMag 新收录；其余沿用9/10在案条目）</h3>
+        <ul>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·直接对标</span> <span class="new">现代 IONIQ 5 N Line 泰产CKD定价 1,449,000 泰铢</span>——日韩系以<strong>本地生产</strong>方式把纯电主力车型压到1.45M泰铢，直接与 XPeng G6 高配（1,489,000）交锋；本地化带来的政策/成本优势，是纯进口小鹏最难对冲的竞争维度之一，也强化了"小鹏需尽快落地本地化"的紧迫性。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·价格战</span> <span class="new">铃木 Fronx 特价 599,000–699,000 泰铢（GLX/GLX Plus 再降10万）</span>——日系以近10万泰铢降幅清库，60–70万泰铢档（AION UT、MG4、BYD Dolphin折后、Jaecoo 5 EV）价格战持续，L03 若下探至接近该区间将面临更激烈的入门级挤压。</span>
+            <a class="src" href="https://www.headlightmag.com/special-price-suzuki-fronx-september-2026/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·品类扩张</span> <span class="new">吉利 Starray EM-R Max（可充电+加油）实车曝光</span>——中系品牌在泰从"纯电单线"转向"电+油双补能"，直接回应泰国充电基础设施与节假日长途痛点；对纯电车型（含G6/L03）形成使用场景层面的分流竞争，需以小鹏智能化与服务网络强化差异化。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-09-08-picture-specs-geely-starray-em-r-max/" target="_blank">HeadLightMag</a>
+          </li>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·日系反攻</span> <span class="new">丰田 Land Cruiser FJ（1,289,000泰铢）+ 三菱全新 PAJERO 全球首发</span>——日系以经典IP重启硬派SUV/越野线（含皮卡+SUV组合），在1.2–1.4M与SUV/皮卡基本盘同时巩固阵地，挤压新品牌在燃油/混动客群中的渗透空间。</span>
+            <a class="src" href="https://www.headlightmag.com/2026-mitsubishi-pajero-world-premiere-launch/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">延续</span> BYD Sealion 7 MY2026 泰国官方售价：1,199,900–1,349,900泰铢（含 AWD Ultimate 顶配）——顶配与 XPeng G6（1,189,000–1,489,000）价格带正面重叠，C-Segment 纯电SUV竞争持续白热化。</span>
+            <a class="src" href="https://www.headlightmag.com/official-price-byd-sealion-7-2026-awd-ultimate/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">评测·竞品</span> Geely EX2 泰媒全评测上线——7月BEV注册冠军车型评测热映巩固其"入门纯电首选"心智（429,990泰铢起），对同价位带的AION UT、MG4、BYD Dolphin及L03下方市场构成直接声量压力。</span>
+            <a class="src" href="https://www.headlightmag.com/full-review-2026-geely-ex2/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">评测·日系反攻</span> Mazda 6e 首发体验与 Exclusive 实车（1,199,000泰铢）——日系纯电轿车切入 G6 入门价位（1,189,000泰铢），日系主流品牌纯电产品+媒体评测攻势延续，L03上方价格空间同步受压制。</span>
+            <a class="src" href="https://www.headlightmag.com/first-impression-2026-mazda-6e/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">竞品·渠道扩张</span> Tesla 春武里（Central Chonburi）新 Experience Center 开业，同步配套 Supercharger 与服务中心——特斯拉东进覆盖春武里-芭提雅（EEC）客群，渠道下沉叠加金融工具，对 1.1–2.0M 泰铢价位带（与 G6 高配、X9 入门重叠）持续施压。</span>
+            <a class="src" href="https://www.autospinn.com/2026/09/tesla-experience-center-152005" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">竞品·技术军备</span> 奇瑞（Chery）宣布最快明年开始固态电池路测——奇瑞集团（含OMODA&amp;JAECOO，7月泰国注册3,291辆居中国品牌首位）若将新一代电池技术导入泰国产品线，将加剧中系品牌在续航/技术标签上的内卷。</span>
+            <a class="src" href="https://www.bangkokpost.com/business/motoring/3313928/chinese-carmaker-chery-to-begin-testing-solidstate-batteries-next-year" target="_blank">Bangkok Post</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">竞品·高端MPV</span> Li Auto MEGA 新款中国发布：CLTC续航710km——理想高端纯电MPV持续迭代，若导入泰国将与 XPeng X9（2,539,000–2,799,000泰铢）所在高端纯电MPV价格带正面重叠。</span>
+            <a class="src" href="https://www.autospinn.com/2026/09/li-auto-mega-152087" target="_blank">Autospinn</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块三：我情监测 ===== -->
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车·社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛）— 口碑数据截至8月底（9/10报告沿用）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-up">正面</span> VW ID. AURA T6 搭载XPeng CEA智能架构帖（12 Jul，8回复）引发热议，网友评论"XPeng的技术帮了VW很多"——大众背书显著提升小鹏技术品牌形象；"G6软件实力顶级"仍是用户共识。</span>
+            <a class="src" href="https://pantip.com/tag/%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">正面</span> "豪华EV SUV对比（Xpeng/Zeekr/Hyptec）"帖中，多楼用户推荐 <strong>Xpeng G6</strong> 作为通勤+科技感首选；"X9漂亮到想回头看"（Porsche Cayenne观感）等设计好评持续出现。</span>
+            <a class="src" href="https://pantip.com/tag/%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">热议</span> X9改款（续航增至750km）帖与"2026年X9 vs ZEEKR 009 vs DENZA D9"MPV选购帖显示小鹏X9已进入高端MPV对比清单，但品牌发音/认知问题（"读Xie-Peng还是Chao-Peng"）仍是话题点。</span>
+            <a class="src" href="https://pantip.com/tag/%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">质疑</span> "Geely/XPeng是否值得信任"帖核心顾虑集中在：<strong>售后服务体系待长期验证</strong>、品牌成立时间短；eVTOL飞行汽车帖（47回复）则证明小鹏话题热度高、出圈能力强。</span>
+            <a class="src" href="https://pantip.com/tag/%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C" target="_blank">Pantip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>媒体评测 / YouTube / Instagram（媒体条目截至9/5在案·本期沿用；★=9/11新收录）</h3>
+        <ul>
+          <li class="new-li">
+            <span class="text"><span class="badge badge-new">9/11新收录·关键节点</span> <span class="new">XPENG L03 官方定价公布日锁定 9月17日（规格对比价 899,000–1,2XX,000泰铢）</span>——上市第24天官价仍未全版本公布，泰媒已给出规格与预估价区间；9/17 定价是本季度小鹏泰国最大传播节点：若标准版落位90万泰铢档，将直接冲击百万铢以下最大细分市场的入门纯电竞品，社群关注度将集中爆发。</span>
+            <a class="src" href="https://www.headlightmag.com/unofficial-price-xpeng-l03/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">媒体评测·重大利好</span> 泰媒 Autospinn 长测：XPENG X9 被誉为"当今最完美的电动MPV"（"几乎没有短板"的车型）——评测认为在泰国在售电动MPV中 X9 是"缺点最少"的选择，涵盖空间实用性、智能配置与行驶品质的全维度好评；建议作为展厅物料与社媒传播素材跟进。</span>
+            <a class="src" href="https://www.autospinn.com/2026/08/car-ev-review-xpeng-x9-2026-151962" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">重大利好</span> XPENG 公布东盟战略：长期深耕泰国，研究设厂（"1工厂1市场"计划）（8/26 Autospinn报道）——小鹏明确泰国为东盟战略支点，正评估本地建厂可行性；若落地将直接对冲EV进口税/消费税改革风险（券商8/11警告的MGC纯进口渠道政策风险），本地化预期显著提振市场信心。</span>
+            <a class="src" href="https://www.autospinn.com/2026/08/xpeng-2026-151645" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">热点延续</span> L03 已于8月18日上市（今日为上市第24天）：HeadLightMag 8/17发布泰国规格对比（245马力 RWD / LFP 58–71kWh / 最长600km NEDC）——"买不起G6就等L03"仍是价格敏感用户的普遍心态；XPENG CARNIVAL 特惠（50+辆低里程车）已于9/6截止，9/17 官方定价公布是社群当前最大关注点，若低于预期将显著拉动关注度。</span>
+            <a class="src" href="https://www.headlightmag.com/xpeng-l03-standard-long-range-thailand-specs/" target="_blank">HeadLightMag</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">产品管线</span> MONA L05 中国路试曝光（9/1 Autospinn报道）——小鹏MONA序列新车路试谍照流出，泰媒跟进报道；若引入泰国将下探入门价位带，与G6/L03构成完整价格阶梯，社群对MONA序列关注度开始升温。</span>
+            <a class="src" href="https://www.autospinn.com/2026/08/xpeng-mona-l05-151957" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-up">正面</span> 实时复核（8/9）：G6评测头部视频播放量已上量——autolifethailand官方G6 Long Range评测 <strong>36.4万次</strong>、spin9评测 <strong>26.0万次</strong>；对比BYD Seal头部评测（autolifethailand <strong>94.5万次</strong>），差距由早期的"3–6倍"收窄至约2.6倍，<strong>品牌认知度仍在爬坡但关注度快速抬升</strong>。</span>
+          </li>
+          <li>
+            <span class="text">#XpengThailand 标签帖量与 #BYDThailand / #MGThailand 相比仍有数量级差距（Instagram 需登录无法外部核验精确值，参考此前实测约1/5–1/7）；评论区高频问题仍为"ราคาเท่าไหร่（多少钱）""ศูนย์บริการอยู่ที่ไหน（服务中心在哪）"——价格与服务网络信息不对称。</span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">注意</span> 服务中心外更换电池可能导致质保失效的提醒（MGR Online 报道，7/27，未获取到文章级URL，建议跟进官方声明）在车主群传播，售后政策透明度问题需要官方及时回应。</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <div class="sentiment-tag">🟡 中性偏正面（口碑好、认知待提升、L03 9/17 定价在即+本地化预期升温）</div>
+          <strong>正面信号：</strong>技术实力获VW官方背书；G6软件口碑、X9设计口碑稳定；Autospinn长测将 X9 称为"当今最完美的电动MPV"（几乎没有短板）；7月G6+X9双车合计658辆注册（Autolife口径，品牌合计657辆/CAR250口径）显示高端双车有基本盘；8/26曝出东盟战略与在泰设厂研究计划，本地化预期对冲进口税风险；<strong>L03 官方定价日锁定9月17日（规格对比价899,000–1,2XX,000泰铢）</strong>，百万铢以下定价切入最大细分市场，规格（245马力/LFP 58–71kWh/600km NEDC）已获媒体正面解读；MONA L05中国路试曝光（9/1），产品管线持续扩充。<br>
+          <strong>风险点：</strong>① 品牌认知度仍低（IG/YT声量为BYD的1/5–1/7）；② 本地化竞争加剧——现代 IONIQ 5 N Line 以泰产CKD定价1,449,000泰铢、GWM完成EV3.5本土补偿，纯进口渠道（MGC）在成本与政策端被持续挤压，小鹏设厂进度是关键；③ 进口车消费税改革+EV进口税风险（券商8/11明确警告）；④ 售后网络与质保政策透明度（换电池争议）待改善；⑤ L03 定价若高于市场预期的"9xx,xxx"，将打击价格敏感客群——竞品促销（KIA EV5直降344,000、铃木Fronx降10万、Tesla 0%首付延续）构成入门至中端全价位挤压；⑥ BYD Sealion 7 MY2026 顶配上探1,349,900泰铢、Mazda 6e（1,199,000泰铢）压G6入门、Geely EX2（429,990泰铢起）在入门走量，中系+日系+韩系上下夹击格局延续。
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">数据来源：CAR250 / Autolifethailand / Nation Thailand / Kaohoon / Share2Trade / Motor Expo / HeadLightMag（9/11新增11条新车·官价条目）/ Autospinn / Pantip / checkraka.com / Bangkok Post · 汇率来源：open.er-api.com（9/11 08:00 实时，USD/CNY 6.73 / USD/THB 33.00 / THB/CNY 0.2039）· 报告生成于 2026-09-11（日报）· 本期采集说明：9/11 08:00 autospinn.com 返回空响应（未重试）、headlightmag.com 新车频道抓取成功并新增11条新车/官价条目；bangkokpost.com 本期无新增；销量/注册/政策/竞品价格快照沿用9/10报告已验证内容（统计口径2026年7月注册数据；敌情价格快照8/11、8/22复核；我情社媒口碑截至8月底+9/5媒体条目）；L03 上市第24天，官方定价9/17公布；XPENG CARNIVAL 已于9/6截止</div>
+</body>
+</html>
