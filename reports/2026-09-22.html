@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-09-22</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.75; margin-bottom: 10px; line-height: 1.7; max-width: 860px; margin-left: auto; margin-right: auto; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; flex-shrink: 0; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 10px 14px; border-radius: 0 6px 6px 0; margin-bottom: 14px; font-size: 13.5px; line-height: 1.7; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #999; padding: 20px; line-height: 1.8; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .new { background: #fff3cd; padding: 0 3px; border-radius: 3px; font-weight: 700; }
+  .new-li { border-left: 3px solid #ffc107; background: #fffde7; padding-left: 10px; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } .rate-bar { gap: 8px; padding: 6px 12px; } .rate-bar .rate-item { font-size: 12px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">📅 2026年9月22日（周二）· <strong>最新口径：8月新车注册数据（8月 62,204辆；1–8月累计 492,527辆）</strong> · 竞品价格＝checkraka.com 9/15 实时复核 · <strong>9/22 早间 autospinn 首页返回 2026/09 新条目（Wuling GLOBAL 5、Ford 泰国30周年、Tesla 清迈中心、Li Auto i9、iCAUR V27 REEV、ORA 5 官价等）已纳入本报告；headlightmag 仍为 JS 渲染分类页、bangkokpost.com/auto 无可解析条目；销量/注册数据仍截至 2026-09-15，未作任何推算</strong></div>
+  <div class="rate-bar">
+    <div class="rate-item">USD/CNY <span class="rate-val">6.71</span> <span class="rate-trend" style="color:#69f0ae;">▲ 美元对人民币回升</span></div>
+    <div class="rate-item">USD/THB <span class="rate-val">33.26</span> <span class="rate-trend" style="color:#ff8a80;">▼ 美元对泰铢回落</span></div>
+    <div class="rate-item">THB/CNY <span class="rate-val">0.2017</span> <span class="rate-trend" style="color:#69f0ae;">▲ 泰铢对人民币小幅走强</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ===== 板块一：行情监测 ===== -->
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="highlight">📌 <strong>9/22 早间速报（08:00 抓取）</strong>：autospinn 首页本次<strong>返回 2026/09 可解析新条目并已全部纳入本报告</strong>——Wuling GLOBAL 5 全球化战略（ASEAN 列为核心区域）、Ford 泰国 30 周年（累计投资逾 1,330亿泰铢）、Tesla 清迈 Tesla Center 开业、Li Auto i9（705km）中国发布、iCAUR V27 REEV、GWM ORA 5 EV 泰国官价公布、Volvo XC60/XC90 PHEV（纯电 200km）、NEXA EV Station Hub 充电枢纽；headlightmag 首页仍为 JS 渲染分类页、bangkokpost.com/auto 未返回可解析条目。<strong>销量/注册数据口径仍为 8月（截至 9/15 已核验），未作任何推算</strong>。本日核心跟踪项：① 8月新车注册 62,204辆、1–8月累计 492,527辆，BEV 累计 146,567辆（29.76%）继续居动力结构首位；② 240亿泰铢商用车替换方案细则仍为本月最大政策悬置项；③ 竞品由「价格战」转向「渠道+服务+本地化」竞争（Tesla 清迈中心、Wuling 全球化、现代 Staria 泰产 Hybrid）；④ 汇率：USD/THB 33.26 ▼（美元对泰铢回落）、USD/CNY 6.71 ▲（美元对人民币回升）、THB/CNY 0.2017 ▲（泰铢对人民币小幅走强）。
+
+      <div class="subsection">
+        <h3>🆕 9/22 早间新增条目（autospinn 首页 08:00 实时抓取 · 可解析）</h3>
+        <ul>
+          <li class="new-li"><span class="text"><strong>Wuling 发布 GLOBAL 5 全球化战略</strong>，将 <span class="new">ASEAN 列为核心区域之一</span>——上汽通用五菱继 Darion EV（8月 MPV 榜第1、897辆）后加大东南亚投入，<strong>Wuling Eksion 560 定档 9/29 泰国上市</strong>，对 MPV/多人出行价格带（X9 下方）持续加压</span><a class="src" href="https://www.autospinn.com/2026/09/wuling-global-5-strategy-asean-2026-152387" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>Ford 泰国 30 周年：累计在泰投资逾 <span class="new">1,330亿泰铢</span></strong>——皮卡/商用车基本盘与本地供应链地位稳固，泰媒以「深耕」定性，与中系新进入者形成「存量 vs 增量」对照</span><a class="src" href="https://www.autospinn.com/2026/09/ford-30th-152386" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>Tesla 泰国开设清迈 Tesla Center（销售+服务+交付一体）</strong>——高端纯电品牌的服务网络由曼谷向北部扩张，补齐其在泰「渠道/售后」短板，直接强化高端纯电心智竞争</span><a class="src" href="https://www.autospinn.com/2026/09/tesla-tesla-center-chiang-mai-152374" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>Li Auto（理想）i9 旗舰纯电在中国发布，续航 <span class="new">705km</span></strong>；同段时间 <strong>iCAUR V27 REEV 技术解读</strong>（奇瑞系 iCAUR 品牌）——中国新势力/新品牌继续扩品，泰国导入预期升温</span><a class="src" href="https://www.autospinn.com/2026/09/li-auto-i9-152412" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>GWM ORA 5 EV 泰国官方价格与规格公布</strong>（ORA 5 为 7月 BEV 榜第3）——60–70 万泰铢入门纯电细分再加一款官方定价车型</span><a class="src" href="https://www.autospinn.com/2026/09/ora5-ev-official-price-and-spec-thailand-152316" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>Volvo 新版 XC60 / XC90 PHEV 纯电续航提升至 <span class="new">200km</span></strong>；Volvo 40 Series 改款加入 AI 功能与安全升级——豪华/插混阵营以「长纯电续航」对冲 BEV 价格战</span><a class="src" href="https://www.autospinn.com/2026/09/volvo-xc60-and-xc90-phev-2026-152317" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>Hyundai Staria 区域分化</strong>：欧洲市场推纯电版，<strong>泰国市场为 Hybrid 版本</strong>（改款官价 2,099,000–2,399,000）——现代在泰「混动先行」策略明确</span><a class="src" href="https://www.autospinn.com/2026/09/hyundai-staria-electric-152127" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>充电基础设施</strong>：NT 联合 MEAei 推出 <strong>NEXA EV Station Hub</strong> 充电枢纽（5 家伙伴）——电网系资本入局补能网络，利好 BEV 保有量渗透</span><a class="src" href="https://www.autospinn.com/2026/09/nexa-ev-station-hub-152398" target="_blank">Autospinn 9/22</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>🔔 核心跟踪条目（历史已核验 · 9/22 沿用）</h3>
+        <ul>
+          <li><span class="text"><strong>市场数据</strong>｜CAR250 9/7 发布 8月注册：<span class="new">8月 62,204辆</span>，<span class="new">1–8月累计 492,527辆</span>；1–8月动力结构 BEV <span class="new">146,567辆（29.76%）</span>、柴油 143,946辆（29.23%）、HEV 115,444辆（23.44%）、汽油 72,614辆（14.74%）、PHEV 13,908辆（2.82%）</span><a class="src" href="https://www.car250.com/th-car-2026-08-1.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>政策·重磅</strong>｜<strong>EV Board（国家电动车政策委员会）首次会议（9/10）原则通过 BEV 消费税结构改革</strong>，方向为「按对国家贡献征税」＝以 Local Content（本地零件含量）为核心指标；会议确认 BEV 占新车注册已升至 <span class="new">30%</span>、HEV <span class="new">23%</span>，两类合计过半；新设两个小组委员会（电动车生产与供应链/标准/报废车＝工业部长；充电网络＝能源部长）；同步推进<strong>电池健康监测平台与 Battery Passport</strong></span><a class="src" href="https://autolifethailand.tv/board-ev-tax-structure-first-time-2026/" target="_blank">Autolife 9/10</a></li>
+          <li><span class="text"><strong>行情·利空</strong>｜开泰研究中心（9/11）：<strong>1–7月 BEV 占泰国汽车进口总额的 72%</strong>，产量下滑与进口扩张背离；若本地含量措施落地，<strong>2027年（2570）产量有望重回增长</strong>（2026年预计收缩约1.8%）</span><a class="src" href="https://autolifethailand.tv/kresearch-comment-new-tax-structure-automotive-industry/" target="_blank">Autolife 9/11</a></li>
+          <li><span class="text"><strong>产业·警示</strong>｜FTI 汽车产业组（9/9 发布）：1–7月销量 <span class="new">406,162辆</span>、产量 <span class="new">834,595辆</span>；<strong>乘用 ICE 产量同比 -34%，7月单月 -60% 以上</strong>；乘用车产能利用率仅 <span class="new">40.65%</span>（上年 44.92%）；汽车产业链占 GDP &gt;10%、2,500 家企业、80 万人就业，警示若错过新一轮投资将冲击整个供应链</span><a class="src" href="https://autolifethailand.tv/automotive-industry-club-fti-comment-situation-in-thailand/" target="_blank">Autolife 9/10</a></li>
+          <li><span class="text"><strong>促销·价格战</strong>｜<strong>BYD「Surprise Deal」9/11–13 三日限时已结束</strong>：期间 Atto 1 直降至 <span class="new">399,900泰铢</span>、Atto 2 降 90,000 至 <span class="new">569,900泰铢</span>、Atto 3（泰产）降 120,000 至 <span class="new">609,900–649,900泰铢</span>；Volvo 仓储特惠 EX90 降 <span class="new">800,000→3,490,000</span>、XC60 T8 降 <span class="new">600,000→2,790,000</span></span><a class="src" href="https://autolifethailand.tv/byd-atto-1-ev-bev-official-price-discount-11-12-13-sep-2026/" target="_blank">Autolife 9/11–12</a></li>
+          <li><span class="text"><strong>竞品·本地化</strong>｜现代 IONIQ 5 N Line（<strong>泰国组装 CKD / MY2026 第二批</strong>）官方价 <span class="new">1,449,000泰铢</span>（800V/84kWh/DC 350kW），直接进入 G6 高配价位带；现代 STARIA Hybrid 改款官价 <span class="new">2,099,000–2,399,000泰铢</span>（9/10）</span><a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag 9/7</a></li>
+          <li><span class="text"><strong>日系反攻</strong>｜丰田 Land Cruiser FJ 官价 <span class="new">1,289,000泰铢</span>（9/7）；丰田 bZ4X MY2026 推 <span class="new">0% 利率</span>（9/11）；三菱 PAJERO 泰规公布（<strong>柴油 204 马力 + 顶配 4WD + MI-PILOT</strong>，预估 1,6xx,000–1,9xx,000，10/19 上市）；Suzuki Fronx 特价 599,000–699,000（再降100,000）</span><a class="src" href="https://www.car250.com/pajero-th.html" target="_blank">CAR250 9/9</a></li>
+          <li><span class="text"><strong>新车导入</strong>｜<strong>Wuling Eksion 560 将于 9月29日 在泰国上市</strong>（7座SUV，尺寸接近 CR-V）；GWM ORA 5 Sedan、Tank 700 LWB（中国市场登陆/预览）；MG 07（中国开售20天订单 42,000辆）</span><a class="src" href="https://www.car250.com/wuling-eksion-560-th.html" target="_blank">CAR250 9/11</a></li>
+          <li><span class="text"><strong>全球格局</strong>｜大众计划裁员 50,000 人、2035年前产品线减半；捷豹路虎或裁员 4,000 人（9%）；特斯拉 Model Y Performance 中国上市（主力 Model Y 销量下滑背景）——传统车企收缩 vs 中系扩张</span><a class="src" href="https://www.headlightmag.com/news-jaguar-land-rover-may-reduce-9-pc-of-its-global-workforce/" target="_blank">HeadLightMag 9/12</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>🚀 XPeng 主力车型销量追踪（8月 &amp; 1–8月注册量）</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:14px;">
+          <div style="flex:1;min-width:260px;background:#f8f9fa;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-size:13px;font-weight:700;color:#333;margin-bottom:4px;">XPeng G6</div>
+            <div style="font-size:11px;color:#888;margin-bottom:10px;">纯电智能轿跑SUV · C-Segment</div>
+            <img src="https://s-cdn.xpeng.com/commoncms/prod/2024-04-01/8e7dcbe0e06744449f91fe6981395eca.jpg?x-oss-process=image%2Fresize%2Cw_1920%2Cquality%2Cq_80%2Finterlace%2C1" alt="XPeng G6 官方渲染图" style="width:100%;max-width:260px;height:auto;border-radius:8px;display:block;margin:0 auto;object-fit:cover;aspect-ratio:16/10;"/>
+            <div style="margin-top:8px;font-size:12px;line-height:1.9;"><span style="color:#888;">8月销量</span> <strong style="color:#1a73e8;">269辆</strong><br><span style="color:#888;">1–8月销量</span> <strong style="color:#1a73e8;">2,648辆</strong></div>
+          </div>
+          <div style="flex:1;min-width:260px;background:#f8f9fa;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-size:13px;font-weight:700;color:#333;margin-bottom:4px;">XPeng X9</div>
+            <div style="font-size:11px;color:#888;margin-bottom:10px;">纯电智能旗舰MPV · 7座</div>
+            <img src="https://s-cdn.xpeng.com/commoncms/prod/2026-03-19/6c37b69e7e11425cafde3b5797efe18f.jpg" alt="XPeng X9 官方渲染图" style="width:100%;max-width:260px;height:auto;border-radius:8px;display:block;margin:0 auto;object-fit:cover;aspect-ratio:16/10;"/>
+            <div style="margin-top:8px;font-size:12px;line-height:1.9;"><span style="color:#888;">8月销量</span> <strong style="color:#1a73e8;">328辆</strong><br><span style="color:#888;">1–8月销量</span> <strong style="color:#1a73e8;">1,753辆</strong></div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-card"><div class="val">269</div><div class="lbl">XPeng G6 · 8月销量（辆）</div></div>
+          <div class="stat-card"><div class="val">2,648</div><div class="lbl">XPeng G6 · 1–8月销量（辆）</div></div>
+          <div class="stat-card"><div class="val">328</div><div class="lbl">XPeng X9 · 8月销量（辆）</div><div class="chg">MPV/VAN榜第3 · 份额12.4%</div></div>
+          <div class="stat-card"><div class="val">1,753</div><div class="lbl">XPeng X9 · 1–8月销量（辆）</div></div>
+        </div>
+        <div style="font-size:11px;color:#888;margin-top:8px;">数据来源：8月 MPV/VAN 分车型注册 <a href="https://autolifethailand.tv/register-sales-report-mpv-van-aug-2026/" target="_blank">autolifethailand.tv</a>（X9 328辆）；1–8月累计品牌/车型榜 <a href="https://www.car250.com/th-car-2026-08-1.html" target="_blank">car250.com</a>（G6 2,648辆、X9 1,753辆、XPENG 品牌 4,401辆）；车型图为 XPeng 官方渲染图。</div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-card"><div class="val">62,204</div><div class="lbl">8月新车注册总量（辆）</div><div class="chg">CAR250 9/7 发布</div></div>
+        <div class="stat-card"><div class="val">492,527</div><div class="lbl">1–8月累计注册（辆）</div><div class="chg">50+品牌口径</div></div>
+        <div class="stat-card"><div class="val">146,567</div><div class="lbl">1–8月 BEV 累计（辆）</div><div class="chg">占比 29.76%</div></div>
+        <div class="stat-card"><div class="val">4,401</div><div class="lbl">XPENG 1–8月累计（辆）</div><div class="chg">品牌榜第20位</div></div>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态（8月注册数据 · 数据截至 9/15 + 9/22 新增国际车企在泰动向）</h3>
+        <ul>
+          <li class="new-li"><span class="text"><span class="new">9/22 新增·投资</span>：<strong>Ford 泰国 30 周年，累计在泰投资逾 1,330亿泰铢</strong>；<strong>Tesla 泰国开设清迈 Tesla Center</strong>（销售/服务/交付一体）；<strong>NT×MEAei 推出 NEXA EV Station Hub</strong> 充电枢纽——跨国车企与泰国电网系资本同步加码「渠道+补能」，竞争维度从价格转向本地基础设施</span><a class="src" href="https://www.autospinn.com/2026/09/ford-30th-152386" target="_blank">Autospinn</a></li>
+          <li class="new-li"><span class="text"><span class="new">9/22 新增·产品</span>：<strong>Wuling 发布 GLOBAL 5 全球化战略、ASEAN 列为核心区域</strong>（Eksion 560 定档 9/29 泰国上市）；<strong>GWM ORA 5 EV 泰国官方价格与规格公布</strong>；<strong>Volvo XC60/XC90 PHEV 新版纯电续航 200km</strong>；<strong>Hyundai Staria 欧版纯电 / 泰版 Hybrid</strong>——入门 BEV 与长续航 PHEV 双向挤压 90–130 万泰铢主流带</span><a class="src" href="https://www.autospinn.com/2026/09/wuling-global-5-strategy-asean-2026-152387" target="_blank">Autospinn</a></li>
+          <li class="new-li"><span class="text"><span class="new">9/22 新增·中国新车</span>：<strong>Li Auto i9 旗舰纯电发布（续航 705km）</strong>、<strong>iCAUR V27 REEV 技术解读</strong>——中国新势力与中国系新品牌持续扩品，泰国后续导入预期升温；<strong>Bentley 发布纯电 Torcal</strong> 则显示豪华阵营电动化继续推进</span><a class="src" href="https://www.autospinn.com/2026/09/li-auto-i9-152412" target="_blank">Autospinn</a></li>
+          <li><span class="text"><span class="new">8月注册</span>：<strong>8月新车注册 62,204辆</strong>（1–8月累计 <strong>492,527辆</strong>）；月度序列（辆）：1月 90,733、2月 48,847、3月 59,486、4月 49,028、5月 61,608、6月 62,219、7月 58,402、8月 62,204——8月为 6月以来最高月份，市场在补贴脉冲后维持 6 万辆/月量级</span><a class="src" href="https://www.car250.com/th-car-2026-08-1.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><span class="new">动力结构</span>：1–8月累计中 <strong>BEV 146,567辆（29.76%）</strong>为第一大类动力，柴油 143,946辆（29.23%）居次，HEV 115,444辆（23.44%）、汽油 72,614辆（14.74%）、PHEV 13,908辆（2.82%）；<strong>BEV+HEV 合计 262,011辆、占比 53.2%</strong>，电动化车型已占新车注册过半</span><a class="src" href="https://www.car250.com/th-car-2026-08-1.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><span class="new">品牌格局</span>：1–8月累计品牌榜 丰田 170,499辆 稳居第一，本田 51,631辆、五十铃 45,863辆 分列二三；中系集团 比亚迪 31,772辆、OMODA&amp;JAECOO 22,728辆、MG 22,444辆、GAC AION 14,056辆、GWM 13,784辆、GEELY 11,278辆、DEEPAL 10,476辆——前十中中系占四席</span><a class="src" href="https://www.car250.com/th-car-2026-08-1.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><span class="new">车型榜·我情</span>：1–8月累计 <strong>XPENG 品牌 4,401辆（品牌榜第20位）</strong>，其中 <strong>G6 8月销量 269辆</strong>、1–8月 2,648辆，<strong>X9 8月销量 328辆</strong>、1–8月 1,753辆；X9 8月居 MPV/VAN（滑门）榜第3（份额12.4%，榜首 Wuling Darion EV 897辆、Alphard/Vellfire 477辆），该细分8月合计 2,641辆</span><a class="src" href="https://autolifethailand.tv/register-sales-report-mpv-van-aug-2026/" target="_blank">Autolife</a></li>
+          <li><span class="text"><span class="new">产能警示</span>：FTI 数据——1–7月销量 406,162辆、产量 834,595辆；<strong>乘用 ICE 产量同比 -34%（7月单月 -60%以上），乘用车产能利用率 40.65%</strong>（上年 44.92%），ICE/皮卡底盘相关供应链承压加剧</span><a class="src" href="https://autolifethailand.tv/automotive-industry-club-fti-comment-situation-in-thailand/" target="_blank">Autolife</a></li>
+          <li><span class="text">日系产品反攻节奏：丰田 Land Cruiser FJ（1,289,000）、丰田 bZ4X MY2026（0%利率，1,529,000–1,649,000）、三菱 PAJERO 泰规（柴油204马力/顶配4WD/MI-PILOT，10/19上市）、现代 IONIQ 5 N Line（泰产CKD 1,449,000）、现代 STARIA Hybrid 改款（2,099,000–2,399,000）——日系/韩系以「新车 + 本地生产 + 金融方案」三线对冲中系价格战</span><a class="src" href="https://www.headlightmag.com/official-price-toyota-land-cruiser-fj-2/" target="_blank">HeadLightMag</a></li>
+          <li><span class="text">行业动态：本田加速降本（零部件成本目标 2030 年前降 30%）；日产将泰产 Kicks e-POWER 出口菲律宾；BOI 确认日企继续加码泰国并升级产线——日系在泰「防守中转型」，本地化生产基地地位短期未被替代</span><a class="src" href="https://autolifethailand.tv/boi-confirmed-japanese-invester-continue-invest-in-thailand/" target="_blank">Autolife</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向（最新 3 项 · 数据截至 9/15 · 9/22 无新增）</h3>
+        <ul>
+          <li><span class="text"><strong>【本周新增·最关键】EV Board 首次会议（9/10）原则通过 BEV 消费税结构改革</strong>：方向为「<strong>按对国家贡献征税</strong>」（ปรับภาษีตามการสร้างประโยชน์ประเทศ），以本地零件含量（Local Content）为核心，鼓励本地生产与本地供应链；会议同时确认 BEV 占新车注册 30%、HEV 23%；新设两个小组委员会——<strong>电动车生产/供应链/标准/报废车管理（工业部长任主席）</strong>与<strong>充电网络建设（能源部长任主席）</strong>；并推进<strong>电池健康监测平台 + Battery Passport</strong>（含电池再利用/回收与报废车处理）</span><a class="src" href="https://autolifethailand.tv/board-ev-tax-structure-first-time-2026/" target="_blank">Autolife 9/10</a></li>
+          <li><span class="text"><strong>【本周新增】开泰研究中心（9/11）</strong>：1–7月 <strong>BEV 占泰国汽车进口额 72%</strong>，进口扩张与本地产量下滑背离；认为消费税改革若执行到位（本地含量认定 + 有效监管），<strong>可推动 2027 年（2570）产量重回增长</strong>（2026年预计收缩约 1.8%）</span><a class="src" href="https://autolifethailand.tv/kresearch-comment-new-tax-structure-automotive-industry/" target="_blank">Autolife 9/11</a></li>
+          <li><span class="text"><strong>【本周新增】FTI 汽车产业组（9/9 发布）</strong>：呼吁政策需兼顾「过渡期」——ICE/皮卡底盘供应链（2,500家企业、80万人就业、占GDP &gt;10%）正在快速萎缩，若泰国错过新一轮汽车投资，损失将扩散至整车以外的经济面</span><a class="src" href="https://autolifethailand.tv/automotive-industry-club-fti-comment-situation-in-thailand/" target="_blank">Autolife 9/10</a></li>
+          <li><span class="text">延续·政府 4,000亿泰铢能源转型贷款：其中 <strong>2,000亿泰铢</strong>用于能源结构转型，明确覆盖 <strong>EV、充电站（EV Charging Station）与换电站（Battery Swapping Station）</strong>——8/26 议会通过，与 EV Board 决议形成「税制 + 资金」双轨推进</span><a class="src" href="https://www.car250.com/2026-08-27.html" target="_blank">CAR250</a></li>
+          <li><span class="text">延续·240亿泰铢商用车 EV 替换方案（约 8万辆 出租车/摩的/嘟嘟车/巴士/卡车）原定 8 月底落地，<strong>截至 9/21 仍未见细则公布</strong>，为本月最大政策悬置项</span><a class="src" href="https://www.car250.com/2026-08-27.html" target="_blank">CAR250</a></li>
+          <li><span class="text">我情·本地化表态：XPeng 副董事长 James Wu 于 L03 泰国上市发布会（8/18）与 MGC-ASIA 高层联合受访，表示<strong>密切跟踪泰国新税制调整、将加快在泰投资</strong>（「1工厂1市场」研究）——新税制方向落地后，该表态的政策含金量显著提升</span><a class="src" href="https://autolifethailand.tv/xpeng-comment-new-tax-structure-thailand-2026/" target="_blank">Autolife 8/18</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测（9/22 08:00 实时）</h3>
+        <ul>
+          <li><span class="text">💵 <strong>USD/CNY 6.71 ▲ 美元对人民币回升</strong>（6.71，较 9/21 的 6.70 上行约 0.01）：人民币小幅走弱，中资品牌以人民币结算的零部件进口成本边际略增，幅度有限，汇兑层面无重大扰动</span></li>
+          <li><span class="text">💵 <strong>USD/THB 33.26 ▼ 美元对泰铢回落</strong>（33.26，较 9/21 的 33.34 下行约 0.08）：泰铢连续第二日回升，<strong>美元结汇成本小幅改善，但仍站稳 33.2 上方高位</strong></span></li>
+          <li><span class="text">💵 <strong>THB/CNY 0.2017 ▲ 泰铢对人民币小幅走强</strong>（按 6.71 ÷ 33.26 = 0.20174 折算，较 9/21 的 0.20110 上行）：<strong>整体仍处 0.20 附近的相对弱位——对纯进口车型（含小鹏 MGC 渠道）成本端压力尚未实质缓解</strong>；对本地化生产车型影响有限</span></li>
+          <li><span class="text">驱动因素：USD/THB 近一周在 33.0–33.4 区间震荡（9/15 33.08 → 9/20 33.36 → 9/21 33.34 → 9/22 33.26），泰铢自 9/20 高点连续两日回强；美元兑人民币回到 6.71。三对报价中 <strong>USD 兑 CNY 回升、兑 THB 回落</strong>，与 <strong>THB 兑 CNY 走强</strong>并行，短期维持窄幅整理格局</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块二：敌情监测 ===== -->
+  <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品官方价格（checkraka.com 9/15 实时抓取 + 本周官价复核）</h3>
+        <table>
+          <tr><th>品牌 / 车型</th><th>官方售价（泰铢）</th><th>动力类型</th><th>营销政策（9月）</th><th>来源</th></tr>
+          <tr><td>XPeng L03</td><td><strong>899,000 – 1,2XX,000</strong>（3版本）</td><td>纯电</td><td>标准版/长续航版/长续航 Ultra 三版本；质保 5年/12万km、电池 8年/16万km</td><td><a href="https://www.car250.com/xpeng-l03-th-price-2026-08.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>XPeng G6</td><td>1,189,000 – 1,489,000</td><td>纯电</td><td>无公开促销（现行优惠需联系经销商）；8月销量 269辆；🆚 Mazda 6e Exclusive 1,199,000 同价位</td><td><a href="https://www.checkraka.com/car/xpeng" target="_blank">checkraka</a></td></tr>
+          <tr><td>XPeng X9</td><td>2,539,000 – 2,799,000</td><td>纯电</td><td>无公开促销；8月销量 328辆（MPV榜第3）</td><td><a href="https://www.checkraka.com/car/xpeng" target="_blank">checkraka</a></td></tr>
+          <tr><td>BYD Atto 1</td><td>429,900 – 459,900</td><td>纯电</td><td><strong>Surprise Deal 9/11–13 已结束：期间直降至 399,900</strong>（入门BEV新低价）；9/21 未见顺延公告</td><td><a href="https://autolifethailand.tv/byd-atto-1-ev-bev-official-price-discount-11-12-13-sep-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td>BYD Atto 2</td><td>629,900 – 659,900</td><td>纯电</td><td><strong>Surprise Deal：降 90,000 → 569,900</strong>（CBU中国，9/11–13 已结束）</td><td><a href="https://autolifethailand.tv/official-price-discount-byd-atto-2-ev-bev-sep-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td>BYD Atto 3</td><td>669,900 – 769,900</td><td>纯电</td><td><strong>降 120,000 → 609,900–649,900（泰产 CKD）</strong>；置换再降30,000</td><td><a href="https://autolifethailand.tv/official-price-discount-byd-atto-3-ev-bev-sep-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td>BYD Dolphin</td><td>549,900 – 639,900</td><td>纯电</td><td>9月无新campaign（8月曾直降90,000–120,000）；送家充桩</td><td><a href="https://www.checkraka.com/car/byd" target="_blank">checkraka</a></td></tr>
+          <tr><td>BYD Sealion 7 (MY2026)</td><td>1,199,900 – 1,349,900</td><td>纯电</td><td>顶配 AWD Ultimate 1,349,900；首付59,995起 或 利率1.88%</td><td><a href="https://www.headlightmag.com/official-price-byd-sealion-7-2026-awd-ultimate/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td>BYD Seal / Seal 6</td><td>899,900–999,900 / 799,900–949,900</td><td>纯电</td><td>Seal 无专属campaign；Seal 6 首付39,995起 或 利率1.88%</td><td><a href="https://www.checkraka.com/car/byd" target="_blank">checkraka</a></td></tr>
+          <tr><td>MG 4 / MG S5 EV</td><td>599,900–709,900 / 779,900–899,900</td><td>纯电</td><td>2026款促销价599,900起；全系终身质保（S5 EV Plus 649,900起）</td><td><a href="https://www.checkraka.com/car/mg" target="_blank">checkraka</a></td></tr>
+          <tr><td>MG IM5 / IM6</td><td>1,449,900 / 1,299,000–1,749,900</td><td>纯电</td><td>IM5 促销价 1,499,900（8月OCR核实）；终身质保</td><td><a href="https://www.checkraka.com/car/mg" target="_blank">checkraka</a></td></tr>
+          <tr><td>AION UT / AION V</td><td>549,900–649,900 / 799,900–949,000</td><td>纯电</td><td>UT 519,900–619,900+送50,000优惠包+家充；V 769,900–899,900、利率1.48%、Trade-in 40,000</td><td><a href="https://www.checkraka.com/car/aion" target="_blank">checkraka</a></td></tr>
+          <tr><td>Hyptec HT</td><td>1,624,000</td><td>纯电</td><td>9月无公开促销（金额需联系经销商）；1–8月累计 1,755辆</td><td><a href="https://www.checkraka.com/car/aion" target="_blank">checkraka</a></td></tr>
+          <tr><td>Deepal S05 / S07</td><td>949,000–999,000 / 1,099,000–1,219,000</td><td>纯电/增程</td><td>BEV降50,000→799,000起；REEV 919,000起；S07 改款（BEV+EREV）；终身质保</td><td><a href="https://www.checkraka.com/car/deepal" target="_blank">checkraka</a></td></tr>
+          <tr><td>Geely EX2 / EX5</td><td>429,990–484,990 / 699,000–899,000</td><td>纯电</td><td>无公开促销（EX2 为7月BEV单车冠军 2,640辆）；🆚 L03 下方最大走量对手</td><td><a href="https://www.checkraka.com/car/geely" target="_blank">checkraka</a></td></tr>
+          <tr><td>Geely Starray EM-R</td><td>699,900（PRO）/ 799,900（MAX）/ 729,000（EM-R）</td><td>插混REEV</td><td>9月上市宣传主推「市区用电+长途加油」；18.4kWh / 104.8km NEDC</td><td><a href="https://www.car250.com/geely-starray-em-r-2026.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>Zeekr X / 7X</td><td>899,000–1,349,000 / 1,399,000–1,799,000</td><td>纯电</td><td>X MY2026 官方降价300,000 → 899,000 起；7X 无公开促销</td><td><a href="https://www.checkraka.com/car/zeekr" target="_blank">checkraka</a></td></tr>
+          <tr><td>Tesla Model 3 / Model Y</td><td>1,149,000–2,099,000 / 1,849,000–1,999,000</td><td>纯电</td><td>Open House 试驾活动延续（8月曾推0%首付）；Model Y Performance 中国新上市</td><td><a href="https://www.checkraka.com/car/tesla" target="_blank">checkraka</a></td></tr>
+          <tr><td>Jaecoo 5 EV</td><td>599,000 – 649,000</td><td>纯电</td><td>9月无公开促销；1–8月累计 16,051辆（中系BEV单车榜首）</td><td><a href="https://www.checkraka.com/car/jaecoo" target="_blank">checkraka</a></td></tr>
+          <tr><td>Wuling Darion EV</td><td>799,000 – 859,000</td><td>纯电</td><td>8月 MPV/VAN 榜第1（897辆，份额33.9%）；<strong>Wuling Eksion 560 9/29 泰国上市</strong></td><td><a href="https://www.car250.com/wuling-eksion-560-th.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>Hyundai IONIQ 5 N Line</td><td>1,449,000</td><td>纯电</td><td><strong>泰产 CKD（MY2026 第二批）</strong>，800V/84kWh/DC350kW；享本地化政策红利</td><td><a href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td>Toyota Land Cruiser FJ</td><td>1,289,000</td><td>燃油</td><td>9/7 官价公布（方盒子入门越野）；丰田 bZ4X MY2026 推 0% 利率</td><td><a href="https://www.car250.com/toyota-bz4x-my2026-09.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>Suzuki Fronx</td><td>599,000 – 699,000</td><td>轻混</td><td><strong>9月特价再降 100,000</strong>（GLX/GLX Plus，9/1 公布、9月有效）；日系杀入 60 万级</td><td><a href="https://www.headlightmag.com/special-price-suzuki-fronx-september-2026/" target="_blank">HeadLightMag</a></td></tr>
+          <tr><td>Mazda 6e / CX-5 gen3</td><td>1,199,000（6e Exclusive）/ 948,000（CX-5澳洲）</td><td>纯电 / 燃油</td><td>6e 与 G6 入门价几乎重合；CX-5 三代泰国导入待定</td><td><a href="https://www.car250.com/all-new-mazda-cx-5-3-aus-2026.html" target="_blank">CAR250</a></td></tr>
+        </table>
+        <div style="font-size:11px;color:#888;margin-top:8px;">说明：价格为 checkraka.com 品牌页 2026-09-15 实时抓取（72品牌/880配置全量见配套 Excel），配合本周官价文章复核；促销为官网/泰媒明确公布的9月当期政策，未公布金额者如实标注「无公开促销/需联系经销商」，不留空、不编造。</div>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态（9/22 新增：Wuling 全球化 / Tesla 清迈中心 / GWM ORA 5 官价）</h3>
+        <ul>
+          <li class="new-li"><span class="text"><strong>【渠道·最值关注】Tesla 泰国清迈 Tesla Center 开业（9/22 新增）</strong>：服务/交付/销售一体化网点由曼谷扩至北部——高端纯电竞争从「产品参数」转向<strong>「服务半径」</strong>，小鹏在泰约12家展厅、社群「街上能见度低」的短板对比更加突出</span><a class="src" href="https://www.autospinn.com/2026/09/tesla-tesla-center-chiang-mai-152374" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>【价格带·下压】GWM ORA 5 EV 泰国官方价格与规格公布（9/22 新增）</strong>：ORA 5 为 7月 BEV 榜第3，官价落地后 60–70 万泰铢入门纯电细分竞争再升级；叠加 <strong>Wuling Eksion 560（9/29 上市）</strong>，L03 Standard（899,000）下方的入门心智争夺持续向低价端位移</span><a class="src" href="https://www.autospinn.com/2026/09/ora5-ev-official-price-and-spec-thailand-152316" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>【全球化·长线】Wuling GLOBAL 5 战略、ASEAN 列为核心区域（9/22 新增）</strong>：全球车+区域制造思路明确，直接对标 X9 所在 MPV/多人出行细分（Darion EV 已居 8月 MPV 榜第1、897辆，份额33.9%）</span><a class="src" href="https://www.autospinn.com/2026/09/wuling-global-5-strategy-asean-2026-152387" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>【存量阵营】Ford 泰国 30 周年、累计投资逾 1,330亿泰铢（9/22 新增）</strong>：皮卡/商用车与本地供应链基本盘稳固；结合 <strong>BOI 确认日企持续加码</strong>，「泰国产能地位」仍是小鹏等 CBU 进口方的结构性压力</span><a class="src" href="https://www.autospinn.com/2026/09/ford-30th-152386" target="_blank">Autospinn 9/22</a></li>
+          <li class="new-li"><span class="text"><strong>【产品管线·中国系】Li Auto i9（705km 旗舰纯电）中国发布、iCAUR V27 REEV 技术解读（9/22 新增）</strong>：中国品牌继续以「旗舰 + 增程」双线扩品，泰国导入预期升温，未来将与小鹏在中大型纯电/增程带正面相遇</span><a class="src" href="https://www.autospinn.com/2026/09/li-auto-i9-152412" target="_blank">Autospinn 9/22</a></li>
+          <li><span class="text"><strong>【价格战·最激进】BYD 三日限时「Surprise Deal」（9/11–13，已结束）</strong>：Atto 1 直降至 <strong>399,900泰铢</strong>、Atto 2 至 <strong>569,900</strong>、Atto 3（泰产）至 <strong>609,900–649,900</strong>——短期爆破式清库+为9月冲量，直接压住 40–65 万泰铢入门带，<strong>Xpeng L03 的 Standard 版（899,000）与其价差达 50 万泰铢，但入门心智的争夺被进一步拉低</strong>；截至 9/21 未见顺延公告</span><a class="src" href="https://www.car250.com/byd-atto-1-new-th-2026.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>【本地化·信号最强】现代 IONIQ 5 N Line 泰国组装版 1,449,000 泰铢（9/7）</strong>：外资把纯电主力车型转入泰国产（CKD LOT2），叠加 EV3.5 本地化配比与消费税改革方向，<strong>「本地生产＝成本+政策双优势」的剪刀差将持续拉大</strong>，对 CBU 进口的小鹏 MGC 渠道构成结构性压力</span><a class="src" href="https://www.headlightmag.com/official-price-hyundai-ioniq-5-n-line-ckd-thailand-2nd-lot/" target="_blank">HeadLightMag</a></li>
+          <li><span class="text"><strong>【日系反攻】丰田 1,289,000 的 Land Cruiser FJ + bZ4X 0% 利率；三菱 PAJERO 复活（泰规柴油204马力/顶配4WD/MI-PILOT，10/19上市）；Suzuki Fronx 降至 599,000 起</strong>：日系在「燃油硬派 + 混动/纯电金融方案 + 小型车价格下探」三条线同时反击，与中系纯电正面争夺入门与家庭客群</span><a class="src" href="https://www.car250.com/pajero-th.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>【新车导入】Wuling Eksion 560 定档 9月29日泰国上市</strong>（7座SUV，尺寸接近 CR-V）；Wuling Darion EV 已居 8月 MPV 榜第一（897辆）——上汽通用五菱在 MPV/多人出行细分持续加压 X9 所在价格带下方</span><a class="src" href="https://www.car250.com/wuling-eksion-560-th.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>【清库促销】Volvo 仓储特惠（9/12）</strong>：EX90 降 <strong>800,000 → 3,490,000</strong>、XC60 T8 降 <strong>600,000 → 2,790,000</strong>——豪华品牌加入大幅让利，反映高端市场库存与需求压力（与泰国「豪车市场坚挺」的旧判断出现分歧）</span><a class="src" href="https://autolifethailand.tv/official-price-discount-volvo-ex90-ev-bev-suv-warehouse-mega-deal-2026/" target="_blank">Autolife</a></li>
+          <li><span class="text"><strong>【产品管线】GWM ORA 5 Sedan、TANK 700 LWB（6座PHEV）中国预览/登陆；MG 07（中国20天订单42,000辆）；Avatr T09 旗舰PHEV；Xiaomi SkyNomad REEV</strong>：中系在海外市场持续扩品，泰国后续导入预期升温（ORA 5 已是泰国 7月BEV榜第3）</span><a class="src" href="https://www.headlightmag.com/gwm-ora-5-sedan-registered-miit-china/" target="_blank">HeadLightMag</a></li>
+          <li><span class="text"><strong>【全球收缩 vs 扩张】大众拟裁员 50,000 人、2035年前产品线减半；捷豹路虎或裁 4,000 人（9%）；特斯拉 Model Y Performance 中国上市救场</strong>：传统车企以收缩换利润，日系在华/在泰以金融与本地化应对，中系仍处扩张周期</span><a class="src" href="https://www.headlightmag.com/news-jaguar-land-rover-may-reduce-9-pc-of-its-global-workforce/" target="_blank">HeadLightMag</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== 板块三：我情监测 ===== -->
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车·社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>本周焦点：L03（8/18 上市）与销量硬数据落地</h3>
+        <ul>
+          <li><span class="text"><strong>【我情核心】L03 于 8月18日 在泰国正式上市（全球首个右舵市场）</strong>：泰媒规格对比价为 <strong>899,000 – 1,2XX,000 泰铢</strong>，共 3 个版本（Standard 58.3kWh/530km NEDC、Long Range 71.2kWh/600km、Long Range Ultra 71.2kWh/560km），顶配 ULTRA 搭载 <strong>3 颗图灵芯片</strong>、支持 DC 3C 236kW 快充；质保 5年/12万km、电池 8年/16万km——该车直接切入 90–130 万泰铢最激烈价格带</span><a class="src" href="https://www.car250.com/xpeng-l03-th-price-2026-08.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>【我情数据】8月销量落地</strong>：<strong>G6 8月销量 269辆</strong>（1–8月 2,648辆）、<strong>X9 8月销量 328辆</strong>（MPV/VAN 榜第3、份额 12.4%；1–8月 1,753辆）、<strong>XPENG 品牌 1–8月累计 4,401辆</strong>（品牌榜第20位）——X9 在高端纯电 MPV 细分维持稳定第三位，与 Zeekr 009（186辆）拉开差距，但落后 Wuling Darion EV（897辆）与 Alphard/Vellfire（477辆）</span><a class="src" href="https://autolifethailand.tv/register-sales-report-mpv-van-aug-2026/" target="_blank">Autolife</a></li>
+          <li><span class="text"><strong>【媒体口碑·重大利好】8月 Autospinn 长测：XPENG X9 被称为「当今最完美的电动MPV」</strong>（「几乎没有短板」），在泰媒评测中持续强化 X9 的高端 MPV 心智，该评测在泰语社群继续被引用传播</span><a class="src" href="https://www.checkraka.com/car/xpeng" target="_blank">媒体汇总</a></li>
+          <li><span class="text">【竞争声量】本田 Super-ONE EV 实测出炉（<strong>990,000 泰铢</strong>，限量30辆），与 L03 的 899,000–1,2xx,000 价位正面重叠——日系小型 EV 以「限量+JDM 文化」切入，抢同一批价格敏感但看重品牌背书的客群</span><a class="src" href="https://www.headlightmag.com/honda-super-one-ev-acceleration-consumption-test/" target="_blank">HeadLightMag 9/11</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛，数据截至8月底）</h3>
+        <ul>
+          <li><span class="text"><strong>正面</strong>｜VW ID. AURA T6 搭载 XPeng CEA 智能架构帖引发热议，网友评论「XPeng 的技术帮了 VW 很多」——大众背书显著提升小鹏技术品牌形象；「G6 软件实力顶级」仍是用户共识</span><a class="src" href="https://pantip.com/tag/รถยนต์" target="_blank">Pantip</a></li>
+          <li><span class="text"><strong>正面</strong>｜「豪华EV SUV对比（Xpeng/Zeekr/Hyptec）」帖中多楼用户推荐 <strong>Xpeng G6</strong> 作为「通勤+科技感」首选；「X9 漂亮到想回头看」等设计好评持续出现</span><a class="src" href="https://pantip.com/tag/รถยนต์" target="_blank">Pantip</a></li>
+          <li><span class="text"><strong>热议</strong>｜X9 改款（续航增至750km）与「2026 X9 vs ZEEKR 009 vs DENZA D9」MPV 选购帖显示 X9 已进入高端 MPV 对比清单；品牌发音/认知问题仍是话题点</span><a class="src" href="https://pantip.com/tag/รถยนต์" target="_blank">Pantip</a></li>
+          <li><span class="text"><strong>质疑</strong>｜「Geely/XPeng 是否值得信任」帖核心顾虑集中在<strong>售后服务体系待长期验证</strong>、品牌成立时间短；eVTOL 飞行汽车帖（47回复）证明小鹏话题热度高、出圈能力强</span><a class="src" href="https://pantip.com/tag/รถยนต์" target="_blank">Pantip</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Facebook 汽车社群 / YouTube / Instagram</h3>
+        <ul>
+          <li><span class="text"><strong>YouTube（上次实测，8/9）</strong>：G6 头部评测播放量 autolifethailand <strong>36.4万次</strong>、spin9 <strong>26.0万次</strong>；对比 BYD Seal 头部评测 <strong>94.5万次</strong>——差距由早期 3–6 倍收窄至约 2.6 倍，品牌认知仍在爬坡</span><a class="src" href="https://www.youtube.com/results?search_query=XPENG+G6+%E0%B9%84%E0%B8%97%E0%B8%A2" target="_blank">YouTube</a></li>
+          <li><span class="text"><strong>Instagram（无法外部核验）</strong>：#XpengThailand 标签帖量与 #BYDThailand / #MGThailand 相比仍有数量级差距（需登录，参考此前实测约 1/5–1/7）；评论区高频问题仍为「ราคาเท่าไหร่（多少钱）」「ศูนย์บริการอยู่ที่ไหน（服务中心在哪）」——<strong>价格与服务网络信息不对称仍是首要转化障碍</strong></span><a class="src" href="https://www.instagram.com/explore/tags/xpengthailand/" target="_blank">IG</a></li>
+          <li><span class="text"><strong>经销商与渠道</strong>：泰国渠道仍以 MGC-ASIA 经销网络为主（约12家展厅级别，社群抱怨「街上能见度低」）；「加快在泰投资」官方表态后，渠道扩张预期上升但尚无门店数更新数据</span><a class="src" href="https://autolifethailand.tv/xpeng-comment-new-tax-structure-thailand-2026/" target="_blank">Autolife</a></li>
+          <li><span class="text"><strong>售后政策关注</strong>｜「服务中心外更换电池可能导致质保失效」的提醒在车主群传播（此前 MGR Online 报道，未获取文章级 URL），售后政策透明度问题需官方及时回应</span><a class="src" href="https://www.xpeng.com/th" target="_blank">XPeng TH</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <span class="sentiment-tag">🟡 中性偏正面（口碑好、认知待提升）</span>
+          <div style="margin-bottom:8px;"><strong>正面信号：</strong>① 技术品牌获大众背书（VW 采用 XPeng 技术架构）；② X9 媒体口碑（「当今最完美的电动MPV」）+ 8月泰国 MPV 注册第3（328辆、份额12.4%）双支撑，高端 MPV 基本盘稳固；③ XPENG 1–8月累计 4,401辆（品牌榜第20），G6 8月 269辆 / 1–8月 2,648辆、X9 1–8月 1,753辆 为可核验的基本盘；④ L03 规格（245马力 RWD、LFP 58–71kWh、600km NEDC、顶配3颗图灵芯片 + 3C 快充）已获媒体正面解读，是下半年最重要的销量变量；⑤ 官方「加快在泰投资」表态叠加消费税改革方向，本地化预期是最大中长期利好。</div>
+          <div><strong>风险点：</strong>① <strong>L03 定价风险（最高优先级）</strong>——Standard 版能否守住 899,000 甚至下探 8xx,xxx，决定其在 90 万泰铢以下最大细分的冲击力；若高于预期，将继续被 BYD Atto 3（促销 609,900 起）与 Geely EX5（699,000 起）价格压制；② <strong>政策风险落地</strong>——EV Board 原则通过消费税结构改革（本地含量导向），CBU 进口的 MGC 渠道成本劣势将制度化，小鹏设厂研究的时间窗口收窄；③ 泰铢仍处 33.2 上方相对弱位（USD/THB 33.26，9/22 回落但未改弱势区间）抬升纯进口车成本端；④ 品牌认知与渠道：IG/YT 声量仍为 BYD 的 1/5–1/7，展厅约12家、街上能见度低，「服务中心在哪」是高頻疑问；⑤ 竞品合围——上有现代 IONIQ 5 N Line 泰产 CKD（1,449,000）压 G6 价位带、下有 BYD Atto 1（促销 399,900）/Wuling 9/29 新车填补入门带；⑥ 售后政策透明度（换电质保争议）待官方澄清。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    数据来源：CAR250 / Autolifethailand / HeadLightMag / checkraka.com / FTI（ส.อ.ท.）/ 开泰研究中心（Kasikorn Research）/ 泰国总理府发言人办公室 / XPeng TH（MGC-ASIA） / Pantip / YouTube / Instagram · 汇率来源：open.er-api.com（9/22 08:00 实时快照）· 注册量口径：2026年8月及1–8月累计（CAR250 50+品牌口径、Autolife 分车型口径）· 竞品价格：checkraka.com 9/15 实时抓取<br>
+    报告生成于 2026-09-22（日报）· 销量/注册数据截至 2026-09-15（9/22 早间 autospinn 首页返回 2026/09 可解析新条目并已全部纳入；headlightmag 首页仍为 JS 渲染分类页、bangkokpost.com/auto 未返回可解析条目；注册量沿用已核验数据，未作推算）· 车型图为 XPeng 官方渲染图（xpeng.com）
+  </div>
+
+</div>
+</body>
+</html>
