@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-10-27</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.7; margin-bottom: 10px; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; font-size: 14px; }
+  .note { background: #f5f5f5; border-left: 3px solid #9e9e9e; padding: 7px 11px; border-radius: 0 6px 6px 0; margin-bottom: 10px; font-size: 12px; color: #666; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:nth-child(even) td { background: #fcfcfd; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge-down { background: #fce4ec; color: #c62828; }
+  .badge-up { background: #e8f5e9; color: #2e7d32; }
+  .badge-new { background: #e3f2fd; color: #1565c0; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .up { color: #2e7d32; } .down { color: #c62828; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">📅 2026年10月27日（周二）· 数据口径：2026 年 9 月月度销量 + 1–9 月累计注册量 · 新闻截至 10/27 早间</div>
+  <div class="rate-bar">
+    <div class="rate-item">USD/CNY <span class="rate-val">6.6838</span> <span class="rate-trend" style="color:#ff9090;">▼ −0.08%</span></div>
+    <div class="rate-item">USD/THB <span class="rate-val">33.7871</span> <span class="rate-trend" style="color:#8ef0a0;">▲ +0.09%</span></div>
+    <div class="rate-item">THB/CNY <span class="rate-val">0.1978</span> <span class="rate-trend" style="color:#ff9090;">▼ −0.17%</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="note">⏱️ 数据口径说明：宏观销量以 <strong>9 月完整月度截面</strong>为准（单月 <strong>60,110 辆</strong>、1–9 月累计 <strong>552,637 辆</strong>，BSCB 口径），注册口径累计 <strong>555,593 辆</strong>（Autolife），两源分别标注、不混用；10 月数据将于 11 月中旬发布。<strong>今日三条主线：① 9 月中国产纯电进口量同比 +138%，关税落地前的"抢通关"已经出现在海关数据上；② Mazda CX-6e 以 125.9–129.9 万泰铢入泰——日系第一次用中国产 CBU 纯电 SUV 直接压在 G6 中高配价位；③ 年末折扣继续下探，Geely EX5 官方直降 5 万至 75.9 万起，L03 所在价格带的让利战没有停歇迹象。</strong></div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="val">555,593</div>
+          <div class="lbl">1–9月累计注册量（辆）</div>
+          <div class="chg">Toyota 34.4% 居首</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">4,984</div>
+          <div class="lbl">小鹏 1–9月注册量（辆）</div>
+          <div class="chg">份额 0.9% · 品牌第20</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">+138%</div>
+          <div class="lbl">9月中国纯电进口量（同比）</div>
+          <div class="chg">加税前抢通关</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">30%</div>
+          <div class="lbl">2027年整车进口纯电消费税</div>
+          <div class="chg">现为 10%</div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态（10/26–10/27 新增 + 9 月完整月度数据）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-down">今日重点</span> <strong>9 月泰国中国产纯电车进口量同比激增 138%（Matichon 10/26 报道，标题级，未取得文章级链接）。</strong>这与 2027 年 1 月 1 日起整车进口纯电消费税由 10% 上调至不低于 30% 的时点完全对应——<strong>进口商在税则生效前把车"抢"进泰国关境，成本按旧税率锁定。含义有两层：① 10–12 月市场将面对一批"低税成本库存"，厂商有空间继续打折扣；② 反过来，2027 年 Q1 之后新到港车辆的税负成本跳升，"越晚进口越贵"会成为渠道端的共识，年内冲量动机因此被进一步强化。</strong>对小鹏这类全系 CBU 的品牌，同行抢进口会同时压低短期价格空间与抬高长期税负成本。</span>
+          </li>
+          <li>
+            <span class="text"><strong>注册口径交叉验证（Autolife 1–9 月，10/15 发布）：累计注册 555,593 辆。</strong>Toyota 191,167 辆（34.4%）、Honda 58,264 辆（10.5%）、Isuzu 50,759 辆（9.1%）、BYD 33,913 辆（6.1%）、OMODA JAECOO 26,463 辆（4.8%）、MG 26,401 辆（4.8%）。<strong>小鹏 4,984 辆、份额 0.9%、列品牌第 20</strong>，位于 Zeekr（5,411 辆）之后、Suzuki（3,638 辆）之前。<strong>集团口径：BYD Group 34,889 辆、Chery Group 34,187 辆、Changan Group 17,392 辆、GAC Group 17,127 辆（含 HYPTEC）——奇瑞系距比亚迪系仅差 702 辆，集团排名随时易位。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/car-register-brands-thailand-q1-q3-2026-jan-sep/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><strong>泰国 9 月新车销量 60,110 辆，同比 +24.7%；1–9 月累计 552,637 辆，同比 +18.9%。</strong>品牌格局：Toyota 20,238 辆（33.7%）第一，Honda 6,633 辆（11.0%，+18.4%）、Isuzu 4,863 辆（8.1%，+9.2%），OMODA JAECOO 3,671 辆（6.1%，+799.8%）与 MG 3,335 辆（5.5%，+72.3%）列第 4、第 5。<strong>小鹏 582 辆（+93.4%）列第 21。</strong></span>
+            <a class="src" href="https://bestsellingcarsblog.com/2026/10/thailand-september-2026-sales-up-24-7-mg-72-3-places-urban-inside-top-10/" target="_blank">BSCB</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>Mazda CX-6e 泰国官方价公布：1,259,000 – 1,299,000 泰铢，中国 CBU 进口，配 26.45 英寸 5K 屏。</strong>这是日系主流品牌第一次把"中国产纯电 SUV"直接摆进 125–130 万泰铢区间——<strong>正压在 G6（118.9–148.9 万）的中高配价位上，而且它带来的是 Mazda 既有渠道与品牌信任，而非新势力的"从零建信任"</strong>。日系电动化的路径已从"日本研发、日本制造"转为"借用中国供应链、贴日系标"，<strong>这对所有中国品牌都是一个新的竞争范式：对手不再是"转型慢的日系"，而是"用你的供应链、卖他的品牌"的日系。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/official-price-mazda-cx-6e-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><strong>市场结构性判断（TrueID 10/26，标题级）：泰国 EV 市场销量高速增长，但价格、维修成本、消费信心三条战线同时承压。</strong>增长与盈利正在脱钩：<strong>销量增速由折扣驱动，而折扣来自关税套利窗口，窗口在 2026 年底关闭。</strong>这意味着当前的高增长含有明显的"前置需求"成分，2027 年 Q1 存在需求真空风险——<strong>对以 CBU 进口为主、且在 90 万级走量的品牌，这是双重暴露。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-down">本期重点</span> <strong>消费税厅调整纯电车条件，为 EV3–EV3.5 补贴申请设定截止期（Thansettakij 10/25 报道，标题级）。</strong>这是补贴政策第一次从"资格与额度"转向"申领与清算时点"：<strong>对已在泰销售纯电的品牌，意味着未完成的补偿生产/申领动作有了硬时限，年内上牌的数量价值上升；对新进入者，则抬高了"先上量再补手续"的操作风险。</strong>与 30% 进口税方案并行看，泰国正在同时收紧补贴端与税收端，<strong>2026 年 Q4 是政策套利窗口的最后一段</strong>。</span>
+          </li>
+          <li>
+            <span class="text"><strong>进口纯电消费税方案定量口径：整车 CBU 进口纯电消费税由 10% 上调至不低于 30%，泰媒按「每 100 万泰铢车价税负增加约 20 万泰铢」测算，生效时点指向 2027 年 1 月 1 日，财政部拟两周内提交内阁。</strong>（按 10/19 起算，<strong>内阁窗口在 11 月初关闭</strong>。）<strong>对小鹏的算术含义（推算，非官方报价）：按新价格体系，X9（253.9–279.9 万）单车税负增量约 51–56 万；G6（118.9–148.9 万）约 24–30 万；L03（89.9–118.9 万）约 18–24 万——L03 恰好落在对价格最敏感的价格带，税负几乎无法通过终端传导。</strong>今日的 +138% 进口激增正是这条政策的市场化预演。</span>
+            <a class="src" href="https://autolifethailand.tv/forcast-new-tax-structure-complete-in-1-2-week/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">9/10 决议</span> <strong>EV Board 首会已通过 BEV 消费税重构原则：以本地零部件使用比例分三档给予优惠，并配套进口配额管理。</strong>方向明确为「CBU 加税、本地组装给优惠」，<strong>本地化比例从「补贴门槛」变成「税率杠杆」</strong>。对纯 CBU 进口的小鹏而言，这是结构性的（而非周期性的）税负劣势。</span>
+            <a class="src" href="https://autolifethailand.tv/board-ev-tax-structure-first-time-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><strong>BOI 批准 Toyota 追加投资 14.9 亿泰铢</strong>，新建<strong>氢燃料电池 Hilux 皮卡</strong>生产线。日系在泰的下一张牌不是纯电而是氢能，绑定泰国「2050 碳中和 + 氢能枢纽」叙事，<strong>对纯电路线构成政策注意力分流</strong>。</span>
+            <a class="src" href="https://autolifethailand.tv/boi-approved-toyota-invested-1490-million-thb/" target="_blank">Autolife</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测（open.er-api.com 最新截面 2026-10-27 00:02 UTC，对比 10/26 截面）</h3>
+        <div class="highlight">💵 USD/CNY <strong>6.6838</strong>（▼ −0.08%）| USD/THB <strong>33.7871</strong>（▲ +0.09%）| THB/CNY <strong>0.1978</strong>（▼ −0.17%）</div>
+        <ul>
+          <li>
+            <span class="text"><strong>美元/人民币 6.6838（▼ −0.08%）：</strong>由 6.6892 回落，<strong>下行突破了 6.68–6.69 连续五日维持的窄幅区间下沿</strong>，人民币小幅走强。以人民币核算泰国业务收入的口径影响仍可忽略，但方向与前几日相反，需留意是否形成趋势。</span>
+          </li>
+          <li>
+            <span class="text"><strong>美元/泰铢 33.7871（▲ +0.09%）：</strong>由 33.7569 继续上行，<strong>泰铢走弱、中枢抬高至 33.78</strong>（10 月中旬以来从 33.59 一路上移）。以美元结算零部件、泰铢定价销售的模式，<strong>成本压力在连续第二周缓慢累积</strong>——这一条比汇率本身的绝对水平更值得关注。</span>
+          </li>
+          <li>
+            <span class="text"><strong>泰铢/人民币 0.1978（▼ −0.17%）：</strong>由 6.6838 ÷ 33.7871 计得，较 10/26 的 0.1982 回落，<strong>是三条汇率里变动最大的一条</strong>。按此折算：L03 的 89.9 万泰铢约合 <strong>17.8 万人民币</strong>、G6 的 118.9 万约合 <strong>23.5 万</strong>、X9 的 253.9 万约合 <strong>50.2 万</strong>。<strong>人民币口径的单车收入连续两日缩水，与税负上行方向一致，双向挤压毛利。</strong></span>
+          </li>
+          <li>
+            <span class="text"><strong>影响与建议：</strong><strong>汇率与税负今天首次同向恶化（泰铢贬值 + 税负预期上行），而折扣战仍在加码——三者叠加意味着 2027 年 Q1 的单车毛利同时受收入端（折人民币缩水）与成本端（税、美元零部件）挤压。</strong>建议本周把「税负（10%/30%）× 汇率（33.6/33.8/34.0）× 车型（L03/G6/X9）」做成敏感性矩阵，其中 L03 因价格带弹性最低，单列「不可传导」场景。</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品官方售价（Checkraka 核验日 2026-09-23；调价/新增行按 10/20–10/27 官方发布）</h3>
+        <div class="note">下表为泰国公开挂牌价区间（含 2026/2025 款在售版本）。<strong>本期新增四行：Mazda CX-6e（日系中国产纯电，正压 G6 中高配）、DENZA D9（0% 60 期）、Forthing Friday BEV、Lexus ES 350e；Geely EX5 按 10/1–10/31 官方促销下调至 759,000 起。</strong>促销政策以官方公告为准，未取得公开确认的优惠幅度一律不标注。</div>
+        <table>
+          <tr><th>品牌 / 车型</th><th>官方售价（泰铢）</th><th>营销政策 / 版本备注</th><th>来源</th></tr>
+          <tr><td><strong>Mazda CX-6e</strong> <span class="badge badge-new">今日新增</span></td><td>1,259,000 – 1,299,000</td><td>纯电 SUV，中国 CBU 进口，26.45 英寸 5K 屏；日系首个中国产纯电，正压 G6 中高配（118.9–148.9 万）</td><td><a href="https://autolifethailand.tv/official-price-mazda-cx-6e-thailand/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Geely EX5</strong> <span class="badge badge-down">直降5万</span></td><td>759,000 – 899,000</td><td>10/1–10/31 官方直降 50,000（原 809,000 起）；与 L03 入门版同价带，是 L03 最直接的"同价位替代"</td><td><a href="https://autolifethailand.tv/official-price-discount-geely-ex5-ev-bev-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>DENZA D9</strong> <span class="badge badge-new">0%利率</span></td><td>1,949,900 – 2,399,900</td><td>纯电 MPV，中国 CBU 进口；促销 0% 利率 60 期，直压 X9（253.9–279.9 万）下沿</td><td><a href="https://autolifethailand.tv/byd-denza-d9-ev-bev-mpv-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Forthing Friday BEV</strong> <span class="badge badge-new">今日新增</span></td><td>699,900 – 789,900</td><td>B-SUV，64.4 kWh 电池，中国 CBU 进口；切入 L03 下方 10–20 万价格带</td><td><a href="https://autolifethailand.tv/official-price-forthing-friday-ev-bev-thailand/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>GAC AION UT</strong> <span class="badge badge-down">直降2万</span></td><td>499,900 – 599,900</td><td>促销至 10/31：ส่วนลด 20,000（原 549,900–649,900），Standard / Premium；同期 GAC 三车型统一走「Motor Expo 同款优惠」</td><td><a href="https://autolifethailand.tv/official-price-discount-gac-aion-ut-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Zeekr X MY2026</strong> <span class="badge badge-new">L03对标</span></td><td>899,000 – 1,069,000</td><td>MY2026 官方降价 300,000；与 L03 入门版（899,000）正面同价，L03 以车身更大取胜</td><td><a href="https://www.car250.com/zeekr-x-2026-th-450.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>NIO Firefly</strong> <span class="badge badge-down">直降4万</span></td><td>759,000 – 799,000</td><td>Comfort 799,000→759,000；新增 Comfort Plus；质保 5 年 15 万 km、电池 8 年 16 万 km</td><td><a href="https://autolifethailand.tv/official-price-nio-firefly-ev-bev-thailand-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Isuzu MU-X 2026</strong></td><td>1,197,000 – 1,774,000</td><td>2.2 Ddi MAXFORCE Bi-Turbo 204 PS/500 Nm、8AT；Bi-Turbo 自 1,474,000；金属漆含 VAT</td><td><a href="https://www.car250.com/the-new-isuzu-mu-x-2026.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Mitsubishi Pajero</strong></td><td>1,499,000 – 1,999,000</td><td>2.4T 柴油 8AT，2WD / S-AWC 4WD；日系硬派 SUV 重返泰国</td><td><a href="https://autolifethailand.tv/official-price-all-new-mitsubishi-pajero-suv-thailand-19-oct/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Lexus ES 350e</strong> <span class="badge badge-new">今日新增</span></td><td>3,290,000 – 3,890,000</td><td>纯电 ES 350e / 混动 ES 350h，日本 CBU 进口；豪华轿车价格上沿参考</td><td><a href="https://autolifethailand.tv/official-price-lexus-es350e-bev-es350h-hybrid-thailand/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>smart #1</strong></td><td>1,449,000</td><td>纯电 SUV，CBU 进口，Thonburi Mercedes-Benz 代理</td><td><a href="https://autolifethailand.tv/official-price-smart-1-ev-bev-suv-thailand-thouburi-mercedes-benz/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>smart #3</strong></td><td>1,549,000</td><td>纯电 SUV Coupé，455 km；正对 G6 高配（1,489,000）价位上沿</td><td><a href="https://autolifethailand.tv/official-price-smart-3-ev-bev-suv-coupe-thailand-thonburi-mercedes-benz/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>smart #5</strong></td><td>1,749,000</td><td>纯电 Boxy C-SUV，590 km，车长 4,695 mm／轴距 2,900 mm；卡在 G6 顶配与 X9 低配之间</td><td><a href="https://autolifethailand.tv/official-price-smart-5-ev-bev-suv-boxy-thailand-thonburi-mercedes-benz/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>iCAUR V27 REEV</strong></td><td>999,900 – 1,259,900</td><td>方盒增程 SUV（1.5T 增程），三档在售；长测油耗约 20.47 km/L</td><td><a href="https://www.autospinn.com/2026/10/test-drive-icaurv27-153027" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>BYD Sealion 7</strong> <span class="badge badge-down">直降10万</span></td><td>1,099,900</td><td>10 月直降 100,000 + 终身质保；Premium 版，压向小鹏 G6 高配</td><td><a href="https://www.checkraka.com/car/byd/sealion-7/1460893/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>BYD Sealion 6 DM-i</strong> <span class="badge badge-down">直降8万</span></td><td>799,900</td><td>插混，Dynamic 版 10 月直降 80,000</td><td><a href="https://www.car250.com/new-byd-sealion-6-dm-i-plug-in-hybrid-2026-10-1.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>BYD Sealion 5 DM-i</strong> <span class="badge badge-down">直降10万</span></td><td>659,900 – 699,900</td><td>插混，纯电续航 110 km；10 月直降 100,000</td><td><a href="https://www.checkraka.com/car/byd/sealion-5-dm-i/1461925/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>BYD Atto 1</strong> <span class="badge badge-down">直降6万</span></td><td>399,900</td><td>10 月直降 60,000；380 km NEDC，全泰 EV 价格锚点下探至 40 万以下</td><td><a href="https://www.checkraka.com/car/byd/atto-1/1461821/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>BYD Atto 2</strong> <span class="badge badge-down">直降9万</span></td><td>569,900</td><td>10 月直降 90,000；410 km NEDC</td><td><a href="https://www.checkraka.com/car/byd/atto-2/1461169/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>BYD Dolphin</strong> <span class="badge badge-down">直降7万</span></td><td>459,900 – 529,900</td><td>10 月直降 70,000；1–9 月注册 10,052 辆</td><td><a href="https://www.car250.com/byd-dolphin-new-th-2026-11.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>BYD M6</strong> <span class="badge badge-down">直降5万</span></td><td>799,900</td><td>7 座纯电 MPV，10 月直降 50,000 + 终身质保；530 km</td><td><a href="https://www.car250.com/byd-m6-mpv-th-2026-10.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Honda eN2</strong> <span class="badge badge-down">直降20万</span></td><td>1,229,000</td><td>纯电 SUV，530 km NEDC；10 月直降 200,000，日系对中系价格战的正面回应</td><td><a href="https://www.car250.com/new-honda-th-en2-2026-10.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>MG Urban</strong></td><td>529,900 – 709,900</td><td>2026 款城市 EV，Standard / Max / Ultra；9 月 1,280 辆首进车型榜第 10</td><td><a href="https://www.checkraka.com/car/mg/urban/1461888/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>MG4 Electric</strong></td><td>599,900 – 709,900</td><td>2026 款 D Standard / X Long Range</td><td><a href="https://www.checkraka.com/car/mg/4/1461811/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>MG S5 EV</strong></td><td>779,900 – 899,900</td><td>X / Plus V+ / V 三版本</td><td><a href="https://www.checkraka.com/car/mg/s5-ev/1461095/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>MG IM5</strong></td><td>1,449,900</td><td>Premium Long Range，中大型纯电轿车</td><td><a href="https://www.checkraka.com/car/mg/im5/1461751/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>AION V</strong></td><td>799,900 – 899,900</td><td>2026 款 500 Premium / 602 Luxury；与 L03 入门版同价区间上沿</td><td><a href="https://www.checkraka.com/car/aion/v/1461785/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Hyptec HT</strong></td><td>1,624,000</td><td>620 Luxury（AION 渠道）</td><td><a href="https://www.checkraka.com/car/aion/hyptec/1460633/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Tesla Model 3</strong></td><td>1,149,000 – 1,599,000</td><td>2026 Standard / Premium Long Range；9 月 Tesla 品牌 +164.1%</td><td><a href="https://www.checkraka.com/car/tesla/model-3/1461668/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Tesla Model Y</strong></td><td>1,849,000 – 1,999,000</td><td>2026 LR RWD / LR AWD / Model Y L</td><td><a href="https://www.checkraka.com/car/tesla/model-y/1461809/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Deepal SO5</strong></td><td>949,000 – 999,000</td><td>REEV Plus/Max、Max Long Range；L03 的价格带直接对手</td><td><a href="https://www.checkraka.com/car/deepal/so5/1461636/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Deepal SO7</strong></td><td>1,099,000</td><td>Standard，渠道持续扩张</td><td><a href="https://www.checkraka.com/car/deepal/so7/1461478/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Geely EX2</strong></td><td>429,990 – 489,990</td><td>2026 款；9 月 1,759 辆列车型榜第 8，品牌 +905.7%</td><td><a href="https://www.checkraka.com/car/geely/ex2/1461830/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Geely EM-R</strong></td><td>729,000</td><td>EM-R Pro；与 EX5 形成 72.9–89.9 万的双车价格带</td><td><a href="https://www.checkraka.com/car/geely/ex5/1461825/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Jaecoo 5 EV</strong></td><td>599,000 – 649,000</td><td>5 EV Max+；9 月 2,301 辆，当月在售新车型销量冠军</td><td><a href="https://www.checkraka.com/car/jaecoo/5-ev/1461823/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Omoda C5 EV</strong></td><td>649,000</td><td>2026 款 Max+ 版本；品牌 9 月 +799.8%</td><td><a href="https://www.checkraka.com/car/omoda/c5-ev/1461750/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Neta V</strong></td><td>549,000</td><td>入门级 EV，价格攻击性强但品牌 9 月同比 −93.0%</td><td><a href="https://www.checkraka.com/car/neta/v/1456817/" target="_blank">Checkraka</a></td></tr>
+        </table>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态（本期重点：中国供应链 × 日系品牌的"新范式"）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-new">范式变化</span> <strong>Mazda CX-6e 以 1,259,000–1,299,000 泰铢入泰（中国 CBU 进口、26.45 英寸 5K 屏）。</strong>这不是一次普通的日系电动化上新，而是<strong>竞争范式的切换：日系不再试图用"日本研发的电动车"追赶，而是直接用中国供应链 + 日系品牌与渠道</strong>。对小鹏的直接含义——G6（118.9–148.9 万）面对的不再是"转型慢"的日系，而是<strong>同价位、同供应链、但品牌信任度更高的对手</strong>；而"科技感"这一差异点，会被一块 5K 大屏大幅稀释。</span>
+            <a class="src" href="https://autolifethailand.tv/official-price-mazda-cx-6e-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">抢税窗口</span> <strong>9 月中国产纯电进口量同比 +138%（Matichon 10/26，标题级）。</strong>进口商在 2027/1/1 新税率前集中通关，<strong>把"未来更高的成本"换成了"当下更低的库存成本"</strong>。行业后果是双面的：<strong>短期（Q4）市场上多出一批低税成本车源，折扣战有恃无恐；长期（2027 Q1）新到港车辆成本跳升，终端价格必须上调，而消费者的价格预期已被 Q4 的折扣锚定——这个断点比税本身更危险。</strong></span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">降价继续</span> <strong>Geely EX5 官方直降 50,000 至 759,000–899,000（10/1–10/31），与 L03 入门版 899,000 形成"同价双选"；同时 Geely EM-R 以 729,000 卡在其下方。</strong><strong>L03 面对的已不是单点竞品，而是一个 72.9–89.9 万的连续价格带</strong>——Geely 用两款车把 70–90 万这段填满，L03 的"车身更大"必须在试驾中被感知，否则价格对比表上不占优势。</span>
+            <a class="src" href="https://autolifethailand.tv/official-price-discount-geely-ex5-ev-bev-oct-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">金融战</span> <strong>DENZA D9 以 0% 利率 60 期促销，售价 1,949,900–2,399,900。</strong>纯电 MPV 用"零利率五年"进攻，<strong>直接对 X9（253.9–279.9 万）形成"低 15–60 万 + 零利息"的双重压力</strong>。这标志着价格战正从"降价"转向"金融杠杆"——<strong>对以科技豪华定位、较少使用金融工具的 X9，是需要回应的维度</strong>。</span>
+            <a class="src" href="https://autolifethailand.tv/byd-denza-d9-ev-bev-mpv-oct-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">新品下压</span> <strong>Forthing Friday BEV 定价 699,900–789,900（64.4 kWh，中国 CBU），切进 L03 下方 10–20 万；Lexus ES 350e 纯电版 3,290,000 起，抬高豪华纯电上沿。</strong><strong>价格带的上下两端同时被填：70 万以下越来越密，300 万以上开始有豪华品牌纯电选项</strong>——中间 90–150 万这段（L03 顶配与 G6 所在）反而成了"最拥挤、最没有品牌溢价掩护"的一段。</span>
+            <a class="src" href="https://autolifethailand.tv/official-price-forthing-friday-ev-bev-thailand/" target="_blank">Autolife</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车·社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>📈 销量与产品线（销量核验日 2026-10-15 / 注册数据 2026-10-15 / L03 官方价 2026-10-01 / G9L 入泰计划 2026-10-15）</h3>
+        <ul>
+          <li>
+            <span class="text"><strong>品牌 9 月销量 582 辆，同比 +93.4%，份额 1.0%，品牌排名第 21；1–9 月累计注册 4,984 辆、份额 0.9%、列品牌第 20（Autolife 注册口径）。</strong>在四家老牌中系（BYD/AION/Deepal/Neta）同时下滑的月份里实现接近翻倍，<strong>是本月中系阵营中少数逆势上行的品牌之一</strong>。</span>
+            <a class="src" href="https://autolifethailand.tv/car-register-brands-thailand-q1-q3-2026-jan-sep/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><strong>分车型：G6 9 月 318 辆（+119.3%，1–9 月累计 2,966 辆）；X9 9 月 264 辆（+69.2%，1–9 月累计 2,017 辆）。</strong>318 + 264 = 582，<strong>与品牌总量完全吻合，说明 9 月的注册数据里还没有 L03</strong>——L03 的官方价 10/1 才公布，<strong>交付起量应发生在 10 月之后（推算）</strong>。X9 在 253.9–279.9 万泰铢的高端 MPV 区间稳定月销 260 辆以上，但今日 DENZA D9 的 0% 60 期促销是这一细分第一次遇到直接的金融杠杆攻击。</span>
+            <a class="src" href="https://bestsellingcarsblog.com/2026/10/thailand-september-2026-sales-up-24-7-mg-72-3-places-urban-inside-top-10/" target="_blank">BSCB</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">L03 落地</span> <strong>XPENG L03 泰国官方价：Standard Range PLUS RWD 899,000 / Long Range PLUS RWD 989,000 / Long Range ULTRA RWD 1,189,000 泰铢（CBU 中国进口）。</strong>权益包：整车质保 5 年/12 万 km、高压电池 8 年/16 万 km、首年一级保险、AC 便携充电线、TUNAP 养护、24 小时道路救援 5 年、MOBILIFE 3,000 积分。<strong>这是小鹏在泰第一次进入 100 万泰铢以下价格带，直接修正了此前「小鹏 100 万以下无产品」的结构性缺口。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/official-price-xpeng-l03-ev-bev-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><strong>L03 的定位与对标：车长 4,650 mm／轴距 2,850 mm／后备厢 539–1,640 L，官方明确主竞品为 Zeekr X（899,000–1,069,000），以「车身更大」为差异点。</strong><strong>但今日的竞品表显示，这一档已从"5 个对手"变成"一条连续价格带"：Geely EX5 降至 759,000、EM-R 729,000、Forthing Friday 699,900、Deepal S05 949,000、AION V 799,900 起——L03 的 899,000 落在中间，上下各被夹住。</strong>换言之，L03 进入的不是空白区，而是全泰竞争最密、折扣最深、且刚刚又被新增 3 款车填满的一段。</span>
+            <a class="src" href="https://autolifethailand.tv/official-price-discount-geely-ex5-ev-bev-oct-2026/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">G9L 确认</span> <strong>XPENG G9L 确认 11 月入泰（Motor Expo 2026 之前），是小鹏在泰第 4 款车型、也是最大的 D-SUV 旗舰：长 5,120 mm／宽 1,999／高 1,782／轴距 3,100 mm，3 排 6 座。</strong>动力：EV Long Range RWD 367 马力／465 Nm、110 kWh NMC 800V 电池、0–100 km/h 7.0 秒、续航 591 km，DC 支持 5C／540 kW 快充；另有 REEV 增程版本待确认。<strong>将补上「5.1 米级 6 座 SUV」这一泰国中系品牌尚未占位的细分——这也是当前产品矩阵里唯一没有直接对标者的一段。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/xpeng-g9l-d-suv-ev-bev-reev-coming-thailand/" target="_blank">Autolife</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛）· 口碑数据截至 9 月 28 日核验（本期未取得新增帖文）</h3>
+        <ul>
+          <li>
+            <span class="text"><strong>正面：</strong>用户认可 G6 的外观设计和软件能力（"เด่นสุดๆในเรื่อง SW"），有用户评价"รถสวยจริง อยากได้ X9"（车真好看，想要 X9），对小鹏的科技和豪华定位持肯定态度；部分用户认同小鹏不卷价格、以创新和质价比竞争的路线。</span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>负面/批评：</strong>多名用户吐槽 G6 配置缺陷——全景玻璃天幕无电动遮阳帘、前排中控台无储物空间、前备箱缺失。<strong>在泰国炎热气候下这是明显短板：用户在要求更实用的设计，而非更多屏幕。</strong>（L03 的 539–1,640 L 后备厢与 G9L 的 65 L 前备箱，正好回应了这类抱怨的"实用性"诉求）</span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>质疑：</strong>有用户表示马路上几乎看不到 G6 实车，对比 BYD、Neta、Deepal 随处可见，质疑小鹏的销量与交付能力；也有用户对"不打价格战"策略持怀疑态度。<strong>今日 Geely EX5 降至 75.9 万、Forthing 以 69.99 万入场后，"不打价格战"这句话在 Pantip 上的说服力会进一步下降——L03 必须靠可感知的产品差异（尺寸、后备厢、800V）而非价格叙事来回应。</strong></span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Facebook 汽车社群 · 口碑数据截至 9 月 28 日核验</h3>
+        <ul>
+          <li>
+            <span class="text">泰国 EV 相关群组中，G6 讨论集中在<strong>价格对比</strong>——部分用户认为定价偏高（G6 挂牌 118.9 万起，而 <strong>AION UT 已降至 49.99 万起</strong>）。<strong>L03 的 89.9 万起售价会明显改善这一观感：与小鹏自家 G6 差 29 万、与 BYD Sealion 7（109.99 万）低 20 万，「小鹏很贵」的直观印象第一次有了反驳点。</strong></span>
+          </li>
+          <li>
+            <span class="text">有车主分享提车体验，对<strong>XNGP 辅助驾驶</strong>和底盘质感好评，认为高速巡航优于同价位竞品；但抱怨<strong>售后网点少</strong>（在泰约 12 家经销商），服务中心集中在曼谷及周边。<strong>产品线从 2 款扩到 4 款后，这个短板会被放大：车型越多，单店服务负荷越重。</strong></span>
+          </li>
+          <li>
+            <span class="text">品牌认知方面：不少用户仍将小鹏与 Neta、Deepal 归为同一梯队，尚未形成明确的"高端中国 EV"心智。<strong>Mazda CX-6e 以 125.9 万入场后，这一认知差距会被放大成"同样的钱为什么不买日系"的追问——这是需要提前准备答案的问题。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>YouTube 泰国汽车媒体评测 · 口碑数据截至 9 月 28 日核验（L03/G9L 评测尚未上线）</h3>
+        <ul>
+          <li>
+            <span class="text">泰国头部汽车媒体（AutoLifeTH、HeadLight Magazine、Checkraka）的 G6 评测播放量普遍在 <strong>5–15 万次</strong>，低于 BYD Atto 3/Seal 的 30–50 万次（注：2026-08 实测 G6 头部评测已到 36.4 万／26.0 万，差距收窄至约 2.6 倍，本期沿用 9/28 口径未重抓）。</span>
+          </li>
+          <li>
+            <span class="text">评测总体正面：认可<strong>续航</strong>、<strong>充电速度</strong>（800V，10–80% 约 20 分钟）和<strong>智能座舱</strong>；批评点集中在后排空间一般、天幕夏季暴晒、高速胎噪偏大。<strong>L03 的 800V + 5C 快充（G9L 为 540 kW）是唯一能在评测里"一句话讲清"的差异点，11 月媒体试驾窗口应优先安排这两项实测。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Instagram 用户动态 · 口碑数据截至 9 月 28 日核验</h3>
+        <ul>
+          <li>
+            <span class="text">#XpengThailand / #XpengG6 标签量级显著低于 #BYDThailand 与 #MGThailand（精确数量需登录，外部无法核验，此前实测约为 BYD 的 1/5–1/7，本期不写死数字）。</span>
+          </li>
+          <li>
+            <span class="text">晒车帖最常见角度是<strong>前脸与侧面线条</strong>，外观获多数点赞；评论区高频问题为"ราคาเท่าไหร่"（多少钱）、"ศูนย์บริการอยู่ที่ไหน"（服务中心在哪），<strong>说明购买渠道与价格信息差仍在。L03 的明确挂牌价（89.9/98.9/118.9 万）可以直接用来回答第一个问题——这是社媒运营可立即利用的素材。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <div><span class="sentiment-tag">🟡 中性偏正面 · 产品线已补齐，外部挤压同时加剧</span></div>
+          <p><strong>正面信号：</strong>9 月销量 582 辆（+93.4%）、1–9 月注册 4,984 辆（份额 0.9%，品牌第 20），在 BYD/AION/Deepal/Neta 四家同时下滑的月份里逆势接近翻倍；G6 318 辆、X9 264 辆。<strong>产品矩阵已从「2 款车覆盖 119–280 万」变成「4 款车覆盖 90–280 万」，L03 补价格缺口、G9L 补细分空位——内部结构问题基本解决。</strong></p>
+          <br>
+          <p><strong>风险点（本期新增两条外部变量）：</strong></p>
+          <p>⚠️ <strong>税负结构劣势（仍为最高优先级）</strong> — 30% 进口纯电税按「每百万 +20 万」测算：X9 约 51–56 万、G6 约 24–30 万、<strong>L03 约 18–24 万</strong>。<strong>今日 +138% 的进口激增说明同行正在抢在税则前把成本锁死，而小鹏 4 款车全部 CBU、且没有本地组装计划——"别人在抢窗口，我们还在窗口里"</strong></p>
+          <p>⚠️ <strong>【新增】日系"中国供应链 + 日系品牌"范式</strong> — Mazda CX-6e 以 125.9–129.9 万入场，用中国产 CBU + 26.45 英寸 5K 屏直接压在 G6 中高配。<strong>这削弱了小鹏最主要的两个差异点（科技感、性价比），却保留了对手最强的两项（品牌信任、渠道密度）</strong></p>
+          <p>⚠️ <strong>【新增】90 万级从"5 个对手"变成"连续价格带"</strong> — Geely EX5 降至 75.9 万、EM-R 72.9 万、Forthing Friday 69.99 万、AION V 79.99 万、Deepal S05 94.9 万。<strong>L03 的 89.9 万正落在密集区中央，上下被夹，价格对比表上不占优势，只能靠尺寸/后备厢/800V 这些"要试驾才感知"的点</strong></p>
+          <p>⚠️ <strong>价格战正从"降价"转向"金融杠杆"</strong> — DENZA D9 以 0% 利率 60 期攻入高端 MPV，X9 面对的是"低 15–60 万 + 零利息"。<strong>小鹏若只跟价格不跟金融方案，会在月供对比上吃亏</strong></p>
+          <p>⚠️ <strong>渠道承载能力</strong> — 约 12 家经销商、以店中店为主，而车型数从 2 款增至 4 款（含 5.1 米级 D-SUV，对展厅面积与举升机有硬要求）。<strong>G9L 上市前若不解决"能展、能修"的物理条件，会重复 Pantip 上「看不见实车」的抱怨</strong></p>
+          <p>⚠️ <strong>汇率与税负同向恶化</strong> — 泰铢/人民币由 0.1982 回落至 0.1978（−0.17%），L03 折人民币收入两日缩水；同日美元/泰铢升至 33.7871，美元结算零部件成本上行</p>
+          <p>🎯 <strong>本期关键判断</strong> — ① <strong>小鹏的内部问题（产品线缺口）已经解决，但外部环境在同一天发生了两次质变：日系开始借用中国供应链、价格战转向金融杠杆</strong>；② <strong>L03 成败的关键已不在定价，而在"可感知差异"能否在 11 月车展前被讲清——建议把试驾重点锁死在"车身/后备厢尺寸"与"800V 快充时间"两个可当场验证的点上</strong>；③ <strong>G9L 是当前唯一没有直接对标者的产品（5.1 米 6 座），应作为 11 月的主叙事，而不是 L03 的配角</strong>；④ <strong>税负窗口正在关闭：同行抢进口、折扣加码、成本后移，2027 Q1 将同时面对"高成本车 + 已被折扣锚定的价格预期"，建议本周内完成「税负 × 汇率 × 车型」三档矩阵并同步总部</strong>。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  报告生成时间：2026-10-27 08:00（曼谷时间）| 数据来源：AutolifeThailand（1–9 月注册量 555,593 辆、XPENG 4,984 辆、Mazda CX-6e 官方价、Geely EX5 10 月促销、DENZA D9 促销、Forthing Friday BEV 官方价、Lexus ES 350e 官方价、XPENG L03 官方价 10/01、XPENG G9L 11 月入泰、GAC AION UT 直降、GAC 第二工厂 50 亿、smart 系列官方价、EV Board 三档本地化决议、NIO Firefly 降价、BOI/丰田氢能投资）· Best Selling Cars Blog（9 月月度销量 60,110 辆，2026-10-15）· CAR250（Zeekr X MY2026、Isuzu MU-X 2026、BYD 系列调价、Honda eN2）· Autospinn（iCAUR V27 REEV 长测）· Checkraka（车型售价，核验日 2026-09-23）· Matichon（9 月中国纯电进口 +138%，标题级）· Thansettakij（消费税厅 EV3–EV3.5 补贴申领截止期，标题级）· TrueID（EV 市场三重竞争压力，标题级）· Pantip<br>
+  注：销量口径为 9 月月度销量 60,110 辆 / 1–9 月累计 552,637 辆（BSCB），与 Autolife 注册口径 555,593 辆差异源于统计源不同，本报告分别标注、不混用。竞品售价核验日 2026-09-23，本期新增 Mazda CX-6e、DENZA D9、Forthing Friday BEV、Lexus ES 350e 四行，Geely EX5 按官方 10/1–10/31 促销价更新为 759,000–899,000。税负增量（X9 约 51–56 万、G6 约 24–30 万、L03 约 18–24 万泰铢）为按「每 100 万泰铢车价 +20 万税负」的媒体口径线性推算，<strong>非官方报价</strong>，仅用于敏感性分析。「L03 交付起量发生在 10 月之后」为基于 9 月注册构成（318+264=582）的推算，非官方交付口径。人民币折算（L03 约 17.8 万、G6 约 23.5 万、X9 约 50.2 万）按 THB/CNY 0.1978 计算。标题级信息（9 月中国纯电进口 +138%、消费税厅补贴截止期、TrueID 三重压力、GAC 三车型促销全量金额、Leapmotor B03X 参展、长安欧洲出口基地）未取得文章级链接，仅作方向记录，不构成数据引用。汇率为 open.er-api.com 最新截面 2026-10-27 00:02 UTC（USD/CNY 6.6838 ▼−0.08% · USD/THB 33.7871 ▲+0.09% · THB/CNY 0.1978 ▼−0.17%，对比 10/26 的 6.6892 / 33.7569 / 0.1982）。社媒口碑沿用 9/28 核验内容，本期未取得新增社媒数据。
+</div>
+
+</body>
+</html>
