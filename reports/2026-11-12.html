@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-11-12</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.7; margin-bottom: 10px; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; font-size: 14px; }
+  .note { background: #f5f5f5; border-left: 3px solid #9e9e9e; padding: 7px 11px; border-radius: 0 6px 6px 0; margin-bottom: 10px; font-size: 12px; color: #666; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:nth-child(even) td { background: #fcfcfd; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge-down { background: #fce4ec; color: #c62828; }
+  .badge-up { background: #e8f5e9; color: #2e7d32; }
+  .badge-new { background: #e3f2fd; color: #1565c0; }
+  .badge-info { background: #f3e5f5; color: #6a1b9a; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .up { color: #2e7d32; } .down { color: #c62828; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">📅 2026年11月12日（周四）· 今日截面：<strong>XPENG G9L 11/11 泰国上市，官方价 2,399,000 泰铢（单一 ULTRA AWD 版）</strong> + ZEEKR 7X Black Edition 1,799,000 限量 30 辆 + 本田 12 月双车倒计时 · 销量口径：10 月全口径注册量（CAR250 11/4）· 新闻截至 11/12 早间</div>
+  <div class="rate-bar">
+     <div class="rate-item">USD/CNY <span class="rate-val">6.6858</span> <span class="rate-trend" style="color:#ff9090;">▼ -0.28%</span></div>
+     <div class="rate-item">USD/THB <span class="rate-val">33.7226</span> <span class="rate-trend">▲ +0.08%</span></div>
+     <div class="rate-item">THB/CNY <span class="rate-val">0.1983</span> <span class="rate-trend" style="color:#ff9090;">▼ -0.35%</span></div>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="note">⏱️ <strong>今日主线：小鹏自己把「2027 价格悬念」提前回答了一半——G9L 用 2,399,000 的单一顶配定价进场，把「旗舰」做成了一个不需要选配的价格。</strong>11/11 G9L 泰国正式上市：<strong>单一 ULTRA AWD 版本、2,399,000 泰铢</strong>，CBU 中国进口，官方进口商为 <strong>X Mobility</strong>（与 Millennium Group Corporation 合作）。参数上它把「5.1 米 6 座 + 110 kWh + 540 kW 5C」压进了 X9 入门价（2,539,000）以下 <strong>140,000 泰铢</strong>的位置——<u>这是小鹏在泰第一次出现「更大的车、更低的价」</u>，产品梯度需要重排。竞争侧同步加码：<strong>ZEEKR 7X Black Edition 1,799,000、限量 30 辆</strong>（AWD 637 PS、0–100 3.8 秒、800V＋空悬），把 180 万这一格的价格锚点又钉了一次。数据仍沿用 10 月注册量：<strong>53,750 辆、纯电 17,782 辆、渗透率 33.08%</strong>，小鹏 460 辆（G6 252 + X9 208）。汇率本期三条全部小幅走动（USD/CNY 6.6858 ▼、USD/THB 33.7226 ▲、THB/CNY 0.1983 ▼），幅度均在 ±0.5% 内，<u>仍不构成决策变量</u>。</div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <div class="val">2,399,000</div>
+          <div class="lbl">G9L 泰国官方价（泰铢，11/11）</div>
+          <div class="chg">单一 ULTRA AWD 版</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">53,750</div>
+          <div class="lbl">10月注册量（辆，全口径）</div>
+          <div class="chg">BEV 占 33.08%</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">17,782</div>
+          <div class="lbl">10月纯电注册量（辆）</div>
+          <div class="chg">渗透率 33.08%</div>
+        </div>
+        <div class="stat-card">
+          <div class="val">33.08%</div>
+          <div class="lbl">纯电渗透率（10月）</div>
+          <div class="chg">HEV 24.44% · 柴油 24.39%</div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态（11/12 新增：G9L 上市定价 / ZEEKR 7X Black Edition / 本田 12 月双车 / ZEEKR Motor Expo 阵容 / VOYAH DREAM 11/20；沿续：10 月注册量、税率分档）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-new">今日最重要</span> <strong>XPENG G9L 11 月 11 日在泰国正式上市，官方价 2,399,000 泰铢，只有 ULTRA AWD 一个版本（CBU 中国进口，官方进口商 X Mobility เอ็กซ์ โมบิลิตี้，合作方 Millennium Group Corporation）。</strong>核心参数：车身 <strong>5,129 × 1,999 × 1,788 mm</strong>、轴距 <strong>3,100 mm</strong>、<strong>3 排 6 座（2+2+2）</strong>；双电机 <strong>430 kW／585 PS／695 Nm</strong>、0–100 km/h <strong>4.9 秒</strong>；<strong>110 kWh NMC</strong> 电池、<strong>800V</strong> 架构、<strong>5C 超充、DC 峰值 540 kW</strong>、10–80% 约 <strong>12 分钟</strong>、AC 22 kW；续航 <strong>648 km NEDC／553 km WLTP</strong>；<strong>双腔空气悬架＋自适应阻尼＋后轮转向</strong>、21 吋轮圈 265/45 R21；二排 Captain Seats 电动调节、前排 16 点按摩＋Zero-Gravity、Nappa 真皮、四门电吸、电动侧踏板。（Autolife 11/11 官方价页、CAR250 11/11 全规格页）<strong>读法：<u>「单一顶配定价」是小鹏在泰第一次放弃「多档价格梯度」的打法</u>——2,399,000 一刀切，等于把「选配焦虑」换成「配置拉满」的确定性，也把与 X9（2,539,000 起）的内部价差压到 140,000。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/official-price-xpeng-g9l-ev-bev-d-suv-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>ZEEKR 7X Black Edition 泰国上市：1,799,000 泰铢、全泰限量 30 辆，与普通 7X Performance AWD 同价。</strong>全黑内外饰、20 吋黑轮圈、Nappa 黑内饰；AWD 双电机 <strong>637 PS</strong>、0–100 km/h <strong>3.8 秒</strong>、800V 架构＋空气悬架。（CAR250 11/3 正文）<strong>同页关键数据：ZEEKR 7X 在泰上市约一年销量已超 <strong>3,000 辆</strong>，全球累计产量突破 <strong>200,000 辆</strong>。<u>「同价＋限量 30 辆」是典型的稀缺营销：不降价、不伤主价格带，却制造了排队与话题</u>——这正好是小鹏在 180 万这一格最缺的东西：一个不用打折就能讲的「抢手」故事。</strong></span>
+            <a class="src" href="https://www.car250.com/zeekr-7x-black-edition491712.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>ZEEKR 公布 Motor Expo 2026 阵容（12/2–13，Impact 蒙通他尼）：右舵 ZEEKR 7GT 泰国首秀，同场展出 ZEEKR 8X（1,400 PS 级高性能 SUV）、9X 与 009 Grand，配套年终「10,000 Togetherness」 campaign。</strong>官方明确<u>「展出≠确认开卖」</u>，7GT 的价格、版本与交付时间待公布。（CAR250 11/11 正文）<strong>含义：ZEEKR 用「7GT 首秀＋8X/9X 旗舰矩阵」把 Motor Expo 的「技术豪华」叙事位占住，而它手里已有万辆保有量与 009 的 MPV 冠军。<u>小鹏在同一个展期的叙事资源只有 G9L 一款</u>——展台话术必须集中在「5.1 米 6 座 + 12 分钟补能」，不要在车型数量上跟它比。</strong></span>
+            <a class="src" href="https://www.car250.com/zeekr-news-09.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>本田 12 月双车倒计时：All-New Avancier 12/1 泰国首发（D-SUV、定位高于 CR-V、3 排 6–7 座、2.0L＋双电机全混动、车长约 4,960 mm，泰国可能成为区域生产基地）；Honda Alpha 纯电 SUV 12/2 发布（印度生产、出口全球）。</strong>（CAR250 11/11 两篇正文）<strong>两条合起来是日系的年末组合拳：<u>一台不用充电的大三排（Avancier）＋一台纯电 SUV（Alpha）</u>，覆盖「有充电条件」与「没有充电条件」两类家庭客户。Avancier 若定价落在 160–190 万，将直接对上 G9L 的 239.9 万下方与 X9 的 253.9 万——<u>用「无里程焦虑＋日系残值」抢三排客群，是小鹏最难用参数反驳的一击</u>。</strong></span>
+            <a class="src" href="https://www.car250.com/all-new-honda-avancier-2026-14.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">跟踪</span> <strong>VOYAH（东风高端）确认首款车 VOYAH DREAM 于 11 月 20 日公布官方价并亮相，12 月正式开卖；7 座纯电 MPV，AAS Group 独家进口与经销。</strong>（CAR250 11/11 正文）<strong>豪华纯电 MPV 从「009＋D9」两强变成三家以上混战，而 DREAM 是唯一以「MPV 专业品牌」身份入场的玩家。<u>对 X9 的直接压力不在价格，而在身份叙事</u>——X9 的差异化必须锁在纯电平台质感、后轮转向带来的城市灵活性、以及 800V 实际补能，而不是「豪华 MPV」这个已被讲满的标签。</strong></span>
+            <a class="src" href="https://www.car250.com/voyah.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>丰田 Innova Zenix 2026 泰国「加配不加价」：1,379,000 泰铢起，2.0L 混动 201 PS、21.3 km/L，新增多项配置。</strong>（CAR250 正文）<strong>这是日系在 130–150 万这一格的标准动作：<u>不降价、加配置，把「性价比」的定义从「便宜」改成「多用五年不心疼」</u>。它不直接打 G9L，但会截走「想买大三排、又不敢买纯电」的家庭客户——正是 X9/G9L 客群里最犹豫的那一部分。</strong></span>
+            <a class="src" href="https://www.car250.com/toyota-innova-zenix-2026.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">长期变量</span> <strong>小米确认 2028 年进军右舵市场，已在澳大利亚组建团队；报道明确「泰国也有机会引入 SU7 与 YU7」。</strong>（CAR250 11/12 正文）<strong>这不是 2027 的竞争变量，但它是 2028 的定价天花板：<u>小米的进入方式历来是「用一款爆品把整个价格带重定锚」</u>。对现在做 2028 产品规划的人来说，G9L 这一档的溢价空间要在「小米进场前」兑现完。</strong></span>
+            <a class="src" href="https://www.car250.com/xiaomi-su7-yu7-new-11.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">数据复核</span> <strong>10 月全口径注册量 53,750 辆（รย.1+2+3），纯电 17,782 辆、渗透率 33.08%；分燃料 HEV 13,138 辆（24.44%）、柴油 13,110 辆（24.39%）、汽油 6,984 辆（12.99%）、PHEV 2,706 辆（5.03%）；品牌 TOYOTA 17,472、HONDA 5,752、ISUZU 4,186、BYD 3,881、OMODA&JAECOO 3,495、MG 2,412、XPENG 460（第 22）。</strong>（CAR250 11/4 正文，本期二次核对无误）<strong>口径提示：<u>11–12 月的注册量会被「锁旧价」抢购潮抬高，不宜当作需求真实增长</u>；G9L 的交付爬坡通常从次月起量，11 月数据基本不会体现它。</strong></span>
+            <a class="src" href="https://www.car250.com/10-2569-th.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">跟踪</span> <strong>小鹏 G9L REEV AWD Ultra 已在香港开卖（约 299 万泰铢量级，纯电续航 314 km）；同期长安 LUMIN PLUS 在中国上市（251,546 泰铢起、CLTC 301 km）、长安 NEVO Q06 首月交付 10,105 辆。</strong>（CAR250 11/11–11/12 正文）<strong>两条并读的含义：<u>中国厂商正在用「REEV＋低价纯电」两条腿同时压价格带两端</u>，而泰国 2027 年起 BEV 与 REEV 同被纳入 35% 顶格，这个「双动力对冲」在泰国不再成立——<u>产品组合的价值回到「谁的车更贵、谁的税更疼」这个简单算术上</u>。</strong></span>
+            <a class="src" href="https://www.car250.com/xpeng-g9l-reev-awd-ultra.html" target="_blank">CAR250</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向（沿续 11/3 内阁决议 + 11/6 财政部分档口径；本期无新增政策文件）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-down">基准参数</span> <strong>11/3 内阁决议：CBU 进口 BEV 消费税 10%→35%、REEV 15%→35%，2027 年 1 月 1 日生效，适用 ≤10 座乘用车/客车；35% 为「不达标」顶格、10% 为「高本地含量」底档，财政部 11/6 补充为按本地零部件比例在 10–35% 间滑动，并给 3 年调整期。</strong>（CAR250 11/3 正文；分档与过渡期为 MGR Online 11/6 口径，标题级）<strong>对小鹏的直接含义：<u>全系 CBU（L03/G6/X9/G9L）在本地采购比例未公开的情况下，默认落入顶格</u>；而 3 年过渡期把这件事从「一次性资本开支」变成「年度采购比例 KPI」。</strong></span>
+            <a class="src" href="https://www.car250.com/th-vat-new.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">跟踪</span> <strong>配套监管：动力电池拟列为「管制商品」（目标 2027/5 生效）；本地组装纯电亦将开征消费税以封堵「零铢工厂」；日方持续要求对进口 EV 设配额。</strong>（10/27–11/7 系列报道，标题级）<strong>三条叠加后的 2027 图景：<u>税率档位（贵不贵）＋电池认证（能不能卖）＋配额（能卖多少）</u>三道闸门。CBU 品牌面对的不再是单一成本问题。</strong></span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">跟踪</span> <strong>EV 促进第三阶段（EV 4.0）在研；EV3.0/3.5 补贴端设定申领截止期。</strong>（Bangkok Post 11/5，标题级）<strong>组合判断不变：<u>2026 Q4 是「旧税率＋旧补贴」同时有效的最后一段</u>，这也是 Motor Expo 前后最有效的成交话术——比任何配置对比都直接。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测（open.er-api.com 实时截面 2026-11-12 00:02 UTC；月内基准 10/7）</h3>
+        <div class="highlight">💵 USD/CNY <strong>6.6858</strong>（月内 <span class="down">▼ -0.28%</span>）| USD/THB <strong>33.7226</strong>（月内 <span class="up">▲ +0.08%</span>）| THB/CNY <strong>0.1983</strong>（月内 <span class="down">▼ -0.35%</span>）</div>
+        <ul>
+          <li>
+            <span class="text"><strong>美元/人民币 6.6858（较 11/10 截面 6.6798 小幅上行 +0.09%；10/7 基准 6.7046，月内 -0.28%）：</strong>仍在 6.68–6.69 窄幅区间。<strong>对以人民币核算泰国收入的影响可忽略</strong>——泰国毛利的主要变量是税率与销量，不是汇率。</span>
+          </li>
+          <li>
+            <span class="text"><strong>美元/泰铢 33.7226（较 11/10 的 33.5588 上行 +0.49%，泰铢转弱；10/7 基准 33.6950，月内 +0.08%）：</strong>本期唯一有方向性变化的一条。<strong>泰铢走弱对 CBU 进口方是小幅逆风</strong>：以美元结算的整车与零部件折算泰铢成本上升。<u>但量级（+0.49%）远小于 2027 年 20–25pp 的税率冲击——不要用汇率去解释或对冲价格决策</u>。</span>
+          </li>
+          <li>
+            <span class="text"><strong>泰铢/人民币 0.1983（由 6.6858 ÷ 33.7226 计得；11/10 为 0.1990，月内 -0.35%）：</strong><strong>折算参考（按 0.1983）：L03 的 89.9 万泰铢约合 17.83 万人民币、G6 的 118.9 万约合 23.58 万、G9L 的 239.9 万约合 47.57 万、X9 的 253.9 万约合 50.35 万、DENZA D9 的 219.99 万约合 43.62 万</strong>（均取入门/官方价）。</span>
+          </li>
+          <li>
+            <span class="text"><strong>影响与建议：</strong>三条本期均小幅走动、方向不一致，<strong>仍不构成决策变量</strong>。真正的三个变量是：<strong>① 本地含量比例（决定税率档位）；② 官方进口条件细则与配额（决定销量上限）；③ 年末锁旧价抢购带来的 2027 Q1 需求真空</strong>。汇率层面只保留「Q4 订单尽快结汇」一个动作。</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品官方售价（价格核验：Checkraka 2026-09-23 快照 + CAR250/Autolife 10–11 月发布；本期新增 ZEEKR 7X Black Edition、丰田 Innova Zenix、本田 City 2026）</h3>
+        <div class="note">下表为泰国公开挂牌价区间（含 2026/2025 款在售版本）。<strong>本期新增三行：ZEEKR 7X Black Edition（1,799,000／限 30 辆）、丰田 Innova Zenix 2026（1,379,000 起，加配不加价）、本田 City 2026（599,000–779,000）。</strong>⚠️ <strong>重要提示：以下均为 2026 年现行税率（CBU BEV 10%）下的挂牌价；在 10–35% 分档税率下，本地含量低的 CBU 车型 2027 年起将被重定价，本表不预示 2027 年价格。</strong>促销以官方公告为准，未取得公开确认的优惠幅度一律不标注。</div>
+        <table>
+          <tr><th>品牌 / 车型</th><th>官方售价（泰铢）</th><th>营销政策 / 版本备注</th><th>来源</th></tr>
+          <tr><td><strong>ZEEKR 7X Black Edition</strong> <span class="badge badge-new">本期新增</span></td><td>1,799,000</td><td>限量 30 辆（全泰），与 7X Performance AWD 同价；全黑内外饰、20 吋黑轮圈、Nappa；637 PS、0–100 3.8 s、800V＋空悬；7X 在泰累计超 3,000 辆</td><td><a href="https://www.car250.com/zeekr-7x-black-edition491712.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Toyota Innova Zenix 2026</strong> <span class="badge badge-new">本期新增</span></td><td>1,379,000 起</td><td>加配不加价：2.0L 混动 201 PS、21.3 km/L，新增多项配置；守 130–150 万三排家庭客户</td><td><a href="https://www.car250.com/toyota-innova-zenix-2026.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Honda City 2026</strong> <span class="badge badge-new">本期新增</span></td><td>599,000 – 779,000</td><td>小改款；入门轿车价格带下探至 60 万内，与中系 A 级纯电正面对撞</td><td><a href="https://www.car250.com/new-honda-city-th-2026-26-7.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>DENZA D9 新一代</strong> <span class="badge badge-down">11/8 上市</span></td><td>2,199,900 / 2,599,900</td><td>Premium FWD 219.99 万、Performance AWD 259.99 万；115 kWh 二代刀片、1000V、10–97% 充 9 分钟、557 PS、7 座；<strong>官方称 2026 交车特价，2027 随新税率上调</strong></td><td><a href="https://www.autospinn.com/2026/11/new-denza-d9-153200" target="_blank">Autospinn</a></td></tr>
+          <tr><td><strong>ZEEKR 009</strong> <span class="badge badge-new">纯电MPV冠军</span></td><td>2,499,000 – 2,899,000</td><td>泰国纯电 MPV 销量冠军；品牌累计交付破 10,000 辆；Motor Expo 将展 009 Grand</td><td><a href="https://www.car250.com/zeekr-10000.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>VOYAH DREAM</strong> <span class="badge badge-new">11/20 定价</span></td><td>待公布（12 月开卖）</td><td>7 座纯电 MPV，AAS Group 独家代理；车长 5,325 mm／轴距 3,200 mm；豪华 MPV 赛道第三家</td><td><a href="https://www.car250.com/voyah.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Zeekr 7X LR RWD</strong> <span class="badge badge-info">实测对象</span></td><td>1,599,000</td><td>100 kWh 麒麟电池、800V、4C；416 hp、0–100 6.04 s；压 G6 高配与 X9 入门之间</td><td><a href="https://www.headlightmag.com/zeekr-7x-long-range-rwd-acceleration-consumption-test/" target="_blank">Headlightmag</a></td></tr>
+          <tr><td><strong>Leapmotor B03X</strong></td><td>499,000 – 569,000</td><td>10/31 上市，CBU 中国进口，B-SUV，NEDC 345–435 km；<strong>纯 CBU，分档税率下处最不利档</strong></td><td><a href="https://autolifethailand.tv/official-price-leapmotor-b03x-ev-bev-b-suv-thailand/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>BYD Atto 1</strong> <span class="badge badge-down">直降6万</span></td><td>399,900</td><td>10 月直降 60,000；全泰 EV 价格锚点下探 40 万以下</td><td><a href="https://www.car250.com/byd-atto-1-new-th-2026-18.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>BYD M6</strong> <span class="badge badge-down">直降5万</span></td><td>799,900</td><td>7 座纯电 MPV，直降 50,000 + 终身质保；530 km</td><td><a href="https://www.car250.com/byd-m6-mpv-th-2026-10.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>BYD Sealion 7</strong> <span class="badge badge-down">直降10万</span></td><td>1,099,900</td><td>直降 100,000 + 终身质保；Premium 版，压向 G6 高配</td><td><a href="https://www.car250.com/byd-sealion-7-th-2026-11.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>BYD Sealion 6 DM-i</strong> <span class="badge badge-down">直降8万</span></td><td>799,900</td><td>插混，Dynamic 版直降 80,000</td><td><a href="https://www.car250.com/new-byd-sealion-6-dm-i-plug-in-hybrid-2026-10-1.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Geely EX2</strong></td><td>429,990 – 489,990</td><td>2026 款；全球累计销量破 100 万辆（2 年），规模成本支撑价格战</td><td><a href="https://www.checkraka.com/car/geely/ex2/1461830/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Geely EX5</strong> <span class="badge badge-down">直降5万</span></td><td>759,000 – 899,000</td><td>官方直降 50,000（原 809,000 起）；与 L03 入门版同价双选</td><td><a href="https://autolifethailand.tv/official-price-discount-geely-ex5-ev-bev-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Zeekr X MY2026</strong></td><td>899,000 – 1,069,000</td><td>MY2026 官方降价 300,000；与 L03 入门版（899,000）正面同价</td><td><a href="https://www.car250.com/zeekr-x-2026-th-450.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>AION V 602 Luxury</strong> <span class="badge badge-down">直降10万</span></td><td>799,900</td><td>602 Luxury 官方降价 100,000；500 Premium 仍在 899,900 区间</td><td><a href="https://www.car250.com/gac-aion-v-602-11.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>GAC AION UT</strong> <span class="badge badge-down">直降2万</span></td><td>499,900 – 599,900</td><td>ส่วนลด 20,000（原 549,900–649,900）；与 Leapmotor B03X 正撞</td><td><a href="https://autolifethailand.tv/official-price-discount-gac-aion-ut-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Hyptec HT</strong></td><td>1,624,000</td><td>620 Luxury（AION 渠道）</td><td><a href="https://www.checkraka.com/car/aion/hyptec/1460633/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>NIO Firefly</strong> <span class="badge badge-down">直降4万</span></td><td>759,000 – 799,000</td><td>Comfort 799,000→759,000；质保 5 年 15 万 km、电池 8 年 16 万 km</td><td><a href="https://autolifethailand.tv/official-price-nio-firefly-ev-bev-thailand-oct-2026/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Deepal S05</strong></td><td>949,000 – 999,000</td><td>REEV Plus/Max、Max Long Range；L03 价格带直接对手</td><td><a href="https://www.checkraka.com/car/deepal/so5/1461636/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>Jaecoo 5 EV</strong></td><td>569,900 – 649,900</td><td>Max+/Ultra，401–480 km NEDC；9 月新车型销量冠军（2,301 辆）</td><td><a href="https://www.car250.com/jaecoo-5-ev-max-2026-12.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Chery Q EV</strong></td><td>449,900 – 519,900</td><td>400 km NEDC；与 Leapmotor B03X 499,000 起正面对撞</td><td><a href="https://www.car250.com/chery-q-ev-2026-07.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Mazda CX-6e</strong></td><td>1,259,000 – 1,299,000</td><td>纯电 SUV，中国 CBU 进口；日系首个中国产纯电，正压 G6 中高配</td><td><a href="https://autolifethailand.tv/official-price-mazda-cx-6e-thailand/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>smart #3</strong></td><td>1,549,000</td><td>纯电 SUV Coupé，455 km；正对 G6 高配（1,489,000）上沿</td><td><a href="https://autolifethailand.tv/official-price-smart-3-ev-bev-suv-coupe-thailand-thonburi-mercedes-benz/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>smart #5</strong></td><td>1,749,000</td><td>纯电 Boxy C-SUV，590 km；卡在 G6 顶配与 X9 低配之间</td><td><a href="https://autolifethailand.tv/official-price-smart-5-ev-bev-suv-boxy-thailand-thonburi-mercedes-benz/" target="_blank">Autolife</a></td></tr>
+          <tr><td><strong>Honda eN2</strong> <span class="badge badge-down">直降20万</span></td><td>1,229,000</td><td>纯电 SUV，530 km NEDC；直降 200,000，日系对中系价格战的正面回应</td><td><a href="https://www.car250.com/new-honda-th-en2-2026-10.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Tesla Model 3</strong></td><td>1,149,000 – 1,599,000</td><td>2026 Standard / Premium Long Range；全系 CBU，同受分档税率影响</td><td><a href="https://www.checkraka.com/car/tesla/model-3/1461668/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>MG S5 EV</strong></td><td>779,900 – 899,900</td><td>X / Plus V+ / V 三版本；MG 泰国本地组装，税率结构优于 CBU</td><td><a href="https://www.checkraka.com/car/mg/s5-ev/1461095/" target="_blank">Checkraka</a></td></tr>
+          <tr><td><strong>iCAUR V27 REEV</strong> <span class="badge badge-down">涨价3万</span></td><td>999,900 – 1,289,900</td><td>34.3 kWh、纯电 150 km NEDC、综合 1,000 km；部分版本价格上调 30,000；REEV 税率 15%→35%</td><td><a href="https://www.car250.com/icaur-v27-reev-th-new-2026-04.html" target="_blank">CAR250</a></td></tr>
+          <tr><td><strong>Neta V</strong></td><td>549,000</td><td>入门 EV，价格攻击性强但品牌 9 月同比 −93.0%</td><td><a href="https://www.checkraka.com/car/neta/v/1456817/" target="_blank">Checkraka</a></td></tr>
+        </table>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态（11/12 新增：ZEEKR 7X Black Edition＋Motor Expo 阵容、本田 12 月双车、VOYAH DREAM 定价日、丰田/本田加配不加价；沿续：D9 特价、日系配额诉求）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>ZEEKR 用「限量 30 辆、同价 1,799,000」的 Black Edition 做了一次不降价的促销，并拿到 7X 在泰累计超 3,000 辆、全球 200,000 辆的规模背书。</strong>（CAR250 11/3 正文）<strong>竞争读法：<u>这是「稀缺性营销」对「价格战」的一次降维——BYD/Geely/AION 在 40–110 万段打直降，ZEEKR 在 180 万段用限量制造排队</u>。<u>对 G9L 的含义很具体：2,399,000 的车如果只讲「配置值」，就会被 1,799,000 的 7X Black 用「同样的钱、更便宜的入场券、还抢不到」比下去</u>——G9L 必须讲「6 座 + 12 分钟补能 + 后轮转向」这些 7X 给不了的东西。</strong></span>
+            <a class="src" href="https://www.car250.com/zeekr-7x-black-edition491712.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>ZEEKR 拿下 Motor Expo 2026（12/2–13）的「技术豪华」叙事：右舵 7GT 泰国首秀，同场 8X（1,400 PS 级）、9X、009 Grand 全矩阵，配「10,000 Togetherness」年终 campaign。</strong>（CAR250 11/11 正文）<strong>展览层面的竞争往往决定「谁被写进媒体标题」：<u>ZEEKR 有 4 款车＋首秀＋万辆里程碑，小鹏只有 G9L 一款</u>。建议小鹏的展台资源不要摊薄，把「泰国第一台 5.1 米 6 座纯电 + 540 kW」做成唯一记忆点，并把试驾排期做满。</strong></span>
+            <a class="src" href="https://www.car250.com/zeekr-news-09.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>本田 12 月双车：Avancier（12/1，D-SUV 三排 6–7 座、2.0L 双电机全混动、约 4,960 mm）＋ Alpha 纯电 SUV（12/2，印度产出口全球）。</strong>（CAR250 11/11 正文）<strong>这是日系年末最完整的一次组合：<u>用 HEV 大三排接住「不敢买纯电」的家庭，用 Alpha 接住「想买纯电但预算有限」的客户</u>。对 X9/G9L 的真实威胁是<u>「同一个客户、同一笔预算、两个都不需要充电桩焦虑的选项」</u>——这在泰国是决定性优势。</strong></span>
+            <a class="src" href="https://www.car250.com/all-new-honda-avancier-2026-14.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>VOYAH DREAM 定档 11/20 公布官方价、12 月开卖（7 座纯电 MPV、AAS Group 独家进口）。</strong>（CAR250 11/11 正文）<strong>豪华纯电 MPV 形成 009（2,499,000）/ D9（2,199,900）/ DREAM（待定）三强，X9（2,539,000）落在最贵的一端。<u>定价日 11/20 是 X9 的观察窗口：若 DREAM 定在 210–230 万，X9 将同时被 D9 与 DREAM 两头夹住</u>，只剩「6 座/7 座布局差异」与品牌力可讲。</strong></span>
+            <a class="src" href="https://www.car250.com/voyah.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">今日新增</span> <strong>日系「加配不加价」成为标准动作：丰田 Innova Zenix 2026 维持 1,379,000 起、追加配置（2.0L 混动 201 PS）；本田 City 2026 定价 599,000–779,000。</strong>（CAR250 正文）<strong>读法：<u>日系不打价格战，改打「配置通胀」——用同样的钱给更多东西，把「便宜」的定义从标签价换成持有成本</u>。这与中系的「直降 5–10 万」形成两套完全不同的价值语言，而泰国消费者对后者的敏感度正在被反复教育。</strong></span>
+            <a class="src" href="https://www.car250.com/toyota-innova-zenix-2026.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">沿续</span> <strong>DENZA D9 以「2026 交车特价、2027 随税率上调」双段定价（2,199,900 / 2,599,900），BYD 同步在泰投 3 亿泰铢建 FLASH CHARGING 站网（1,500 kW 级）。</strong>（Autospinn 11/8、CAR250 正文）<strong>G9L 上市后这条更值得重读：<u>D9 比 G9L 便宜 199,100 泰铢，且已有 9 分钟补能与在建站网；G9L 的 12 分钟（10–80%）在数字上不占优</u>。G9L 的可守阵地是「6 座 SUV 的车身形态＋空悬＋后轮转向」带来的驾驶质感，而不是补能速度。</strong></span>
+            <a class="src" href="https://www.autospinn.com/2026/11/new-denza-d9-153200" target="_blank">Autospinn</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">价格监控</span> <strong>本期竞品挂牌价新增三条（7X Black Edition 1,799,000／Innova Zenix 1,379,000 起／Honda City 599,000–779,000），另 iCAUR V27 部分版本上调 30,000；其余沿用 9/23–11/10 核验结果。</strong>需盯的窗口是 Motor Expo（12/2–13）期间的年末金融方案——<u>泰国车市的真实成交价通常在展会期才落地，挂牌价只是上限</u>。</span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">长期变量</span> <strong>小米确认 2028 年进右舵市场（澳洲已组队），报道点名泰国可能引入 SU7 / YU7。</strong>（CAR250 11/12 正文）<strong>含义：<u>2028 年这一档的价格锚会被重设</u>。所有 200 万以上的纯电产品，其溢价窗口就是「小米进场之前」这两年——这直接支持「G9L 现在就要把量做起来」的判断，而不是等 2027 税制明朗。</strong></span>
+            <a class="src" href="https://www.car250.com/xiaomi-su7-yu7-new-11.html" target="_blank">CAR250</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车·社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>📈 产品线与定价动作（G9L 上市 2026-11-11 官方价 / 10 月注册 2026-11-04 / L03 官方价 2026-10-01 / 税率口径 2026-11-06）</h3>
+        <ul>
+          <li>
+            <span class="text"><span class="badge badge-new">今日最重要</span> <strong>G9L 泰国上市：2,399,000 泰铢、单一 ULTRA AWD 版、CBU 中国进口（进口商 X Mobility／Millennium Group）。</strong>产品力清单：<strong>5,129 × 1,999 × 1,788 mm、轴距 3,100 mm、2+2+2 六座</strong>；430 kW／585 PS／695 Nm、0–100 4.9 s；110 kWh NMC、800V、5C、DC 540 kW、10–80% 约 12 分钟；648 km NEDC／553 km WLTP；双腔空悬＋自适应阻尼＋后轮转向；21 吋 265/45；二排 Captain Seats 电动、前排 16 点按摩＋Zero-Gravity、Nappa、四门电吸、电动侧踏板、65 L 前备箱。（Autolife 11/11 官方价页、CAR250 11/11 规格页）<strong>定价读法：<u>2,399,000 比 X9 入门（2,539,000）低 140,000，比 D9 高 199,100，比 009 低 100,000</u>。这是小鹏在泰第一次「更大的车卖更低的价」——短期是抢量的利器，中期必须防两件事：① X9 的 208 辆/月被自己吸走；② 媒体把「G9L 比 X9 便宜」写成「X9 定价过高」。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/official-price-xpeng-g9l-ev-bev-d-suv-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-down">结构判断</span> <strong>「单一顶配」的双面性：好的一面是把「配置拉满」变成不需要解释的卖点，销售只需回答「要不要」；风险的一面是<u>没有入门版接住 180–200 万预算的客户</u>，而这正好是 7X Black（1,799,000）与 Avancier（预计 160–190 万）最密集的一段。</strong><strong>建议动作：<u>用金融方案而不是低价版本来覆盖这一段</u>——更长分期、更高尾款比例、或以旧换新补贴，把月供拉进 180 万级客户的承受区间，避免为「补一个低价版本」而破坏「旗舰不打折」的定价纪律。</strong></span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">数据核验</span> <strong>10 月注册：XPENG 品牌 460 辆（品牌第 22），G6 252 + X9 208，两款合计正好 460，L03 仍未形成可辨识注册量。</strong>横向同月：ZEEKR 542 辆、AION HYPTEC HT 145 辆、DENZA 73 辆、NIO 4 辆。（CAR250 11/4 正文）<strong>含义：<u>G9L 的 11 月交付大概率是个位数到低两位数（上市 11/11、月底才进 Motor Expo），真正的量在 12 月与 2027 Q1</u>——不要用 11 月数字评判这款车。</strong></span>
+            <a class="src" href="https://www.car250.com/10-2569-th.html" target="_blank">CAR250</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">价格梯度</span> <strong>现售四车价格带：L03 899,000 / 989,000 / 1,189,000 · G6 1,189,000 起 · G9L 2,399,000 · X9 2,539,000 起。</strong><strong>问题在 119 万到 239 万之间的「120 万空档」：<u>G6 顶配与 G9L 之间没有产品，这一段正是 ZEEKR 7X（1,599,000–1,799,000）、smart #3/#5（154.9–174.9 万）、Mazda CX-6e（125.9–129.9 万）最密集的区间</u>。MONA L05（中国 10/29 上市、约 86 万起）若进泰国，补的是下方而不是这里——这个空档需要产品规划层面回答，不是营销能解决的。</strong></span>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-new">渠道叙事</span> <strong>G9L 的官方进口商首次明确写为 X Mobility（เอ็กซ์ โมบิลิตี้），合作方 Millennium Group Corporation——这是小鹏在泰渠道结构的一次显性化。</strong>（Autolife 11/11 官方价页）<strong>含义：<u>「谁在卖、谁负责售后」这个问题在泰国是高敏问题</u>（Pantip 上「ศูนย์บริการอยู่ที่ไหน」是高频评论）。把进口商与集团名字公开写进官方资料，本身就是对「售后靠不靠得住」质疑的正面回应——建议把这个信息做成渠道物料，而不只是放在参数页。</strong></span>
+            <a class="src" href="https://autolifethailand.tv/official-price-xpeng-g9l-ev-bev-d-suv-thailand/" target="_blank">Autolife</a>
+          </li>
+          <li>
+            <span class="text"><span class="badge badge-info">政策暴露</span> <strong>G9L 全系 CBU、无本地组装、本地采购比例未公开；在 10–35% 分档税率下默认落顶格，3 年过渡期是唯一缓冲。</strong><strong>本期新增的具体压力：<u>G9L 是价格绝对值最高的车型（2,399,000），顶格税率下的税额绝对值也最大</u>——同样 +25pp，对 89.9 万的 L03 是 22 万级，对 G9L 是 60 万级。这意味着 2027 年 G9L 的涨价压力在绝对值上最痛，产品沟通必须提前准备「税后价区间」的说法。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛）· 口碑数据截至 9 月 28 日核验（本期未取得新增帖文）</h3>
+        <ul>
+          <li>
+            <span class="text"><strong>正面：</strong>用户认可 G6 的外观设计与软件能力（"เด่นสุดๆในเรื่อง SW"），有用户评价"รถสวยจริง อยากได้ X9"（车真好看，想要 X9）；部分用户认同小鹏不卷价格、以创新与质价比竞争的路线。<strong>G9L 上市后，论坛讨论焦点预计从「设计」转向「239.9 万值不值」——这是小鹏在泰第一次面对「旗舰定价」的公开质询。</strong></span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>负面/批评：</strong>多名用户吐槽 G6 配置缺陷——全景玻璃天幕无电动遮阳帘、前排中控台无储物空间、前备箱缺失。<strong>G9L 的规格页正好逐条回应了这些：电动遮阳帘（ม่านบังแดดหลังคาไฟฟ้า）、65 L 前备箱、二排独立 Captain Seats。这是把「用户抱怨清单」直接变成「改款清单」的正面案例，建议在社媒上把这三项做成对比图。</strong></span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+          <li>
+            <span class="text"><strong>质疑：</strong>有用户表示马路上几乎看不到 G6 实车，对比 BYD、Neta、Deepal 随处可见，质疑小鹏的销量与交付能力；也有用户对"不打价格战"策略持怀疑态度。<strong>G9L 的 239.9 万定价会强化这一质疑的一半（贵），同时削弱另一半（终于有旗舰了）。<u>破解方式只有一个：让车出现在路上</u>——交付节奏与试驾覆盖比任何文案都有效。</strong></span>
+            <a class="src" href="https://pantip.com/topic/43698181" target="_blank">Pantip</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Facebook 汽车社群 · 口碑数据截至 9 月 28 日核验</h3>
+        <ul>
+          <li>
+            <span class="text">泰国 EV 群组中 G6 讨论集中在<strong>价格对比</strong>——部分用户认为定价偏高（G6 挂牌 118.9 万起，而 <strong>AION UT 已降至 49.99 万起、Leapmotor B03X 499,000 起</strong>）。<strong>G9L 的 239.9 万会面对同一套逻辑的放大版：社群会立刻拿 D9（219.99 万，7 座、9 分钟补能）与 009（249.9 万，MPV 冠军）做三方对比。<u>预设回答应该是「6 座 SUV 的车身形态与空悬/后轮转向带来的驾驶质感」，而不是参数表对撞。</u></strong></span>
+          </li>
+          <li>
+            <span class="text">有车主分享提车体验，对<strong>XNGP 辅助驾驶</strong>和底盘质感好评，认为高速巡航优于同价位竞品；但抱怨<strong>售后网点少</strong>（在泰约 12 家经销商），服务中心集中在曼谷及周边。<strong>产品线从 2 款扩到 4 款（含 5.1 米 D-SUV，对举升机与展厅面积有硬要求）后，这个短板会被放大——G9L 的空悬与后轮转向是需要专门工位与培训的配置。</strong></span>
+          </li>
+          <li>
+            <span class="text">品牌认知方面：不少用户仍将小鹏与 Neta、Deepal 归为同一梯队，尚未形成明确的"高端中国 EV"心智。<strong>G9L 是纠正这个认知最好的一次机会：<u>239.9 万的价格本身就在声明「我不是那一档」</u>——但价格声明需要产品体验支撑，试驾转化率是关键指标。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>YouTube 泰国汽车媒体评测 · 口碑数据截至 9 月 28 日核验（G9L 评测尚未上线）</h3>
+        <ul>
+          <li>
+            <span class="text">泰国头部汽车媒体（AutoLifeTH、HeadLight Magazine、Checkraka）的 G6 评测播放量普遍在 <strong>5–15 万次</strong>，低于 BYD Atto 3/Seal 的 30–50 万次（注：2026-08 实测 G6 头部评测已到 36.4 万／26.0 万，差距收窄至约 2.6 倍，本期沿用 9/28 口径未重抓）。</span>
+          </li>
+          <li>
+            <span class="text">评测总体正面：认可<strong>续航</strong>、<strong>充电速度</strong>（800V，10–80% 约 20 分钟）与<strong>智能座舱</strong>；批评点集中在后排空间一般、天幕夏季暴晒、高速胎噪偏大。<strong>G9L 恰好是唯一能在评测里「一句话讲清差异」的产品（5.1 米 6 座 + 540 kW + 12 分钟），且它把「天幕遮阳帘」这个被点名的问题修掉了。<u>媒体试驾资源应 100% 优先给 G9L，且优先给「家庭长途」场景，而不是零百加速</u>。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Instagram 用户动态 · 口碑数据截至 9 月 28 日核验</h3>
+        <ul>
+          <li>
+            <span class="text">#XpengThailand / #XpengG6 标签量级显著低于 #BYDThailand 与 #MGThailand（精确数量需登录，外部无法核验，此前实测约为 BYD 的 1/5–1/7，本期不写死数字）。</span>
+          </li>
+          <li>
+            <span class="text">晒车帖最常见角度是<strong>前脸与侧面线条</strong>，外观获多数点赞；评论区高频问题为"ราคาเท่าไหร่"（多少钱）、"ศูนย์บริการอยู่ที่ไหน"（服务中心在哪），<strong>说明购买渠道与价格信息差仍在。G9L 上市期是拉高标签量级最自然的窗口——二排 Captain Seats 与电动侧踏板是天然的「开箱内容」素材。</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <div><span class="sentiment-tag">🟡 中性偏正面 · 产品力首次具备「旗舰说服力」，但定价纪律与内部蚕食是新的两个风险</span></div>
+          <p><strong>正面信号：</strong>G9L 以 <strong>2,399,000</strong> 上市，单一 ULTRA AWD 版把「5,129 mm／3,100 mm 轴距／2+2+2 六座／110 kWh／800V 5C 540 kW／双腔空悬＋后轮转向」一次给满——这是小鹏在泰产品力的最高点，也是第一次有一款车能在参数上压制 D9 与 009 的单项优势（补能、空间、底盘）。10 月注册 460 辆（G6 252 + X9 208）、9 月 582 辆（+93.4%）、1–9 月累计 4,984 辆（份额 0.9%，品牌第 20）仍为有效基线；产品矩阵从「2 款覆盖 119–280 万」变成「4 款覆盖 90–280 万」。<strong>本期最关键的正向变化是「定价确定性」：单一顶配＋明码 239.9 万，把「小鹏到底想卖多少钱」这个长期模糊的问题一次回答清楚。</strong></p>
+          <br>
+          <p><strong>风险点（本期按优先级重排）：</strong></p>
+          <p>⚠️ <strong>【最高优先级】本地含量归零风险 = 税率顶格风险</strong> — G9L 仍是 CBU、无组装厂、本地采购比例未公开，2027 年默认落 35% 顶格；而它是价格绝对值最高的车型，<u>同样 +25pp 的税额绝对值最大（60 万级）</u>，涨价压力最痛</p>
+          <p>⚠️ <strong>【新增】G9L 与 X9 的内部蚕食</strong> — G9L（2,399,000）比 X9 入门（2,539,000）低 140,000，且尺寸接近（5,129 vs 5,310 mm）、座位更少但配置更高。<u>X9 的 208 辆/月是当前第二大销量来源，若客户被 G9L 吸走，品牌总量不会增长，只会换来更低单价</u>——需要明确的「6 座 SUV vs 7 座 MPV」话术分界</p>
+          <p>⚠️ <strong>【新增】120 万价格空档</strong> — G6 顶配（1,489,000 量级）与 G9L（2,399,000）之间无产品，而这一段聚集了 7X（1,599,000–1,799,000）、smart #3/#5（1,549,000–1,749,000）、Mazda CX-6e（1,259,000–1,299,000）——<u>这是竞品最密集、小鹏最空的一段</u></p>
+          <p>⚠️ <strong>补能数字不再领先</strong> — G9L 的 12 分钟（10–80%）对上 D9 的 9 分钟（10–97%）与 BYD 在建的 1,500 kW 站网，<u>「快」这个话术已经守不住，要改讲「12 分钟 + 后轮转向 + 空悬」的综合体验</u></p>
+          <p>⚠️ <strong>Q4 抢购潮会制造 2027 Q1 需求真空</strong> — 订单前置意味着 Q1 数据难看；G9L 的量产爬坡正好撞上这段真空，需提前向总部说明「政策脉冲＋新车爬坡」的双重口径</p>
+          <p>⚠️ <strong>渠道承载与能见度</strong> — 约 12 家经销商、以店中店为主；G9L 的空悬与后轮转向需要专用工位与培训，服务能力若不跟上，「看不见实车 + 修不了」会同时出现</p>
+          <p>🎯 <strong>本期关键判断</strong> — ① <strong>G9L 的 2,399,000 是一次「用配置换确定性」的定价：短期抢量有效，但要立刻建立与 X9 的话术分界，否则品牌总量不增、单价下降</strong>；② <strong>单一顶配意味着放弃 180–200 万客群，必须用金融方案（长分期/高尾款/置换补贴）补位，而不是加一个低价版本</strong>；③ <strong>Motor Expo（12/2–13）是小鹏今年最后一个高密度曝光窗口，且对手是「4 款车＋首秀＋万辆」的 ZEEKR，资源必须集中在一个记忆点上</strong>；④ <strong>本地含量必须变成年度 KPI 并对外可答——G9L 是税额绝对值最大的车型，这个问题会被记者与渠道第一个问到</strong>；⑤ <strong>Pantip 的三条老抱怨（遮阳帘/前备箱/储物）在 G9L 上已修，应该主动做成对比内容，这是成本最低的口碑反转素材</strong>。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  报告生成时间：2026-11-12 08:00（曼谷时间）| 本期新增：<strong>XPENG G9L 11/11 泰国上市，官方价 2,399,000 泰铢、单一 ULTRA AWD 版（CBU 中国进口，进口商 X Mobility／Millennium Group）</strong>（Autolife 11/11 官方价页 https://autolifethailand.tv/official-price-xpeng-g9l-ev-bev-d-suv-thailand/；CAR250 11/11 全规格页）· <strong>ZEEKR 7X Black Edition 1,799,000、全泰限量 30 辆（637 PS／3.8 s／800V＋空悬），7X 在泰累计超 3,000 辆、全球 200,000 辆</strong>（CAR250 11/3 正文）· <strong>ZEEKR Motor Expo 2026（12/2–13）阵容：右舵 7GT 泰国首秀＋8X／9X／009 Grand</strong>（CAR250 11/11 正文）· <strong>本田 12 月双车：Avancier 12/1（D-SUV 三排、2.0L 双电机全混动）、Alpha 12/2（印度产纯电 SUV）</strong>（CAR250 11/11 正文）· <strong>VOYAH DREAM 11/20 公布官方价、12 月开卖（7 座纯电 MPV，AAS Group）</strong>（CAR250 11/11 正文）· 丰田 Innova Zenix 2026 加配不加价 1,379,000 起（CAR250）· 本田 City 2026 599,000–779,000（CAR250）· 小米 2028 进右舵市场、泰国或引入 SU7/YU7（CAR250 11/12）· 小鹏 G9L REEV AWD Ultra 香港开卖（CAR250）· 长安 LUMIN PLUS 251,546 泰铢起／NEVO Q06 首月交付 10,105 辆（CAR250）<br>
+  沿用项：11/3 内阁决议——CBU 进口 BEV 消费税 10%→35%、REEV 15%→35%，2027/1/1 生效（CAR250 11/3 正文）· 财政部 11/6 明确按本地零部件比例在 10–35% 间分档、给 3 年调整期（MGR Online 11/6，标题级）· 日方要求进口 EV 配额（Thansettakij 11/6、Nation 11/7，标题级）· 动力电池拟列管制商品（10/27，标题级）· EV 4.0 在研（Bangkok Post 11/5，标题级）· BYD–REVER 表态支持 35% 并宣布泰厂满产（Autolife 11/9 正文）· DENZA D9 2,199,900／2,599,900（Autospinn 11/8 正文）· ZEEKR 泰国交付破 10,000 辆（Autospinn 11/8 正文）· 10 月全口径注册量 53,750 辆 / 纯电 17,782 辆 / 渗透率 33.08% / 品牌与车型榜 / XPENG 460 辆（CAR250 11/4 正文）· Checkraka 车型售价（核验 2026-09-23）· Pantip / Facebook / YouTube / Instagram 口碑（核验 2026-09-28，本期未取得新增帖文）<br>
+  注：<strong>35% 为「不达标」顶格消费税税率（非关税），2027 年 1 月 1 日生效，适用 ≤10 座乘用车/客车；10–35% 分档与 3 年调整期为财政部 11/6 口径（标题级），具体分档细则与过渡档设计尚未公布，「达标可维持 10%」为对该口径的解读，非官方原文。</strong>G9L 规格以 Autolife 11/11 官方价页与 CAR250 11/11 全规格页为准；其中车身长度 Autolife 记 5,129 mm、CAR250 记 5,120 mm，本报告采用 Autolife 官方价页口径。纯电渗透率 33.08% = 17,782 ÷ 53,750（本报告计算）。人民币折算（L03 约 17.83 万、G6 约 23.58 万、G9L 约 47.57 万、X9 约 50.35 万、D9 约 43.62 万）按 THB/CNY 0.1983 计算。<strong>汇率：open.er-api.com 2026-11-12 00:02 UTC 实时截面（USD/CNY 6.6858 · USD/THB 33.7226 · THB/CNY 0.1983）；月内变化以 10/7 基准（6.7046 / 33.6950）计算，颜色规则为「分子涨绿、分子跌红」。</strong><strong>数据一致性：stat-card 四项（2,399,000 / 53,750 / 17,782 / 33.08%）均在正文中有完全一致的对应数值（2,399,000 见今日主线段落、市场动态首条、我情 G9L 条目；53,750 与 17,782、33.08% 见主线段落与「数据复核」条及政策/我情相关条目）。</strong>ZEEKR 7GT 仅确认「展出」，价格与开卖时间未公布，本报告不作推测。
+</div>
+
+</body>
+</html>
