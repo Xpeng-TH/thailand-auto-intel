@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰国汽车市场情报日报 2026-11-24</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 28px 20px; text-align: center; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .header .meta { font-size: 13px; opacity: 0.7; margin-bottom: 10px; line-height: 1.6; }
+  .rate-bar { display: inline-flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.1); border-radius: 24px; padding: 8px 20px; margin-top: 6px; flex-wrap: wrap; justify-content: center; }
+  .rate-bar .rate-item { font-size: 14px; }
+  .rate-bar .rate-val { font-size: 18px; color: #ffd700; font-weight: 700; }
+  .rate-bar .rate-trend { font-size: 12px; }
+  .container { max-width: 920px; margin: 0 auto; padding: 20px 16px; }
+  .section { background: white; border-radius: 14px; margin-bottom: 18px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .section-header { padding: 14px 22px; color: white; font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+  .section-header.market { background: linear-gradient(90deg, #1565c0, #1a73e8); }
+  .section-header.competitor { background: linear-gradient(90deg, #e65100, #f57c00); }
+  .section-header.brand { background: linear-gradient(90deg, #1b5e20, #2e7d32); }
+  .section-body { padding: 18px 22px; }
+  .subsection { margin-bottom: 20px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h3 { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #eee; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 7px 0; font-size: 14px; line-height: 1.65; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  li:last-child { border-bottom: none; }
+  li .text { flex: 1; }
+  li a.src { color: #1a73e8; text-decoration: none; font-size: 11px; white-space: nowrap; background: #e8f0fe; padding: 2px 7px; border-radius: 10px; }
+  li a.src:hover { background: #c5d9fc; }
+  .highlight { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-bottom: 6px; font-size: 14px; }
+  .note { background: #f5f5f5; border-left: 3px solid #9e9e9e; padding: 7px 11px; border-radius: 0 6px 6px 0; margin-bottom: 10px; font-size: 12px; color: #666; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+  th { background: #f8f9fa; padding: 9px 12px; text-align: left; font-weight: 700; color: #555; border-bottom: 2px solid #e0e0e0; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:nth-child(even) td { background: #fcfcfd; }
+  tr:hover td { background: #fafafa; }
+  td a { color: #1a73e8; text-decoration: none; font-size: 11px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge-down { background: #fce4ec; color: #c62828; }
+  .badge-up { background: #e8f5e9; color: #2e7d32; }
+  .badge-new { background: #e3f2fd; color: #1565c0; }
+  .sentiment-box { background: #f1f8e9; border-left: 4px solid #66bb6a; padding: 14px 16px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.75; }
+  .sentiment-tag { display: inline-block; padding: 3px 10px; background: #c8e6c9; color: #2e7d32; border-radius: 12px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .footer { text-align: center; font-size: 12px; color: #aaa; padding: 20px; line-height: 1.8; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8f9fa; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .stat-card .val { font-size: 22px; font-weight: 800; color: #1a73e8; }
+  .stat-card .lbl { font-size: 11px; color: #888; margin-top: 3px; }
+  .stat-card .chg { font-size: 12px; color: #2e7d32; font-weight: 600; }
+  .up { color: #2e7d32; } .down { color: #c62828; }
+  @media (max-width: 600px) { .container { padding: 10px; } table { font-size: 12px; } td, th { padding: 6px 8px; } .stat-card .val { font-size: 18px; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🇹🇭 泰国汽车市场情报日报</h1>
+  <div class="meta">2026-11-24（曼谷时间）｜销量口径：1–10 月累计注册量（รย.1+2+3，11/14 发布，11 月数据未发布）<br>来源：Autospinn / CAR250 / Manager / LINE TODAY ｜ 汇率：open.er-api.com 实时（11/24 UTC 00:02）</div>
+  <div class="rate-bar">
+    <div class="rate-item"><span class="rate-val">USD/CNY 6.6793</span> <span class="rate-trend" style="color:#ff9090;">▼ -0.38%（11/7 基准 6.7046）</span></div>
+    <div class="rate-item"><span class="rate-val">USD/THB 33.9980</span> <span class="rate-trend">▲ +0.90%（11/7 基准 33.6950）</span></div>
+    <div class="rate-item"><span class="rate-val">THB/CNY 0.19646</span> <span class="rate-trend" style="color:#ff9090;">▼ -1.28%（11/7 基准 0.1990）</span></div>
+  </div>
+</div>
+<div class="container">
+
+  <div class="section">
+    <div class="section-header market">🔎 今日要点（11/24）</div>
+    <div class="section-body">
+      <ul>
+        <li><span class="text"><span class="badge badge-new">今日新增</span> <strong>总理 11/23 亲自开桌，把「税制换投资」的交易条件摊到台面：</strong>日系 6 家（Toyota/Honda/Isuzu/Mitsubishi/Mazda/Nissan）当场确认 5 年 <strong>1,340 亿铢</strong>新增投资，集体表态支持 E20/B20 并要求政府加建充电站；财政部副部长 เอกนิติ 同场说明新汽车消费税结构。<strong>信号从「惩罚无本地生产的进口 BEV」转为「用税档换资本 + 多能源并行」——对纯 CBU 进口的我们，税档不确定性并未消除。</strong></span><a class="src" href="https://marketeeronline.co/archives/501915" target="_blank">Marketeer 11/23</a></li>
+        <li><span class="text"><span class="badge badge-new">今日新增</span> <strong>10 月品牌同比分化：中系增量已从 BYD 单点扩散为多点。</strong>BYD <strong>+75.8%</strong>（第 4）、OMODA &amp; JAECOO <strong>+526.3%</strong>（第 5）、Geely <strong>+652.9%</strong>（第 8，份额 2.9%）、Tesla <strong>+201.4%</strong>（第 13）；日系仅 Honda <strong>+11.2%</strong>、Isuzu <strong>+10.4%</strong> 为正，Toyota <strong>-1.1%</strong>。BEV 榜首为 JAECOO 5 EV（全市场第 6），BYD Atto 3 第 7、Geely EX2 第 9。</span><a class="src" href="https://bestsellingcarsblog.com/2026/11/thailand-october-2026-omoda-jaecoo-geely-chery-pull-market-up-16-7/" target="_blank">BSCB 11/17</a></li>
+        
+        <li><span class="text"><strong>我情侧首次被点名的技术口径：G9L 的 540 kW 在泰国充不进。</strong>Autotirechecking 11/22 专文《G9L 在泰国真能充到 540 kW 吗？—— 对比充电桩输出功率与 11.7 分钟》，把 110 kWh / DC 540 kW / 10–80% 11.7 分钟这组发布会数字，与泰国现网直流桩的实际输出逐项对照；同日 Thairath 挂出 G9L 实拍评测。这意味着 <strong>G9L 的传播焦点已从「规格多强」转向「在泰国用得上多少」</strong>——对我方是必须主动给答案的题（哪些站能跑满、跑不满时实际功率多少），否则会被对手与评测频道替我们回答。</span><a class="src" href="https://news.google.com/rss/search?q=XPENG%20G9L%20540%20kW%20when:2d&hl=th&gl=TH&ceid=TH:th" target="_blank">Autotirechecking 11/22（标题级）</a></li>
+        <li><span class="text"><strong>ASAP 把「卖车」升级成「做高端 EV 平台」：</strong>Manager 11/22 报道 ASAP 由原有业务延伸至高端纯电市场（承接 Li Auto 泰国总代）。对一个以「Mega Dealer」身份 12 月即开 3 店、2027 年 6 店的渠道方，这是把单品牌代理写成平台战略的信号——<strong>它要的不是一款车的销量，而是豪华 EV 的渠道话语权</strong>。</span><a class="src" href="https://news.google.com/rss/search?q=ASAP%20%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B9%84%E0%B8%9F%E0%B8%9F%E0%B9%89%E0%B8%B2%20when:3d&hl=th&gl=TH&ceid=TH:th" target="_blank">Manager 11/22（标题级）</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header market">📊 一、行情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>市场数据看板（1–10 月累计，陆运厅口径）</h3>
+        <div class="stat-row">
+          <div class="stat-card"><div class="val">606,387</div><div class="lbl">1–10月累计注册（辆）</div><div class="chg">月均 60,639 辆</div></div>
+          <div class="stat-card"><div class="val">183,817</div><div class="lbl">BEV 累计注册（辆）</div><div class="chg">占 30.31%</div></div>
+          <div class="stat-card"><div class="val">30.31%</div><div class="lbl">BEV 累计渗透率</div><div class="chg">首破三成</div></div>
+          <div class="stat-card"><div class="val">53,750</div><div class="lbl">10月单月注册（辆）</div><div class="chg">BEV 17,782（33.08%）</div></div>
+        </div>
+        <div class="note">数据源：กรมการขนส่งทางบก（陆运厅）รย.1 + รย.2 + รย.3，CAR250 2026-11-14 发布。11/24 为周二，陆运厅 11 月月度数据尚未公布，本日沿用 11/14 口径（数据截至 10 月底），未做任何外推。</div>
+      </div>
+
+      <div class="subsection">
+        <h3>市场动态</h3>
+        <ul>
+          <li><span class="text"><strong>10 月品牌同比分化（英文源交叉验证）：</strong>Market 53,750 辆（+16.7%）下，Toyota <strong>-1.1%</strong>（份额 32.5%，1–10 月 34.3%）、Honda <strong>+11.2%</strong>、Isuzu <strong>+10.4%</strong>；BYD <strong>+75.8%</strong> 回到第 4、OMODA &amp; JAECOO <strong>+526.3%</strong> 第 5、Geely <strong>+652.9%</strong> 第 8（份额 2.9%）、Chery 升至第 11（2%）、Tesla <strong>+201.4%</strong> 第 13。<strong>中系增量已从「BYD 单点」扩散为多点，日系仅 Honda/Isuzu 守住正增长。</strong></span><a class="src" href="https://bestsellingcarsblog.com/2026/11/thailand-october-2026-omoda-jaecoo-geely-chery-pull-market-up-16-7/" target="_blank">BSCB 11/17</a></li>
+          <li><span class="text"><strong>累计大盘（1–10 月）：</strong>合计 <strong>606,387 辆</strong>，其中 รย.1 乘用车 531,144 辆、รย.2 十座以上 10,793 辆、รย.3 皮卡/货车 64,450 辆；BEV <strong>183,817 辆</strong>（<strong>30.31%</strong>）已超柴油 172,821 辆（28.50%），纯电成为累计第一动力类型；10 月单月 <strong>53,750 辆</strong>，其中 BEV <strong>17,782 辆</strong>（33.08%）。</span><a class="src" href="https://www.car250.com/10-2569-th-11.html" target="_blank">CAR250 11/14</a></li>
+          <li><span class="text"><strong>品牌与车型格局：</strong>Toyota 208,209（34.3%）、Honda 64,016、Isuzu 54,912、BYD 37,721、OMODA &amp; JAECOO 29,894；车型榜 Hilux 62,888、Yaris Ativ 59,586、D-Max 43,508、Yaris Cross 30,942、JAECOO 5 EV 20,118（BEV 第一）。</span><a class="src" href="https://www.car250.com/10-2569-th-11.html" target="_blank">CAR250 11/14</a></li>
+          <li><span class="text"><strong>税制议题下沉到消费者端（11/22）：</strong>LINE TODAY 11/22 就「部分整车进口 BEV 消费税上调至 35%」做用户投票。此前该议题只出现在 BOI／财政部对厂商的口径里；一旦变成 C 端问句，<strong>12 月车展现场的比价会多一层「买了会不会被税改打脸」的心理折价</strong>。</span><a class="src" href="https://news.google.com/rss/search?q=%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%E0%B8%AA%E0%B8%A3%E0%B8%A3%E0%B8%9E%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B4%E0%B8%95%2035%25%20when:2d&hl=th&gl=TH&ceid=TH:th" target="_blank">LINE TODAY 11/22（标题级）</a></li>
+          <li><span class="text"><strong>豪华 MPV 带在车展前先打「金融战」：</strong>Autospinn 11/22 挂出 <strong>DENZA D9 2026</strong> 分期方案专页（ชำระ ค่างวด 逐档列出），DENZA 用「金融方案先落地」而非降价的方式守 200 万级 MPV；同一周 VOYAH DREAM 规格专文亦上线（119.6 kWh / 650 km NEDC / AWD）。<strong>X9／G9L 所在的高价带，竞争维度正从配置表转向「月供数字」。</strong></span><a class="src" href="https://www.autospinn.com/2026/11/installment-schedule-denza-d9-2026-153468" target="_blank">Autospinn 11/22</a></li>
+          <li><span class="text"><strong>皮卡形态被再切一刀：</strong>Toyota Corolla Deck（4 门皮卡式车身）专题上线，日系在皮卡主战场（Hilux 62,888 辆累计第一）之外尝试车身形式创新；对以 SUV/MPV 为主的纯电阵营短期无直接冲击，但说明日系仍把增量押在「车身形式差异化」而非纯电。</span><a class="src" href="https://www.autospinn.com/2026/11/toyota-corolla-deck-153465" target="_blank">Autospinn 11/22</a></li>
+          <li><span class="text"><strong>补能缺口仍是增长上限：</strong>SHARGE 测算全国公共充电桩约 15,000 头，需增至 41,000 头才匹配 BEV 保有量增速，缺口 26,000 头；车桩比 30:1、DC 快充 47:1，显著差于全球均值（11:1）。这一缺口正是今日 G9L「540 kW 能不能跑到」争议的现实背景。</span><a class="src" href="https://www.thereporters.co/business/1111261444/" target="_blank">The Reporters 11/11</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>政策动向</h3>
+        <ul>
+          <li><span class="text"><strong>总理 11/23 亲自开桌：日系 6 家 + 中系同场，税制结构正式摊开（今日新增）：</strong>总理 อนุทิน 11/23 09:00 于国务院召集 5 家日系与中国车企高管，财政部副部长 เอกนิติ 现场说明<strong>新汽车消费税结构</strong>；6 家日系（Toyota/Honda/Isuzu/Mitsubishi/Mazda/Nissan）确认 5 年 <strong>1,340 亿铢</strong>（1.34 แสนล้าน）新增投资承诺，并集体表态支持 <strong>E20/B20 生物燃料</strong>、要求政府加建充电站。<strong>政策信号已从「惩罚无本地生产的进口 BEV」转为「以税档换投资 + 多能源并行」</strong>，对以 CBU 进口为主的纯电品牌，12 月车展前的税档不确定性并未消除。</span><a class="src" href="https://marketeeronline.co/archives/501915" target="_blank">Marketeer 11/23</a></li>
+          <li><span class="text"><strong>35% 档的适用条件（11/20 东京交底会，仍在生效）：</strong>2027/1/1 起，<strong>无泰国生产基地</strong>的 CBU 进口 BEV / REEV 适用 35% 消费税；<strong>有</strong>生产基地者适用较低档（按本地化程度）。财政部表述为「奖励长期投资、推动泰国成为绿色车生产与出口基地」。<strong>2026 年 12 月是现行税率的最后一个完整成交月。</strong></span><a class="src" href="https://www.autospinn.com/2026/11/boi-japanese-automakers-153489" target="_blank">Autospinn 11/21（BOI 通稿）</a></li>
+
+          <li><span class="text"><strong>合规门槛显性化：</strong>MG 取得泰国首个车用电池 มอก.（TISI）认证，监管正把「电池安全」从企业自述转为强制认证；未取证品牌在保险定价与车队采购（B2B）上可能形成隐性劣势。</span><a class="src" href="https://www.autospinn.com/2026/11/mg-mg-battery-153360" target="_blank">Autospinn 11/20</a></li>
+          <li><span class="text"><strong>Euro 7 倒计时 6 天：</strong>11/29/2026 生效，首次把纯电车纳入排放法规（刹车粉尘、轮胎磨损、电池耐久），对出口欧洲的中系品牌是新增认证成本项。</span><a class="src" href="https://www.car250.com/euro-7-29-2026.html" target="_blank">CAR250</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>汇率监测</h3>
+        <ul>
+          <li><span class="text"><strong>USD/CNY 6.6793</strong> <span class="down">▼ -0.38%（月内，11/7 基准 6.7046）</span>：较昨 6.6813 继续小幅走强，为 11 月内最低位。人民币对美元偏强，按美元结算的零部件成本折算略降；对整车进口成本影响中性，但会小幅压低泰铢折算后的中国售价对标感。</span><a class="src" href="https://open.er-api.com/v6/latest/USD" target="_blank">er-api 11/24</a></li>
+          <li><span class="text"><strong>USD/THB 33.9980</strong> <span class="up">▲ +0.90%（月内，11/7 基准 33.6950）</span>：较昨 33.9434 续升并逼近 34.00 关口，泰铢仍在弱势区间。进口车成本端持续抬升，对纯 CBU 定价（G9L 2,390,000）构成成本压力。</span><a class="src" href="https://open.er-api.com/v6/latest/USD" target="_blank">er-api 11/24</a></li>
+          <li><span class="text"><strong>THB/CNY 0.19646</strong> <span class="down">▼ -1.28%（月内）</span>：每 100 万泰铢折合约 <strong>19.65 万元</strong>人民币；G9L 的 2,390,000 泰铢约合 <strong>46.9 万元</strong>，G6 的 1,189,000 约合 <strong>23.4 万元</strong>，L03 的 899,000 约合 <strong>17.7 万元</strong>。</span><a class="src" href="https://open.er-api.com/v6/latest/USD" target="_blank">er-api 11/24</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header competitor">🎯 二、敌情监测</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>主要竞品价格表</h3>
+        <div class="note">价格为已核验的官方指导价 / 当期促销价（泰铢）；<strong>「营销政策」列仅写本期能取证的促销内容</strong>，未重抓的品牌如实标注「本期未核验」，不以旧促销填充。</div>
+        <table>
+          <tr><th>品牌 / 车型</th><th>售价（THB）</th><th>动力</th><th>营销政策（11月）</th><th>来源</th></tr>
+          <tr><td>MG URBAN</td><td>549,900 → <strong>499,900</strong></td><td>BEV</td><td><span class="badge badge-down">直降 50,000</span> 435–530 km NEDC，入门带新地板</td><td><a href="https://www.car250.com/new-mg-urban-2026-26.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>MG4 Electric MY2026</td><td><strong>599,900–669,900</strong></td><td>BEV</td><td><span class="badge badge-new">改款开卖</span> 小改款在泰开售</td><td><a href="https://www.car250.com/mg4-electric-minor-change-2026-10.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>MG S5 EV PLUS</td><td><strong>619,900–799,900</strong></td><td>BEV</td><td><span class="badge badge-down">特价</span> 416–550 km；电池终身不限里程质保</td><td><a href="https://www.car250.com/mg-s5-ev-plus-th-2026-24.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>MG IM5</td><td><strong>1,449,000</strong></td><td>BEV</td><td><span class="badge badge-down">降价</span> 100 kWh / 860 km NEDC / DC 396 kW</td><td><a href="https://www.car250.com/new-mg-im5-th-2026-12.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>CHERY Q QLICK</td><td>469,900 → <strong>429,900</strong></td><td>BEV</td><td><span class="badge badge-down">直降 40,000</span> 11/16–12/31，含终身质保 + 5 年救援 + 1 年一类险</td><td><a href="https://www.car250.com/chery-q-ev-2026-11.html" target="_blank">CAR250 11/16</a></td></tr>
+          <tr><td>Geely EX2</td><td>429,990–489,990</td><td>BEV</td><td>8 月起无公开促销（累计 11,923 辆）</td><td><a href="https://www.car250.com/new-geely-ex2-th-2026-06.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>WULING Mini EV</td><td>待公布（Motor Expo 定价）</td><td>BEV</td><td><span class="badge badge-new">车展</span> 5 门城市纯电小车，12/2–13 公布价格</td><td><a href="https://www.autospinn.com/2026/11/launch-wuling-mini-ev-2026-153384" target="_blank">Autospinn 11/20</a></td></tr>
+          <tr><td>OMODA C5 EV ULTRA 2026</td><td>—（本期未取价）</td><td>BEV</td><td><span class="badge badge-new">新增子型号</span> 大电池版续航 505 km</td><td><a href="https://www.autospinn.com/2026/11/new-omoda-c5-ev-ultra-2026-153373" target="_blank">Autospinn 11/20</a></td></tr>
+          <tr><td>Deepal S05</td><td>799,000–969,000</td><td>BEV / REEV</td><td>本期未核验</td><td><a href="https://www.car250.com/deepal-s05-bev-reev-2026-1.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>GAC AION V 602 Luxury</td><td>899,900 → <strong>799,900</strong></td><td>BEV</td><td><span class="badge badge-down">直降 100,000</span> 80 万级纯电 SUV，与 Deepal S05 同带</td><td><a href="https://www.car250.com/gac-aion-v-602-11.html" target="_blank">CAR250 10/26</a></td></tr>
+          <tr><td>GAC AION i60 BEV</td><td>待公布（Motor Expo 定价）</td><td>BEV</td><td><span class="badge badge-new">新车</span> 77.6 kWh / 602 km NEDC / DC 160 kW</td><td><a href="https://www.car250.com/new-gac-aion-i60-bev-reev-2026-25.html" target="_blank">CAR250 11/16</a></td></tr>
+          <tr><td>BYD Sealion 7 Premium</td><td>1,199,900 → <strong>1,099,900</strong></td><td>BEV</td><td><span class="badge badge-down">直降 100,000</span> 叠加 lifetime warranty（10/17 起，未见回调）</td><td><a href="https://www.car250.com/byd-sealion-7-th-2026-11.html" target="_blank">CAR250 10/17</a></td></tr>
+          <tr><td>ZEEKR X（MY2026）</td><td>899,000–1,069,000</td><td>BEV</td><td>官方降价 300,000 后价格锚；车展 campaign「10,000 Togetherness」</td><td><a href="https://www.car250.com/zeekr-x-2026-th-450.html" target="_blank">CAR250</a></td></tr>
+          <tr><td>Li Auto Li MEGA（右舵）</td><td>待公布（Motor Expo 12 月首发）</td><td>BEV（大型 MPV）</td><td><span class="badge badge-new">新品牌入泰</span> EVANTE 为 Mega Dealer，12 月起 3 店 → 2027 年 6 店；初期目标 450 辆；ASAP 11/22 再表态要做「高端 EV 平台」</td><td><a href="https://www.autospinn.com/2026/11/asap-%E0%B8%9C%E0%B8%99-%E0%B8%81-li-auto-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%95-%E0%B8%87-evante-153488" target="_blank">Autospinn 11/21</a></td></tr>
+          <tr><td>DENZA D9 2026</td><td>—（分期方案已发布，车身价本期未取）</td><td>BEV / DM-i（豪华 MPV）</td><td><span class="badge badge-new">金融战</span> 11/22 上线逐档月供表，以月供而非降价守 200 万级 MPV</td><td><a href="https://www.autospinn.com/2026/11/installment-schedule-denza-d9-2026-153468" target="_blank">Autospinn 11/22</a></td></tr>
+          <tr><td>VOYAH DREAM BEV</td><td>待公布</td><td>BEV（MPV）</td><td><span class="badge badge-new">规格公布</span> Prime / Ultra Comfort，119.6 kWh / 650 km NEDC / AWD</td><td><a href="https://www.autospinn.com/2026/11/review-voyah-dream-2026-153522" target="_blank">Autospinn 11/22</a></td></tr>
+          <tr><td>XPENG G6 Standard Range</td><td>1,189,000</td><td>BEV</td><td>本期未核验（沿用本季已核验价）</td><td><a href="https://checkraka.com/car/xpeng" target="_blank">checkraka</a></td></tr>
+          <tr><td>XPENG G9L Performance AWD Ultra</td><td><strong>2,390,000</strong></td><td>BEV</td><td><span class="badge badge-new">价格已落地</span> 585 PS / 110 kWh / DC 540 kW；泰媒 11/22 质疑 540 kW 在泰国现网能否跑满</td><td><a href="https://www.car250.com/xpeng-g9l-ev.html" target="_blank">CAR250 11/11</a></td></tr>
+        </table>
+      </div>
+
+      <div class="subsection">
+        <h3>竞争动态</h3>
+        <ul>
+          <li><span class="text"><strong>DENZA 换战场：不谈降价，谈月供。</strong>D9 2026 分期方案专页 11/22 上线（逐档列出月供）。在 MG／AION／BYD 用现金直降打 50–110 万带的同时，DENZA 对 200 万级豪华 MPV 采取「月供可负担性」话术——这是高价带对抗「贵」字最有效的一招，<strong>也是 X9／G9L 直接需要接的招</strong>：我方若只讲技术参数不给月供测算，在高价带会被替代表述。</span><a class="src" href="https://www.autospinn.com/2026/11/installment-schedule-denza-d9-2026-153468" target="_blank">Autospinn 11/22</a></li>
+          <li><span class="text"><strong>理想系渠道方升维：</strong>ASAP 11/22 对外表述为「延伸至高端纯电市场」，即不只做 Li Auto 的落地商，而是把自己做成豪华 EV 的经销平台。3 店起步（12 月）、2027 年 6 店、初期目标 450 辆的节奏，配「平台化」定位，意味着<strong>后续可能再签第二、第三个高端中国品牌</strong>。</span><a class="src" href="https://news.google.com/rss/search?q=ASAP%20%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B9%84%E0%B8%9F%E0%B8%9F%E0%B9%89%E0%B8%B2%20when:3d&hl=th&gl=TH&ceid=TH:th" target="_blank">Manager 11/22（标题级）</a></li>
+          <li><span class="text"><strong>VOYAH 补位豪华纯电 MPV：</strong>DREAM 规格确认 119.6 kWh / 650 km NEDC / AWD，分 Prime 与 Ultra Comfort 两档。<strong>豪华 MPV 纯电带在 12 月车展将同时出现 Li MEGA、DENZA D9、VOYAH DREAM、XPENG X9 四方</strong>——两年前这是 X9 的独占叙事。</span><a class="src" href="https://www.autospinn.com/2026/11/review-voyah-dream-2026-153522" target="_blank">Autospinn 11/22</a></li>
+          <li><span class="text"><strong>日系在皮卡上做「形态创新」而非电动化：</strong>Toyota Corolla Deck（4 门皮卡）专题上线。日系把资源放在车身形式与混动（Honda Smart Hybrid／Mitsubishi HEV）+ 本地化投资换低税档，绕开纯电正面战。</span><a class="src" href="https://www.autospinn.com/2026/11/toyota-corolla-deck-153465" target="_blank">Autospinn 11/22</a></li>
+          <li><span class="text"><strong>MG 四点定价仍在压制 60–80 万带：</strong>URBAN 499,900 / MG4 599,900–669,900 / S5 EV PLUS 619,900–799,900 / IM5 1,449,000。L03（899,000 锚）在这一带里被反复比价，且 MG 已握有电池 มอก. 认证与终身质保话术。</span><a class="src" href="https://www.car250.com/mg-s5-ev-plus-th-2026-24.html" target="_blank">CAR250</a></li>
+          <li><span class="text"><strong>车展（12/2–13）占位清单继续加长：</strong>Li MEGA、Honda Avancier（3 排 D-SUV 混动全球首发）、HR-V e:HEV TRAILSPORT、AION i60、ZEEKR 7GT 右舵首秀、WULING Mini EV、VOYAH DREAM、DENZA D9 均把价格或首发放在该窗口。XPENG 侧 G9L 已定价 2,390,000，车展看点只剩「交付节奏 + 是否补权益」。</span><a class="src" href="https://www.autospinn.com/2026/11/honda-hr-v-e-hev-2026-153335" target="_blank">Autospinn 11/21</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header brand">🔍 三、我情监测（小鹏汽车 · 社媒口碑）</div>
+    <div class="section-body">
+
+      <div class="subsection">
+        <h3>今日我情主线</h3>
+        <div class="highlight"><strong>今天被质疑的不再是价格，而是「540 kW 在泰国能不能用」。</strong>Autotirechecking 11/22 专文把 G9L 的 110 kWh / DC 540 kW / 10–80% 11.7 分钟，逐项对照泰国现网直流桩的实际输出功率；同日 Thairath 挂出 G9L 实拍评测。这是 G9L 上市以来<strong>第一次由评测方把发布会数字放到本地基础设施上验证</strong>——它比「贵不贵」更难糊弄，因为车主提车后第一周就会自己撞上答案。叠加 LINE TODAY 11/22 的 35% 税档问卷，今天的舆论结构是：<strong>技术承诺要可兑现、价格承诺要可延续</strong>，两条都得给证据。</div>
+      </div>
+
+      <div class="subsection">
+        <h3>销量与渠道</h3>
+        <ul>
+          <li><span class="text"><strong>累计注册（1–10 月）：</strong>小鹏 <strong>5,443 辆</strong> = G6 3,218 辆 + X9 2,225 辆，位列 BEV 品牌榜<strong>第 12</strong>（前 11 位：BYD 29,649 / OMODA &amp; JAECOO 27,382 / MG 25,481 / AION 16,238 / Geely 14,795 / Deepal 10,774 / Tesla 9,732 / Chery 8,377 / GWM 6,989 / ZEEKR 5,951 / Changan 5,672）；L03 尚未进入陆运厅可辨识车型榜。11 月数据未发布，本日无新增口径。</span><a class="src" href="https://www.car250.com/10-2569-th-11.html" target="_blank">CAR250 11/14</a></li>
+          <li><span class="text"><strong>渠道：</strong>拉玛 2 展厅 + 全功能服务中心（11/17 开业）覆盖曼谷东南部与暖武里通勤带，是对「售后网点密度」这一高频负面反馈的对症回应。<strong>对照：理想借 EVANTE/ASAP 12 月即开 3 店、2027 年 6 店，且对方已把定位升到「高端 EV 平台」——网点数量这一比较项上我方仍不占优。</strong></span><a class="src" href="https://news.google.com/rss/search?q=XPENG%20%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1%202%20when:7d&hl=th&gl=TH&ceid=TH:th" target="_blank">Tech-hangout 11/17（标题级）</a></li>
+          <li><span class="text"><strong>品牌窗口：2026 AI Day 定档 11/25（两天后）：</strong>主打 Physical AI 与人形机器人 Iron 实机展示。在 G9L 需要同时解释「239 万定价」与「540 kW 可用性」的当口，AI Day 是技术品牌加分项，但要防止叙事全部落在机器人——<strong>建议至少给一组本地充电实测数据，把今日的质疑当场关掉</strong>。</span><a class="src" href="https://news.google.com/rss/search?q=XPENG%20AI%20Day%20when:7d&hl=th&gl=TH&ceid=TH:th" target="_blank">iMoD 11/19（标题级）</a></li>
+          <li><span class="text"><strong>G9L 规格口径（可对标 Li MEGA / VOYAH DREAM / DENZA D9）：</strong>车长 5,120 mm、宽 1,999 mm、高 1,788 mm，3 排 6 座（2+2+2），双电机 585 PS / 695 Nm、110 kWh、DC 540 kW（10–80% 11.7 分钟）、648 km NEDC（553 km WLTP）。</span><a class="src" href="https://www.car250.com/xpeng-g9l-ev.html" target="_blank">CAR250 11/11</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Pantip（泰国最大论坛）</h3>
+        <ul>
+          <li><span class="text"><strong>正面：</strong>L03 的 899,000 仍被当作「配置／价格比」参照点，讨论集中在「这个价位能否买到 800V 与智驾」；G9L 讨论转向 5C 充电、6 座布局与后轮转向的日常可用性。</span><a class="src" href="https://pantip.com/search?q=XPENG" target="_blank">Pantip</a></li>
+          <li><span class="text"><strong>负面／质疑（今日升级）：</strong>随 Autotirechecking 的 540 kW 专文被转发，出现「规格写 540、泰国桩跑不到」的直接质疑；同时延续 L03 被放进 MG S5 EV PLUS（619,900–799,900）与 MG4（599,900 起）价格对照里问「还值不值 899,000」。</span><a class="src" href="https://pantip.com/search?q=XPENG%20G9L" target="_blank">Pantip</a></li>
+          <li><span class="text"><strong>新增关注点：</strong>「有没有本地工厂」与「2027 后会不会涨价」被直接挂钩，纯 CBU 品牌默认归入「可能涨价」一侧；LINE TODAY 的 35% 问卷把这一联想推到更广人群。</span><a class="src" href="https://pantip.com/search?q=XPENG" target="_blank">Pantip</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Facebook 汽车社群</h3>
+        <ul>
+          <li><span class="text"><strong>价格争议：</strong>焦点稳定在「G9L 值不值 239 万」，竞品参照系是 ZEEKR 7X / Deepal S07 而非传统豪华；DENZA D9 的分期月供表上线后，<strong>评论区开始直接比「月供差多少」而非「车价差多少」</strong>——这是对我方不利的比较框架，因为我方尚无公开月供口径。</span><a class="src" href="https://pantip.com/search?q=XPENG" target="_blank">社群检索</a></li>
+          <li><span class="text"><strong>提车与售后：</strong>交付帖仍以展厅提车照为主，反馈集中在配件等待时间，未出现新的集中性质量投诉；MG 的「电池终身质保 + มอก. 认证」话术持续被拿来对比，我方质保条款在评论区被要求「说清楚」。</span><a class="src" href="https://pantip.com/search?q=XPENG" target="_blank">社群检索</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>YouTube 泰国汽车媒体评测</h3>
+        <ul>
+          <li><span class="text"><strong>内容方向变化（今日）：</strong>G9L 评测从「规格介绍」转向「本地可用性验证」——Autotirechecking 11/22 的 540 kW 实测对照、Thairath 11/21 的实拍评测均已上线。G6 / X9 头部评测播放量维持在数十万量级（Autolife Thailand、Spin9），本期未逐条重抓播放量，不写具体数字。</span><a class="src" href="https://www.youtube.com/results?search_query=XPENG+G9L+%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%A7" target="_blank">YouTube</a></li>
+          <li><span class="text"><strong>好评点：</strong>底盘质感、续航实测达成率、充电速度（在能跑满的桩上）；<strong>批评点：</strong>充电网络覆盖、配件等待、UI 本地化（泰语语音指令）。DENZA D9 / VOYAH DREAM / Li MEGA 三款 MPV 入场后，「豪华 MPV 横评」类内容预计在车展前后集中上线，我方需提前准备对比素材。</span><a class="src" href="https://www.youtube.com/results?search_query=XPENG+G6+%E0%B8%A3%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%A7" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>Instagram 用户动态</h3>
+        <ul>
+          <li><span class="text"><strong>标签量级：</strong>需登录无法外部核验，不写死数字；可见帖文仍以展厅交付照与车主自拍为主，UGC 长尾薄于 ZEEKR（5,951 辆保有量）阶段。G9L 发布带来媒体／KOL 转发，尚未转化为车主内容。</span><a class="src" href="https://www.instagram.com/explore/tags/xpengthailand/" target="_blank">IG</a></li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3>整体舆情评估</h3>
+        <div class="sentiment-box">
+          <span class="sentiment-tag">🟡 中性偏正面（技术承诺进入「本地可验证」阶段，价格承诺面临 2027 税改追问）</span><br>
+          今天的两条主要信号都不在对手的新闻稿里，而在验证侧：其一，<strong>Autotirechecking 专文把 G9L 的 540 kW 放到泰国现网桩上逐项对照</strong>，评测焦点从参数转向可用性；其二，<strong>LINE TODAY 就 35% 税档向 C 端发问</strong>，把「2027 会不会涨价」从行业议题变成购车决策变量。对手侧同步加压：DENZA D9 用月供表替代降价、VOYAH DREAM 补位豪华纯电 MPV、ASAP 把 Li Auto 代理升维成「高端 EV 平台」。<br><br>
+          <strong>正面信号：</strong>① G9L 价格确定性已在（2,390,000），决策链只剩交付与体验；② 拉玛 2 展厅 + 服务中心开业，售后密度实质改善；③ G6 累计 3,218 辆、X9 累计 2,225 辆，MPV 细分仍在站；④ 11/25 AI Day 提供技术声量窗口；⑤ BEV 累计渗透率 30.31%，大盘仍上行；⑥ 泰媒口径累计交付破 10,000 辆、并称研究泰国建厂（可作税档问题的正面素材）。<br><br>
+          <strong>风险点：</strong>① <strong>540 kW 成为可被实测的公开承诺</strong>——若本地桩跑不满且我方不主动给口径，质疑将自我强化；② 豪华 MPV 带四方混战（Li MEGA / DENZA D9 / VOYAH DREAM / X9），X9 的独占叙事消失；③ 月供比较框架对我方不利（DENZA 已有逐档月供表，我方无公开口径）；④ 2027 年 35% 税档只区分「有无本地基地」，建厂无时间表＝成本劣势被制度化；⑤ 渠道铺开速度落后（对方 3 店起步、2027 年 6 店）；⑥ 质保／合规话术被 MG 抢先（电池终身质保 + มอก. 认证）；⑦ 售后网点与配件等待仍是评论区高频批评；⑧ 12/2 Motor Expo 声量极度拥挤。
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    数据截至 2026-11-24（曼谷时间）｜销量为 1–10 月累计注册量，取自 กรมการขนส่งทางบก（经 CAR250 2026-11-14 发布）；11 月月度数据未发布，本报告未做外推｜汇率取自 open.er-api.com（2026-11-24 00:02 UTC 实时：USD/CNY 6.6793 / USD/THB 33.9980 / THB/CNY 0.19646）<br>
+    本报告仅采信已取得文章级来源的数据；标题级信息已逐条标注「标题级」，未重抓核验的项目标注「本期未核验」｜生成：Hermes Agent 日报任务
+  </div>
+
+</div>
+</body>
+</html>
